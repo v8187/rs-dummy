@@ -1,0 +1,72 @@
+{
+  "name": "@v8187/rs-mock",
+  "version": "0.0.1-draft.0",
+  "description": "This tool provides sample data to test your application written in JavaScript and Typescript. It is still in Development mode.",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --config jest.config.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags",
+    "pub": "npm publish --access public",
+    "unpub": "npm unpublish --force",
+    "deprecate": "npm deprecate @v8187/mock@\"0.0.1-draft.0\" \"This module is deprecated and will be removed soon. Use @v8187/rs-mock instead\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/v8187/rs-mock.git"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "keywords": [
+    "sample",
+    "dummy",
+    "mock",
+    "utils",
+    "utilities",
+    "js",
+    "javascript",
+    "ts",
+    "typescript",
+    "helpers"
+  ],
+  "author": {
+    "name": "Vikam Gupta",
+    "email": "vikram1vicky@gmail.com",
+    "url": "https://github.com/v8187/rs-mock"
+  },
+  "contributes": {
+    "name": "Vikam Gupta",
+    "email": "vikram1vicky@gmail.com",
+    "url": "https://github.com/v8187/rs-mock"
+  },
+  "bundleDependencies": [],
+  "private": false,
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/v8187/rs-mock/issues",
+    "email": "vikram1vicky@gmail.com"
+  },
+  "homepage": "https://github.com/v8187/rs-mock#readme",
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "babel-jest": "^23.6.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.3",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.0",
+    "tslint-config-prettier": "^1.17.0",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "@v8187/rs-utils": "0.0.1-draft.2",
+    "moment": "^2.23.0"
+  }
+}

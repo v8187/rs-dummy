@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "dist",
+    // "declarationDir": "dist",
+    "module": "commonjs",
+    "target": "es5",
+    "declaration": true,
+    // "lib": [
+    //   "es6",
+    //   "dom"
+    // ],
+    // "outFile": "dist/utils.js",
+    "inlineSourceMap": true,
+    "allowJs": false,
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": false,
+    "allowSyntheticDefaultImports": false
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "scripts",
+    "config",
+    "public",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts",
+    "tests"
+  ] //,
+  // "include": [
+  //   "src"
+  // ]
+}
