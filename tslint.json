@@ -4,8 +4,25 @@
         "tslint-config-prettier"
     ],
     "rules": {
-        "no-bitwise": false,
-        "one-variable-per-declaration": false,
-        "no-console": false
+        "no-console": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "member-ordering": false,
+    "member-access": false,
+    "arrow-return-shorthand": false,
+    "no-shadowed-variable": false,
+    "one-variable-per-declaration": false,
+    "no-bitwise": false,
+    "no-angle-bracket-type-assertion": false,
+    "jsx-no-lambda": false,
+    "prefer-const": false,
+    "no-unused-expression": [
+      true,
+      "allow-fast-null-checks"
+    ],
+    "object-shorthand": [
+      "consistent-as-needed"
+    ],
+    "only-arrow-functions": false
     }
 }
