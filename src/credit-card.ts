@@ -1,7 +1,6 @@
-import { randomNum } from './random';
-import { xToNum } from '@v8187/rs-utils';
+import { xToNum, randomNum } from '@v8187/rs-utils';
 
-export const genCreditCard = (options) => {
+export const creditCard = (options) => {
 
     const cards = options.formats;
     const card = cards[1] ? cards[randomNum(0, cards.length - 1)] : cards[0];

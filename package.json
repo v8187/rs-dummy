@@ -1,6 +1,6 @@
 {
   "name": "@v8187/rs-mock",
-  "version": "0.0.1-draft.0",
+  "version": "0.0.1-draft.1",
   "description": "This tool provides sample data to test your application written in JavaScript and Typescript. It is still in Development mode.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -9,6 +9,7 @@
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "test": "jest --config jest.config.json",
+    "test:watch": "jest --verbose --watchAll --config jest.config.json",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
@@ -66,7 +67,7 @@
     "typescript": "^3.2.2"
   },
   "dependencies": {
-    "@v8187/rs-utils": "0.0.1-draft.2",
+    "@v8187/rs-utils": "0.0.1",
     "moment": "^2.23.0"
   }
 }

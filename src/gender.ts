@@ -1,6 +1,6 @@
 import { randomItem } from '@v8187/rs-utils';
 
-export const genGender = (options = { formats: [{ value: '' }] }): string => {
+export const gender = (options = { formats: [{ value: '' }] }): string => {
 
     switch (options.formats[0].value) {
         case 'mf':

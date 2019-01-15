@@ -1,9 +1,9 @@
 import { clrExpected, clrValue } from './helpers';
-import { genCreditCard } from "../src/credit-card";
+import { creditCard } from "../src/credit-card";
 
-describe('[Generators]:Credit Card', () => {
+describe('[Credit Card]', () => {
 
-    const testValue1 = genCreditCard({
+    const testValue1 = creditCard({
         formats: [{
             formats: [{ iins: [34, 37], range: { min: 15, max: 15 } }], default: true
         }], separator: ' '
@@ -13,7 +13,7 @@ describe('[Generators]:Credit Card', () => {
         expect(testValue1).toMatch(/^3(4|7)\d( \d{4}){3}$/);
     });
 
-    const testValue2 = genCreditCard({
+    const testValue2 = creditCard({
         formats: [{
             formats: [{ iins: [34, 37], range: { min: 15, max: 15 } }], default: true
         }], separator: '-'
@@ -23,7 +23,7 @@ describe('[Generators]:Credit Card', () => {
         expect(testValue2).toMatch(/^3(4|7)\d(\-\d{4}){3}$/);
     });
 
-    const testValue3 = genCreditCard({
+    const testValue3 = creditCard({
         formats: [{
             formats: [{ iins: [62], range: { min: 16, max: 19 } }]
         }], separator: ' '
@@ -33,7 +33,7 @@ describe('[Generators]:Credit Card', () => {
         expect((testValue3)).toMatch(/^6(2\d{2}|2\s\d{4}|2\d\s\d{4}|\s2\d{3})( \d{4}){3}$/);
     });
 
-    const testValue4 = genCreditCard({
+    const testValue4 = creditCard({
         formats: [{
             formats: [{ iins: [{ min: 3528, max: 3589 }], range: { min: 16, max: 19 } }]
         }], separator: ' '

@@ -4,17 +4,17 @@ import countries from './jsons/countries.data';
 import states from './jsons/states.data';
 import cities from './jsons/cities.data';
 
-export const genCountry = (): string => {
+export const country = (): string => {
     return randomItem(countries).name;
 };
 
-export const genState = (options): string => {
+export const state = (options): string => {
     const countries = options.countries.map(country => country.code3);
     const filtered = countries.length ? states.filter(state => countries.indexOf(state.country) !== -1) : states;
     return randomItem(filtered).name;
 };
 
-export const genCity = (options): string => {
+export const city = (options): string => {
     const countries = options.countries.map(country => country.code3);
     const states = options.states.map(state => state.id);
     const filtered = (countries.length || states.length) ?
@@ -25,7 +25,7 @@ export const genCity = (options): string => {
     return randomItem(filtered).name;
 };
 
-export const genLatLong = (options): string => {
+export const latLong = (options): string => {
     const countries = options.countries.map(country => country.code3);
     const filtered = countries.length ? cities.filter(city => countries.indexOf(city.country) !== -1) : cities;
     const random = randomItem(filtered)

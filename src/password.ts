@@ -1,10 +1,10 @@
-import { randomAlphabet, randomNum } from './random';
-import { randomItem } from '@v8187/rs-utils';
+import { randomItem, randomNum } from '@v8187/rs-utils';
+import { randomAlphabet } from './random';
 
 enum TYPES { ALPHA, DIGIT, SPECIAL };
 const SPECIAL_CHARS = '`-=[]\\;\',./~!@#$%^&*()_+{}|:"<>?';
 
-export const genPassword = (options) => {
+export const password = (options) => {
 
     const { upperCase, lowerCase, digit, specialChar, max, min } = options;
     const len = randomNum(min, max);

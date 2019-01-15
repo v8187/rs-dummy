@@ -1,5 +1,5 @@
-import { randomNum, randonWords, randomAlphabet } from './random';
-import { toTitleCase, randomItem } from '@v8187/rs-utils';
+import { toTitleCase, randomNum, randomItem } from '@v8187/rs-utils';
+import { randonWords, randomAlphabet } from './random';
 
 const
     numSufix = () => randomItem(['#', 'No', 'No.', 'Number'])
@@ -18,7 +18,7 @@ const
     , house = () => `${randomItem(['', 'H.', 'House', 'Ap.', 'Apartment', 'F.', 'Flat', 'Kothi', ''])} ${ranNumber()},`
     ;
 
-export const genAddress = (options?): string => {
+export const address = (options?): string => {
     const addType: number = 2; // randomNum(1, 7);
     let address = '';
     switch (addType) {

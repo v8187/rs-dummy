@@ -1,7 +1,6 @@
-import { randomNum } from './random';
-import { padString } from '@v8187/rs-utils';
+import { padString, randomNum } from '@v8187/rs-utils';
 
-export const genCurrency = (options?) => {
+export const currency = (options?) => {
 
     const { min, max, decimals, separator, formats } = options;
     let value = '' + randomNum(min, max);

@@ -1,6 +1,6 @@
 import { xToNum } from '@v8187/rs-utils';
 
-export const genMobile = (options): string => {
+export const mobile = (options): string => {
     const format = options.formats[0];
 
     switch (format.value) {

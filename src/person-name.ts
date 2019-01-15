@@ -1,10 +1,10 @@
+import { randomItem, toTitleCase } from '@v8187/rs-utils';
 import { randomAlphabet } from './random';
-import { xToNum, randomItem, toTitleCase } from '@v8187/rs-utils';
 import maleNames from './jsons/person-male-names.data';
 import femaleNames from './jsons/person-female-names.data';
 import surNames from './jsons/person-surnames.data';
 
-export const genPersonName = (options) => {
+export const personName = (options) => {
 
     const format = options.formats[0];
 

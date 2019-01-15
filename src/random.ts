@@ -1,22 +1,8 @@
+import { swapNumbers, randomNum, randomItem } from '@v8187/rs-utils';
 import { ALPHAS, DUMMY_TEXT_MIN_4 } from './common';
-import { swapNumbers } from '@v8187/rs-utils';
-
-export const randomItem = (list: any[]): any => {
-    return list[Math.floor(Math.random() * list.length)];
-};
 
 export const randomAlphabet = (): string => {
     return randomItem(ALPHAS.toLowerCase().split(''));
-};
-
-export const randomNum = (min: number = 0, max: number = 10): number => {
-
-    if (min > max) {
-        const { a, b } = swapNumbers(min, max);
-        min = a;
-        max = b;
-    }
-    return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
 export const randomAlphaNum = (format): string => {

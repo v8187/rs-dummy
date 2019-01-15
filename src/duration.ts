@@ -1,6 +1,6 @@
 import { randomNum } from '@v8187/rs-utils';
 
-export const genDuration = (options?) => {
+export const duration = (options?) => {
     let value = options.prefix || '';
 
     ['decades', 'years', 'months', 'weeks', 'days'

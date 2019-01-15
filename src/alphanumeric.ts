@@ -1,5 +1,5 @@
 import { randomAlphaNum } from './random';
 
-export const genAlphanumeric = (options?) => {
+export const alphanumeric = (options?) => {
     return randomAlphaNum(options.format);
 }

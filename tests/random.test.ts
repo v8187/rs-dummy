@@ -1,33 +1,13 @@
 import { ALPHAS } from '../src/common';
 
-import {
-    randomAlphabet, randomAlphaNum, randomDate,
-    randomItem, randomNum
-} from '../src/random';
+import { randomAlphabet, randomAlphaNum, randomDate } from '../src/random';
 
 const mockList = ['Item 1', 'Item 2', 'Item 3', 'Item 4'];
 
-describe('[Utils][Random]', () => {
-    describe('randomItem(list)', () => {
-        test('Returns random item from given list', () => {
-            expect(mockList.indexOf(randomItem(mockList))).toBeGreaterThanOrEqual(0);
-        });
-
-        test('Returns undefined from empty list', () => {
-            expect(randomItem([])).toBeUndefined();
-        });
-    });
-
+describe('[Random]', () => {
     describe('randomAlphabet()', () => {
         test('Returns random Alphabet', () => {
             expect(ALPHAS.toLowerCase().indexOf(randomAlphabet())).toBeGreaterThanOrEqual(0);
-        });
-    });
-
-    describe('randomNum(min, max)', () => {
-        test('Returns random number between given numbers', () => {
-            const randNum = randomNum(5, 20);
-            expect(randNum >= 5 && randNum <= 20).toBeTruthy();
         });
     });
 

@@ -1,6 +1,6 @@
-import { clrCondition, clrExpected, clrValue } from './helpers';
-import { genDuration } from '../src/duration';
 import { deepMergeObject } from '@v8187/rs-utils';
+import { clrCondition, clrExpected, clrValue } from './helpers';
+import { duration } from '../src/duration';
 
 const mockOptions = (options: any = {}) => {
     const mock = {
@@ -28,21 +28,21 @@ const mockOptions = (options: any = {}) => {
     return deepMergeObject(mock, options);
 };
 
-describe('[Generators]:duration', () => {
+describe('[Duration]', () => {
 
-    const testValue1 = genDuration(mockOptions());
+    const testValue1 = duration(mockOptions());
     // test(`Returns ${clrExpected('N Days')} with ${clrCondition('default configuration')}`, () => {
     test(`Should be in ${clrExpected('"XDays"')} format [ ${clrValue(testValue1)} ]`, () => {
         expect(testValue1).toMatch(/^\d+Days$/);
     });
 
-    const testValue2 = genDuration(mockOptions({ days: { min: 5, max: 10, sufix: ' d', prefix: 'Only' } }));
+    const testValue2 = duration(mockOptions({ days: { min: 5, max: 10, sufix: ' d', prefix: 'Only' } }));
     // test(`Returns ${clrExpected('Only N days')} with ${clrCondition('custom config')}`, () => {
     test(`Should be in ${clrExpected('Only X d')} format [ ${clrValue(testValue2)} ]`, () => {
         expect(testValue2).toMatch(/^Only \d+ d$/);
     });
 
-    const testValue3 = genDuration(mockOptions({
+    const testValue3 = duration(mockOptions({
         months: { min: 1, max: 1, selected: true, prefix: 'Only', sufix: ' months and ' },
         days: { min: 5, max: 10, sufix: ' days left', prefix: '' }
     }));
@@ -51,7 +51,7 @@ describe('[Generators]:duration', () => {
         expect(testValue3).toMatch(/^Only 1 months and \d+ days left$/);
     });
 
-    const testValue4 = genDuration(mockOptions({
+    const testValue4 = duration(mockOptions({
         hours: { selected: true, sufix: 'h' },
         minutes: { selected: true, sufix: 'm' },
         seconds: { selected: true, sufix: 's' },
