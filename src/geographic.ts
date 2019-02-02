@@ -9,13 +9,13 @@ export const country = (): string => {
 };
 
 export const state = (options): string => {
-    const countries = options.countries.map(country => country.code3);
+    const countries = options.countries.map(country => country.code3 || country.id);
     const filtered = countries.length ? states.filter(state => countries.indexOf(state.country) !== -1) : states;
     return randomItem(filtered).name;
 };
 
 export const city = (options): string => {
-    const countries = options.countries.map(country => country.code3);
+    const countries = options.countries.map(country => country.code3 || country.id);
     const states = options.states.map(state => state.id);
     const filtered = (countries.length || states.length) ?
         cities.filter(city => {
@@ -26,7 +26,7 @@ export const city = (options): string => {
 };
 
 export const latLong = (options): string => {
-    const countries = options.countries.map(country => country.code3);
+    const countries = options.countries.map(country => country.code3 || country.id);
     const filtered = countries.length ? cities.filter(city => countries.indexOf(city.country) !== -1) : cities;
     const random = randomItem(filtered)
     return `${random.latitude}, ${random.longitude}`;
