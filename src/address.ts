@@ -1,5 +1,5 @@
 import { toTitleCase, randomNum, randomItem } from '@v8187/rs-utils';
-import { randonWords, randomAlphabet } from './random';
+import { randomWords, randomAlphabet } from './random';
 
 const
     numSufix = () => randomItem(['#', 'No', 'No.', 'Number'])
@@ -24,22 +24,22 @@ export const address = (options?): string => {
     switch (addType) {
         case 1:
         default:
-            address = `${postoffice()} ${numSufix()} ${randomNum(1000, 9999)}, ${randonWords()}`;
+            address = `${postoffice()} ${numSufix()} ${randomNum(1000, 9999)}, ${randomWords()}`;
             break;
         case 2:
-            address = `${house()} ${randonWords()} ${street()}, ${randonWords()} ${area()}`;
+            address = `${house()} ${randomWords()} ${street()}, ${randomWords()} ${area()}`;
             break;
         case 3:
-            address = `${house()} ${street()} ${ranNumber(false, 1, 99)}, ${randonWords()} ${area()}`;
+            address = `${house()} ${street()} ${ranNumber(false, 1, 99)}, ${randomWords()} ${area()}`;
             break;
         case 4:
             address = `${house()} ${street()} ${ranNumber(false, 1, 99)}, ${area()} ${ranNumber(false, 1, 99)}`;
             break;
         case 5:
-            address = `${house()} ${randonWords()} ${street()}, ${area()} ${ranNumber(false, 1, 99)}`;
+            address = `${house()} ${randomWords()} ${street()}, ${area()} ${ranNumber(false, 1, 99)}`;
             break;
         case 6:
-            address = `${house()} ${randonWords()} ${area()}`;
+            address = `${house()} ${randomWords()} ${area()}`;
             break;
         case 7:
             address = `${house()} ${area()} ${ranNumber(false, 1, 99)}`;

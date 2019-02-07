@@ -1,7 +1,6 @@
 import { clrExpected, clrValue } from './helpers';
 import { password } from "../src/password";
 
-
 describe('[Password]', () => {
 
     const testValue1 = password({ lowerCase: true, digit: true, min: 4, max: 6 });

@@ -9,10 +9,10 @@ export const personName = (options) => {
     const format = options.formats[0];
 
     const namesList: string[] = [];
-    if (options.genders.male) {
+    if (options.male) {
         namesList.push(...maleNames);
     }
-    if (options.genders.female) {
+    if (options.female) {
         namesList.push(...femaleNames);
     }
 

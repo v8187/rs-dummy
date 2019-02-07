@@ -19,7 +19,7 @@ export const randomAlphaNum = (format): string => {
     });
 };
 
-export const randonWords = (min: number = 1, max: number = 1): string => {
+export const randomWords = (min: number = 1, max: number = 1): string => {
     let i = min;
     const words: string[] = [];
 
