@@ -4,6 +4,7 @@
         "!**/node_modules/**"
     ],
     "testMatch": [
+        "<rootDir>/tests/**/date*.ts",
         "<rootDir>/src/**/__tests__/**/*.(j|t)s?(x)",
         "<rootDir>/(src|tests)/**/?(*.)(spec|test).(j|t)s?(x)"
     ],

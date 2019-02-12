@@ -1,4 +1,4 @@
-import { swapNumbers, randomNum, randomItem } from '@v8187/rs-utils';
+import { swapNumbers, randomNum, randomItem } from '@v8187/rs-utils'
 import { ALPHAS, DUMMY_TEXT_MIN_4 } from './common';
 
 export const randomAlphabet = (): string => {

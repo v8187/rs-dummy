@@ -1,6 +1,6 @@
 {
   "name": "@v8187/rs-mock",
-  "version": "0.0.1-draft.2",
+  "version": "0.0.1-draft.3",
   "description": "This tool provides sample data to test your application written in JavaScript and Typescript. It is still in Development mode.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -10,6 +10,7 @@
     "lint": "tslint -p tsconfig.json",
     "test": "jest --config jest.config.json",
     "test:watch": "jest --verbose --watchAll --config jest.config.json",
+    "test:one": "jest --verbose tests/date-time.test.ts",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
@@ -58,6 +59,7 @@
   "homepage": "https://github.com/v8187/rs-mock#readme",
   "devDependencies": {
     "@types/jest": "^23.3.10",
+    "@types/moment-timezone": "^0.5.10",
     "babel-jest": "^23.6.0",
     "jest": "^23.6.0",
     "prettier": "^1.15.3",
@@ -68,6 +70,7 @@
   },
   "dependencies": {
     "@v8187/rs-utils": "0.0.1",
-    "moment": "^2.23.0"
+    "moment": "^2.23.0",
+    "moment-timezone": "^0.5.23"
   }
 }
