@@ -8,18 +8,18 @@ const PUBLIC_DOMAINS = ['google', 'gmail', 'yahoo', 'ymail', 'reddif', 'hotmail'
 
 const SUB_DOMAINS = ['com', 'ca', 'in', 'fa', 'org', 'net', 'es', 'cs', 'eu'];
 
-const NAME_OPTIONS = {
-    formats: [{ value: 'name-int' },
+const NAME_OPTIONS = () => ({
+    formats: [randomItem([{ value: 'name-int' },
     { value: 'name-sur' },
-    { value: 'name-int-sur' }],
+    { value: 'name-int-sur' }])],
     male: true,
     female: true
-};
+});
 
 const RANDOM_OPTIONS = ['aaaa aa', 'aaa axxxx', 'axaxa xa', 'xxxx xx', 'xxxxxx xxxxx',
     'aaaaaa aaaaa', 'aaaxxaaa aaa', 'aaa aaaxxaa'];
 
-export interface IEmailTOpions {
+export interface IEmailOptions {
     publicDomains?: boolean;
     companyDomains?: boolean;
     personName?: boolean;
@@ -37,7 +37,7 @@ export interface IEmailTOpions {
  * If Person name is Off, then random user Id will be used by default
  * Special Characters (., -, _) all are optional and Off by default
  */
-export const email = (options: IEmailTOpions = {}) => {
+export const email = (options: IEmailOptions = {}) => {
 
     let domains: string[] = [], types: string[] = [], others: string[] = [];
 
@@ -52,8 +52,8 @@ export const email = (options: IEmailTOpions = {}) => {
     options.underscore && others.push('_');
 
     const other = randomItem(others) || '';
-    const domain = randomItem(domains) === 'p' ? randomItem(PUBLIC_DOMAINS) : company();
-    const username = randomItem(types) === 'p' ? personName(NAME_OPTIONS) : randomAlphaNum(randomItem(RANDOM_OPTIONS));
+    const domain = randomItem(domains) === 'p' ? randomItem(PUBLIC_DOMAINS) : company({ min: 1, max: 3 });
+    const username = randomItem(types) === 'p' ? personName(NAME_OPTIONS()) : randomAlphaNum(randomItem(RANDOM_OPTIONS));
 
     return (`${replaceSpecial(username, ' ').trim()
         .replace(/\s+/ig, other)}@${replaceSpecial(domain)

@@ -1,4 +1,4 @@
-import dummyWords from './static/random.text';
+import dummyWords from './random.text';
 
 export const ALPHAS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 export const DUMMY_WORDS = dummyWords.text.split(' ');

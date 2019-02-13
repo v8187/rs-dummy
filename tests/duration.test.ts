@@ -1,5 +1,5 @@
 import { deepMergeObject } from '@v8187/rs-utils';
-import { clrCondition, clrExpected, clrValue } from './helpers';
+import { clrExpected, clrValue } from './helpers';
 import { duration } from '../src/duration';
 
 const mockOptions = (options: any = {}) => {
@@ -31,13 +31,11 @@ const mockOptions = (options: any = {}) => {
 describe('[Duration]', () => {
 
     const testValue1 = duration(mockOptions());
-    // test(`Returns ${clrExpected('N Days')} with ${clrCondition('default configuration')}`, () => {
     test(`Should be in ${clrExpected('"XDays"')} format [ ${clrValue(testValue1)} ]`, () => {
         expect(testValue1).toMatch(/^\d+Days$/);
     });
 
     const testValue2 = duration(mockOptions({ days: { min: 5, max: 10, sufix: ' d', prefix: 'Only' } }));
-    // test(`Returns ${clrExpected('Only N days')} with ${clrCondition('custom config')}`, () => {
     test(`Should be in ${clrExpected('Only X d')} format [ ${clrValue(testValue2)} ]`, () => {
         expect(testValue2).toMatch(/^Only \d+ d$/);
     });
@@ -46,7 +44,6 @@ describe('[Duration]', () => {
         months: { min: 1, max: 1, selected: true, prefix: 'Only', sufix: ' months and ' },
         days: { min: 5, max: 10, sufix: ' days left', prefix: '' }
     }));
-    // test(`Returns ${clrExpected('Only 1 months and N days left')} with ${clrCondition('custom config')}`, () => {
     test(`Should be in ${clrExpected('Only 1 months and X days left')} format [ ${clrValue(testValue3)} ]`, () => {
         expect(testValue3).toMatch(/^Only 1 months and \d+ days left$/);
     });
@@ -58,7 +55,6 @@ describe('[Duration]', () => {
         days: { selected: false },
         sufix: 'remaining.'
     }));
-    // test(`Returns ${clrExpected('Nh Nm Ns remaining')} with ${clrCondition('custom config')}`, () => {
     test(`Should be in ${clrExpected('Xh Xm Xs remaining.')} format [ ${clrValue(testValue4)} ]`, () => {
         expect(testValue4).toMatch(/^\d+h \d+m \d+s remaining.$/);
     });

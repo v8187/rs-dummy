@@ -21,7 +21,7 @@ describe('[Email]', () => {
 
     const email3 = email({ period: true, hyphen: true, personName: true });
     test(`Should have ${clrExpected('Period (.) or Hyphen (-) in user name')} [ ${clrValue(email3)} ]`, () => {
-        expect(email3).toMatch(new RegExp(`^[a-z\\d]+(\\.|\\-)[a-z\\d]+${RX_P_DOMAIN}`));
+        expect(email3).toMatch(new RegExp(`^([a-z\\d]+(\\.|\\-))+[a-z\\d]+${RX_P_DOMAIN}`));
     });
 
     const email4 = email({ underscore: true, companyDomains: true });

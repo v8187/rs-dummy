@@ -1,5 +1,5 @@
 import { swapNumbers, randomNum, randomItem } from '@v8187/rs-utils'
-import { ALPHAS, DUMMY_TEXT_MIN_4 } from './common';
+import { ALPHAS, DUMMY_TEXT_MIN_4 } from './static/common';
 
 export const randomAlphabet = (): string => {
     return randomItem(ALPHAS.toLowerCase().split(''));

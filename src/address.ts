@@ -18,8 +18,8 @@ const
     , house = () => `${randomItem(['', 'H.', 'House', 'Ap.', 'Apartment', 'F.', 'Flat', 'Kothi', ''])} ${ranNumber()},`
     ;
 
-export const address = (options?): string => {
-    const addType: number = 2; // randomNum(1, 7);
+export const address = (): string => {
+    const addType = randomNum(1, 7);
     let address = '';
     switch (addType) {
         case 1:

@@ -1,5 +1,9 @@
 import { randomAlphaNum } from './random';
 
-export const alphanumeric = (options?) => {
-    return randomAlphaNum(options.format);
-}
+export interface IAlphanumeric {
+    format?: string;
+};
+
+export const alphanumeric = (options: IAlphanumeric = {}): string => {
+    return randomAlphaNum(options.format || '');
+};
