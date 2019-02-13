@@ -2,8 +2,8 @@ import { toTitleCase, randomNum, randomItem } from '@v8187/rs-utils';
 import { randomWords, randomAlphabet } from './random';
 
 const
-    numSufix = () => randomItem(['#', 'No', 'No.', 'Number'])
-    , numSufixEmpty = () => randomItem(['', '', '#', 'No', 'No.', 'Number'])
+    numSufix = () => randomItem(['#', 'No', 'No.'])
+    , numSufixEmpty = () => randomItem(['', '', '#', 'No', 'No.'])
     , area = () => randomItem(['Sec.', 'Sector', 'Rd.', 'Rd', 'Road', 'Ave.', 'Ave', 'Av.', 'Av', 'Avenue'])
     , street = () => randomItem(['Gali', 'St.', 'St', 'Street'])
     , postoffice = () => randomItem(['PO Box', 'PO Box', 'P. O. Box'])
@@ -47,4 +47,4 @@ export const address = (): string => {
     };
 
     return toTitleCase(address.replace(/\s{2,}/g, ' ').trim());
-}
+};

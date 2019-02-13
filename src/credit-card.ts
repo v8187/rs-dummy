@@ -1,5 +1,20 @@
 import { xToNum, randomNum } from '@v8187/rs-utils';
 
+interface IMinMax {
+    min:number;
+    max:number;
+};
+
+export interface ICreditCardOptions {
+    formats: {
+name:string;
+formats:{
+    iins: IMinMax|number[];
+    range: IMinMax;
+};
+    }[];
+};
+
 export const creditCard = (options) => {
 
     const cards = options.formats;
