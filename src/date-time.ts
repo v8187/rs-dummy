@@ -1,42 +1,89 @@
-// import * as moment from 'moment';
-// import { Moment } from 'moment';
 import * as moment from 'moment-timezone';
 import { Moment } from 'moment-timezone';
+import { deepMergeObject } from '@v8187/rs-utils';
 import { randomDate } from './random';
 
-export enum DATE_SEQUENCE {
-    MDY, DMY, YMD
-}
+export enum VARIANT {
+    SHORT = 'Short', MEDIUM = 'Medium',
+    LONG = 'Long', FULL = 'Full'
+};
 
-export interface IDateTime {
+export enum DATE_SEQUENCE {
+    MDY = 'MDY', DMY = 'DMY', YMD = 'YMD'
+};
+
+export enum DATE_SEPARATOR {
+    HYPHEN = '-', FULLSTOP = '.',
+    COMMA = ',', SLASH = '/', SPACE = ' '
+};
+
+export enum TIME_SEPARATOR {
+    HYPHEN = '-', FULLSTOP = '.', COLON = ':'
+};
+
+export interface IDateTimeOptions {
     from?: Moment;
     to?: Moment;
     unixTimestampSecond?: boolean;
     unixTimestampMilisecond?: boolean;
     sqlTimestamp?: boolean;
-    variant?: any[];
-    dateSequence?: any[];
-    dateSeparator?: any[];
+    variant?: keyof VARIANT;
+    dateSequence?: keyof DATE_SEQUENCE;
+    dateSeparator?: keyof DATE_SEPARATOR;
     onlyTime?: boolean;
     hasTime?: boolean;
-    timeSeparator?: any[];
+    timeSeparator?: keyof TIME_SEPARATOR;
 };
 
-export const dateTime = (options: IDateTime = {}) => {
-    // return moment(randomDate(options.dateFrom.toDate(), options.dateTo.toDate())).format(options.formats[0].value);
+const DEFAULTS: IDateTimeOptions = {
+    from: moment().subtract(1, 'month'),
+    to: moment().add(1, 'month'),
+    unixTimestampMilisecond: false,
+    unixTimestampSecond: false,
+    sqlTimestamp: false,
+    onlyTime: false,
+    hasTime: false,
+    variant: VARIANT.FULL,
+    // variant: [
+    //     { label: 'Short', value: 'short' },
+    //     { label: 'Medium', value: 'medium', default: true },
+    //     { label: 'Long', value: 'long' },
+    //     { label: 'Full', value: 'full' }
+    // ],
+    dateSequence: [
+        { label: 'DMY', value: DATE_SEQUENCE.DMY },
+        { label: 'MDY', value: DATE_SEQUENCE.MDY, default: true },
+        { label: 'YMD', value: DATE_SEQUENCE.YMD }
+    ],
+    dateSeparator: [
+        { label: 'Hyphen (-)', value: '-' },
+        { label: 'Period (.)', value: '.' },
+        { label: 'Comma (,)', value: ',' },
+        { label: 'Slash (/)', value: '/', default: true },
+        { label: 'Space ( )', value: ' ' }
+    ],
+    timeSeparator: [
+        { label: 'Colon (:)', value: ':', default: true },
+        { label: 'Hyphen (-)', value: '-' },
+        { label: 'Period (.)', value: '.' }
+    ]
+};
 
-    const ranDate = moment(randomDate((options.from || moment()).toDate(), (options.to || moment()).toDate()));
+export const dateTime = (options: IDateTimeOptions = {}) => {
+    const temp = deepMergeObject({}, DEFAULTS, options);
 
-    if (options.unixTimestampSecond) {
+    const ranDate = moment(randomDate((temp.from || moment()).toDate(), (temp.to || moment()).toDate()));
+
+    if (temp.unixTimestampSecond) {
         return ranDate.unix();
     }
-    if (options.unixTimestampMilisecond) {
+    if (temp.unixTimestampMilisecond) {
         return +ranDate;
     }
-    if (options.sqlTimestamp) {
+    if (temp.sqlTimestamp) {
         return ranDate.toISOString();
     }
-    const { dateSeparator, dateSequence, timeSeparator, hasTime, onlyTime, variant } = options;
+    const { dateSeparator, dateSequence, timeSeparator, hasTime, onlyTime, variant } = temp;
 
     const dateSep = dateSeparator ? dateSeparator[0].value : '/',
         timeSep = timeSeparator ? timeSeparator[0].value : ':';
@@ -83,4 +130,4 @@ export const dateTime = (options: IDateTime = {}) => {
         output = ranDate.tz('Asia/Kolkata').format(dateFormat + (hasTime ? `${onlyTime ? '' : ', '}${timeFormat}` : ''));
     }
     return output;
-}
+};

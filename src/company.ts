@@ -1,4 +1,4 @@
-import { randomItem, toTitleCase } from '@v8187/rs-utils';
+import { randomItem, toTitleCase, deepMergeObject } from '@v8187/rs-utils';
 import { randomWords } from './random';
 
 export const COMPANY_SUFIXES = ['Company', 'Corp.', 'Corporation', 'Inc.', 'Incorporated', 'LLC', 'LLP', 'Ltd', 'Limited', 'Pvt. Ltd.', 'Private Limited',
@@ -9,6 +9,13 @@ export interface ICompanyOptions {
     max?: number;
 };
 
-export const company = (options: ICompanyOptions = {}): string => {
-    return `${toTitleCase(randomWords(options.min || 2, options.max || 5))} ${randomItem(COMPANY_SUFIXES)}`;
+const DEFAULTS: ICompanyOptions = {
+    min: 2,
+    max: 5
+};
+
+export const company = (options: ICompanyOptions = DEFAULTS): string => {
+    const temp = deepMergeObject({}, DEFAULTS, options);
+
+    return `${toTitleCase(randomWords(temp.min, temp.max))} ${randomItem(COMPANY_SUFIXES)}`;
 };

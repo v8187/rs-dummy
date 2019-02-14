@@ -283,16 +283,6 @@ export const CURRENCY = {
     name: 'currency',
     configurable: true,
     options: {
-        /*  formats: [
-             { value: 'xxx.xx', format: 'xxx.xx', example: '999.99', default: true },
-             { value: 'xx,xxx', format: 'xx,xxx', example: '99,999' },
-             { value: 'xxxxx.xx', format: 'xxxxx.xx', example: '99999.99' },
-             { value: 'xxx,xxx.xx', format: 'xxx,xxx.xx', example: '999,999.99' },
-             { value: 'x.xx', format: 'x.xx', example: '9.99' },
-             { value: 'x.xxx.xxx,xx', format: 'x.xxx.xxx,xx', example: '9.999.999,99' },
-             { value: 'xxx xxx', format: 'xxx xxx', example: '999 999' },
-             { value: 'xxx,xxx', format: 'xxx,xxx', example: '999,999' }
-         ] */
         separator: ',',
         decimals: 2,
         min: 100,
