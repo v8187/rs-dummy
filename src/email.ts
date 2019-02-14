@@ -1,4 +1,4 @@
-import { randomItem } from '@v8187/rs-utils';
+import { randomItem, deepMergeObject } from '@v8187/rs-utils';
 import { personName } from './person-name';
 import { company } from './company';
 import { randomAlphaNum } from './random';
@@ -24,9 +24,19 @@ export interface IEmailOptions {
     companyDomains?: boolean;
     personName?: boolean;
     randomChars?: boolean;
-    period?: boolean;
+    fullstop?: boolean;
     underscore?: boolean;
     hyphen?: boolean;
+};
+
+const DEFAULTS: IEmailOptions = {
+    publicDomains: true,
+    companyDomains: false,
+    hyphen: false,
+    fullstop: true,
+    personName: true,
+    randomChars: false,
+    underscore: false
 };
 
 /* 
@@ -37,19 +47,21 @@ export interface IEmailOptions {
  * If Person name is Off, then random user Id will be used by default
  * Special Characters (., -, _) all are optional and Off by default
  */
-export const email = (options: IEmailOptions = {}) => {
+export const email = (options: IEmailOptions = DEFAULTS) => {
+
+    const temp = deepMergeObject({}, DEFAULTS, options);
 
     let domains: string[] = [], types: string[] = [], others: string[] = [];
 
-    options.companyDomains && domains.push('c');
-    (options.publicDomains || !domains.length) && domains.push('p');
+    temp.companyDomains && domains.push('c');
+    (temp.publicDomains || !domains.length) && domains.push('p');
 
-    options.personName && types.push('p');
-    (options.randomChars || !types.length) && types.push('r');
+    temp.personName && types.push('p');
+    (temp.randomChars || !types.length) && types.push('r');
 
-    options.period && others.push('.');
-    options.hyphen && others.push('-');
-    options.underscore && others.push('_');
+    temp.fullstop && others.push('.');
+    temp.hyphen && others.push('-');
+    temp.underscore && others.push('_');
 
     const other = randomItem(others) || '';
     const domain = randomItem(domains) === 'p' ? randomItem(PUBLIC_DOMAINS) : company({ min: 1, max: 3 });
