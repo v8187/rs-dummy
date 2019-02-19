@@ -1,14 +1,13 @@
-import { deepMergeObject } from '@v8187/rs-utils';
 import { randomAlphaNum } from './random';
 
-export interface IAlphanumeric {
+export interface IAlphanumericOptions {
     format?: string;
 };
 
-const DEFAULTS: IAlphanumeric = {
+const DEFAULTS: IAlphanumericOptions = {
     format: ''
 };
 
-export const alphanumeric = (options: IAlphanumeric = DEFAULTS): string => {
-    return randomAlphaNum(deepMergeObject({}, DEFAULTS, options.format));
+export const alphanumeric = (options: IAlphanumericOptions = DEFAULTS): string => {
+    return randomAlphaNum(options.format || DEFAULTS.format);
 };

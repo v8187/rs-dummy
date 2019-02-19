@@ -3,10 +3,11 @@ import { personName } from './person-name';
 import { company } from './company';
 import { randomAlphaNum } from './random';
 
-const PUBLIC_DOMAINS = ['google', 'gmail', 'yahoo', 'ymail', 'reddif', 'hotmail',
-    'outlook', 'msnmail', 'facebook', 'aolmail', 'fastmail', 'gmx', 'hushmail', 'runbox'];
+export const PUBLIC_DOMAINS = [
+    'google', 'gmail', 'yahoo', 'reddif', 'hotmail', 'outlook', 'gmx',
+    'msnmail', 'facebook', 'ymail', 'aolmail', 'fastmail', 'hushmail', 'runbox'];
 
-const SUB_DOMAINS = ['com', 'ca', 'in', 'fa', 'org', 'net', 'es', 'cs', 'eu'];
+export const SUB_DOMAINS = ['com', 'ca', 'in', 'fa', 'org', 'net', 'es', 'cs', 'eu'];
 
 const NAME_OPTIONS = () => ({
     formats: [randomItem([{ value: 'name-int' },
@@ -47,7 +48,7 @@ const DEFAULTS: IEmailOptions = {
  * If Person name is Off, then random user Id will be used by default
  * Special Characters (., -, _) all are optional and Off by default
  */
-export const email = (options: IEmailOptions = DEFAULTS) => {
+export const email = (options: IEmailOptions = DEFAULTS): string => {
 
     const temp = deepMergeObject({}, DEFAULTS, options);
 

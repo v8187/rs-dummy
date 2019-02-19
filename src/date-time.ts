@@ -3,21 +3,20 @@ import { Moment } from 'moment-timezone';
 import { deepMergeObject } from '@v8187/rs-utils';
 import { randomDate } from './random';
 
-export enum VARIANT {
-    SHORT = 'Short', MEDIUM = 'Medium',
-    LONG = 'Long', FULL = 'Full'
+export enum EVariant {
+    SHORT = 'Short', MEDIUM = 'Medium', LONG = 'Long', FULL = 'Full'
 };
 
-export enum DATE_SEQUENCE {
+export enum EDateSequence {
     MDY = 'MDY', DMY = 'DMY', YMD = 'YMD'
 };
 
-export enum DATE_SEPARATOR {
+export enum EDateSeparator {
     HYPHEN = '-', FULLSTOP = '.',
     COMMA = ',', SLASH = '/', SPACE = ' '
 };
 
-export enum TIME_SEPARATOR {
+export enum ETimeSeparator {
     HYPHEN = '-', FULLSTOP = '.', COLON = ':'
 };
 
@@ -27,12 +26,12 @@ export interface IDateTimeOptions {
     unixTimestampSecond?: boolean;
     unixTimestampMilisecond?: boolean;
     sqlTimestamp?: boolean;
-    variant?: keyof VARIANT;
-    dateSequence?: keyof DATE_SEQUENCE;
-    dateSeparator?: keyof DATE_SEPARATOR;
+    variant?: EVariant;
+    dateSequence?: EDateSequence;
+    dateSeparator?: EDateSeparator;
     onlyTime?: boolean;
     hasTime?: boolean;
-    timeSeparator?: keyof TIME_SEPARATOR;
+    timeSeparator?: ETimeSeparator;
 };
 
 const DEFAULTS: IDateTimeOptions = {
@@ -43,36 +42,17 @@ const DEFAULTS: IDateTimeOptions = {
     sqlTimestamp: false,
     onlyTime: false,
     hasTime: false,
-    variant: VARIANT.FULL,
-    // variant: [
-    //     { label: 'Short', value: 'short' },
-    //     { label: 'Medium', value: 'medium', default: true },
-    //     { label: 'Long', value: 'long' },
-    //     { label: 'Full', value: 'full' }
-    // ],
-    dateSequence: [
-        { label: 'DMY', value: DATE_SEQUENCE.DMY },
-        { label: 'MDY', value: DATE_SEQUENCE.MDY, default: true },
-        { label: 'YMD', value: DATE_SEQUENCE.YMD }
-    ],
-    dateSeparator: [
-        { label: 'Hyphen (-)', value: '-' },
-        { label: 'Period (.)', value: '.' },
-        { label: 'Comma (,)', value: ',' },
-        { label: 'Slash (/)', value: '/', default: true },
-        { label: 'Space ( )', value: ' ' }
-    ],
-    timeSeparator: [
-        { label: 'Colon (:)', value: ':', default: true },
-        { label: 'Hyphen (-)', value: '-' },
-        { label: 'Period (.)', value: '.' }
-    ]
+    variant: EVariant.FULL,
+    dateSequence: EDateSequence.MDY,
+    dateSeparator: EDateSeparator.SLASH,
+    timeSeparator: ETimeSeparator.COLON
 };
 
-export const dateTime = (options: IDateTimeOptions = {}) => {
+export const dateTime = (options: IDateTimeOptions = DEFAULTS): string | number => {
+
     const temp = deepMergeObject({}, DEFAULTS, options);
 
-    const ranDate = moment(randomDate((temp.from || moment()).toDate(), (temp.to || moment()).toDate()));
+    const ranDate = moment(randomDate((temp.from).toDate(), (temp.to).toDate()));
 
     if (temp.unixTimestampSecond) {
         return ranDate.unix();
@@ -85,49 +65,71 @@ export const dateTime = (options: IDateTimeOptions = {}) => {
     }
     const { dateSeparator, dateSequence, timeSeparator, hasTime, onlyTime, variant } = temp;
 
-    const dateSep = dateSeparator ? dateSeparator[0].value : '/',
-        timeSep = timeSeparator ? timeSeparator[0].value : ':';
-
     let output = '', dateFormat = '', timeFormat = '';
 
     if (variant) {
-        switch (variant[0].value) {
+        switch (variant) {
             // M/DD/YY, hh:mm a
-            case 'short':
-                const dateSeq = dateSequence ? dateSequence[0].value : DATE_SEQUENCE.MDY;
-
+            case EVariant.SHORT:
                 if (!onlyTime) {
-                    switch (dateSeq) {
-                        case DATE_SEQUENCE.DMY:
-                            dateFormat = `DD${dateSep}MM${dateSep}YY`;
+                    switch (dateSequence) {
+                        case EDateSequence.DMY:
+                            dateFormat = `DD${dateSeparator}MM${dateSeparator}YY`;
                             break;
-                        case DATE_SEQUENCE.MDY:
-                            dateFormat = `MM${dateSep}DD${dateSep}YY`;
+                        case EDateSequence.MDY:
+                            dateFormat = `MM${dateSeparator}DD${dateSeparator}YY`;
                             break;
-                        case DATE_SEQUENCE.YMD:
-                            dateFormat = `YY${dateSep}MM${dateSep}DD`;
+                        case EDateSequence.YMD:
+                            dateFormat = `YY${dateSeparator}MM${dateSeparator}DD`;
                             break;
                     }
                 }
-                timeFormat = `hh${timeSep}mm A`;
+                timeFormat = `hh${timeSeparator}mm A`;
                 break;
             // MMM d, y, hh:mm:ss a
-            case 'medium':
+            case EVariant.MEDIUM:
                 !onlyTime && (dateFormat = `MMM DD, Y`);
-                timeFormat = `hh${timeSep}mm${timeSep}ss A`;
+                timeFormat = `hh${timeSeparator}mm${timeSeparator}ss A`;
                 break;
             // MMMM d, y, hh:mm:ss a z
-            case 'long':
+            case EVariant.LONG:
                 !onlyTime && (dateFormat = `MMMM DD, Y`);
-                timeFormat = `hh${timeSep}mm${timeSep}ss A`;
+                timeFormat = `hh${timeSeparator}mm${timeSeparator}ss A`;
                 break;
             // dddd, MMMM d, y, h:mm:ss a zzzz
-            case 'full':
+            case EVariant.FULL:
                 !onlyTime && (dateFormat = `dddd, MMMM DD, Y`);
-                timeFormat = `hh${timeSep}mm${timeSep}ss A zZ`;
+                timeFormat = `hh${timeSeparator}mm${timeSeparator}ss A zZ`;
                 break;
         }
         output = ranDate.tz('Asia/Kolkata').format(dateFormat + (hasTime ? `${onlyTime ? '' : ', '}${timeFormat}` : ''));
     }
     return output;
 };
+
+// export const DT_VARIANTS = [
+//     { label: 'Short', value: EVariant.SHORT },
+//     { label: 'Medium', value: EVariant.MEDIUM },
+//     { label: 'Long', value: EVariant.LONG },
+//     { label: 'Full', value: EVariant.FULL }
+// ];
+
+// export const DT_DATE_SEQUENCES = [
+//     { label: 'DMY', value: EDateSequence.DMY },
+//     { label: 'MDY', value: EDateSequence.MDY },
+//     { label: 'YMD', value: EDateSequence.YMD }
+// ];
+
+// export const DT_DATE_SEPARATORS = [
+//     { label: 'Hyphen (-)', value: EDateSeparator.HYPHEN },
+//     { label: 'Fullstop (.)', value: EDateSeparator.FULLSTOP },
+//     { label: 'Comma (,)', value: EDateSeparator.COMMA },
+//     { label: 'Slash (/)', value: EDateSeparator.SLASH },
+//     { label: 'Space ( )', value: EDateSeparator.SPACE }
+// ];
+
+// export const DT_TIME_SEPARATORS = [
+//     { label: 'Colon (:)', value: ETimeSeparator.COLON },
+//     { label: 'Hyphen (-)', value: ETimeSeparator.HYPHEN },
+//     { label: 'Fullstop (.)', value: ETimeSeparator.FULLSTOP }
+// ];

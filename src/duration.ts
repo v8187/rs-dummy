@@ -1,31 +1,21 @@
 import { randomNum, deepMergeObject } from '@v8187/rs-utils';
 
-const DURATION_UNITS = ['decades', 'years', 'months', 'weeks', 'days'
-    , 'hours', 'minutes', 'seconds', 'miliseconds'];
+const DURATION_UNITS = [
+    'decades', 'years', 'months', 'weeks', 'days',
+    'hours', 'minutes', 'seconds', 'miliseconds'];
 
 interface IFix {
-    sufix?: string;
-    prefix?: string;
-}
+    sufix?: string; prefix?: string;
+};
 
 export interface IDUnit extends IFix {
-    title?: string;
-    selected?: boolean;
-    min?: number;
-    max?: number;
+    title?: string; selected?: boolean; min?: number; max?: number;
 };
 
 export interface IDurationOptions extends IFix {
-    decades?: IDUnit;
-    years?: IDUnit;
-    months?: IDUnit;
-    weeks?: IDUnit;
-    days?: IDUnit;
-    hours?: IDUnit;
-    minutes?: IDUnit;
-    seconds?: IDUnit;
-    miliseconds?: IDUnit;
-}
+    decades?: IDUnit; years?: IDUnit; months?: IDUnit; weeks?: IDUnit; days?: IDUnit;
+    hours?: IDUnit; minutes?: IDUnit; seconds?: IDUnit; miliseconds?: IDUnit;
+};
 
 const DEFAULTS: IDurationOptions = {
     prefix: '', sufix: '',
@@ -40,16 +30,16 @@ const DEFAULTS: IDurationOptions = {
     miliseconds: { title: 'Miliseconds', selected: false, min: 0, max: 999, sufix: 'Miliseconds', prefix: '' }
 };
 
-export const duration = (options: IDurationOptions = DEFAULTS) => {
+export const duration = (options: IDurationOptions = DEFAULTS): string => {
 
     const temp = deepMergeObject({}, DEFAULTS, options);
-    let value = temp.prefix || '';
+    let value = temp.prefix;
 
     DURATION_UNITS.map(unitName => {
         const unit = temp[unitName];
         if (unit.selected) {
-            value += ` ${unit.prefix || ''} ${randomNum(unit.min, unit.max)}${unit.sufix || ''} `;
+            value += ` ${unit.prefix || ''} ${randomNum(unit.min, unit.max)}${unit.sufix} `;
         }
     });
     return (value + (temp.sufix || '')).replace(/\s+/g, ' ').trim();
-}
+};

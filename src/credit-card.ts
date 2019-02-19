@@ -1,6 +1,6 @@
 import { xToNum, randomNum, deepMergeObject } from '@v8187/rs-utils';
 
-export const CARD_TYPES = [
+export const CCARD_TYPES = [
     // American Express 34, 37 - 15 Luhn algorithm
     {
         name: 'American Express',
@@ -117,31 +117,26 @@ export const CARD_TYPES = [
 ];
 
 interface IMinMax {
-    min: number;
-    max: number;
+    min: number; max: number;
 };
 
 export interface ICCardFormat {
-    iins: (IMinMax | number)[];
-    range: IMinMax;
+    iins: (IMinMax | number)[]; range: IMinMax;
 };
 
 export interface ICCardType {
-    name: string;
-    formats: ICCardFormat[];
+    name: string; formats: ICCardFormat[];
 };
 
 export interface ICCardOptions {
-    cardTypes?: ICCardType[];
-    separator?: string;
+    cardTypes?: ICCardType[]; separator?: string;
 };
 
 const DEFAULTS: ICCardOptions = {
-    cardTypes: [CARD_TYPES[0]],
-    separator: ' '
+    cardTypes: [CCARD_TYPES[0]], separator: ' '
 };
 
-export const creditCard = (options: ICCardOptions = DEFAULTS) => {
+export const creditCard = (options: ICCardOptions = DEFAULTS): string => {
 
     const { cardTypes, separator } = deepMergeObject({}, DEFAULTS, options);
     const card = cardTypes[randomNum(0, cardTypes.length - 1)];

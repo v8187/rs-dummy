@@ -1,5 +1,5 @@
 import * as moment from 'moment-timezone';
-import { DATE_SEQUENCE } from '../';
+import { EDateSequence } from '../';
 
 export interface IDataType {
     label: string;
@@ -131,9 +131,9 @@ export const DATE_TIME = {
             { label: 'Full', value: 'full' }
         ],
         dateSequence: [
-            { label: 'DMY', value: DATE_SEQUENCE.DMY },
-            { label: 'MDY', value: DATE_SEQUENCE.MDY, default: true },
-            { label: 'YMD', value: DATE_SEQUENCE.YMD }
+            { label: 'DMY', value: EDateSequence.DMY },
+            { label: 'MDY', value: EDateSequence.MDY, default: true },
+            { label: 'YMD', value: EDateSequence.YMD }
         ],
         dateSeparator: [
             { label: 'Hyphen (-)', value: '-' },

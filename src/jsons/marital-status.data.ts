@@ -1,6 +1,6 @@
 export default [
-    "Single",
-    "Married",
-    "Divorced",
-    "Common-Law"
+    'Single',
+    'Married',
+    'Divorced',
+    'Common-Law'
 ]

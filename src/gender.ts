@@ -1,13 +1,25 @@
 import { randomItem } from '@v8187/rs-utils';
 
-export const gender = (options = { formats: [{ value: '' }] }): string => {
+export enum EGenderFormat {
+    SHORT_LOWER = 'm/f', SHORT_UPPER = 'M/F', FULL = 'Male/Female'
+};
 
-    switch (options.formats[0].value) {
-        case 'mf':
+export interface IGenderOptions {
+    format?: EGenderFormat;
+}
+
+const DEFAULTS: IGenderOptions = {
+    format: EGenderFormat.FULL
+};
+
+export const gender = (options: IGenderOptions = DEFAULTS): string => {
+
+    switch (options.format || DEFAULTS.format) {
+        case EGenderFormat.SHORT_LOWER:
             return randomItem(['m', 'f']);
-        case 'MF':
+        case EGenderFormat.SHORT_UPPER:
             return randomItem(['M', 'F']);
-        case 'malefemale':
+        case EGenderFormat.FULL:
         default:
             return randomItem(['Male', 'Female']);
     };

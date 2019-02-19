@@ -27,7 +27,7 @@ export const CURRENCY_SYMBOLS = [
     { unicode: 'U+20B4', htmlCode: '\\20B4', name: 'HRYVNIA SIGN', symbol: '₴' },
     { unicode: 'U+20B5', htmlCode: '\\20B5', name: 'CEDI SIGN', symbol: '₵' },
     { unicode: 'U+20B8', htmlCode: '\\20B8', name: 'TENGE SIGN', symbol: '₸' },
-    { unicode: 'U+20B9', htmlCode: '\\20B9', name: 'INDIAN RUPEE SIGN', symbol: '₹', default: true },
+    { unicode: 'U+20B9', htmlCode: '\\20B9', name: 'INDIAN RUPEE SIGN', symbol: '₹' },
     { unicode: 'U+20BA', htmlCode: '\\20BA', name: 'TURKISH LIRA SIGN', symbol: '₺' },
     { unicode: 'U+20BC', htmlCode: '\\20BC', name: 'MANAT SIGN', symbol: '₼' },
     { unicode: 'U+20BD', htmlCode: '\\20BD', name: 'RUBLE SIGN', symbol: '₽' },
@@ -43,11 +43,11 @@ export interface ICSymbol {
 };
 
 export interface ICurrencyOptions {
-    min: number;
-    max: number;
-    decimals: number;
-    separator: string;
-    symbol: ICSymbol;
+    min?: number;
+    max?: number;
+    decimals?: number;
+    separator?: string;
+    symbol?: ICSymbol;
 };
 
 const DEFAULTS: ICurrencyOptions = {
@@ -58,7 +58,7 @@ const DEFAULTS: ICurrencyOptions = {
     symbol: { ...CURRENCY_SYMBOLS[0] }
 };
 
-export const currency = (options: ICurrencyOptions = DEFAULTS) => {
+export const currency = (options: ICurrencyOptions = DEFAULTS): string => {
 
     const { min, max, decimals, separator, symbol } = deepMergeObject({}, DEFAULTS, options);
 
