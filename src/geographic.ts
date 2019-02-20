@@ -14,10 +14,9 @@ const countryNames = (options) => {
 
 export interface ICountry {
     name: string;
-    id?: string;
     isdCode: string;
     code2: string;
-    code3?: string;
+    code3: string;
 };
 
 export interface IState {

@@ -1215,7 +1215,7 @@ export default [
         currencyCode: 'XOF'
     },
     {
-        country: 'Cote d'Ivoire',
+        country: 'Cote d\'Ivoire',
         currencyName: 'West African CFA franc',
         currencyCode: 'XOF'
     },

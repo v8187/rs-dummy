@@ -312,7 +312,7 @@ export default [
         hexCode: '#f5f5dc'
     },
     {
-        name: 'B'Dazzled Blue',
+        name: 'B\'Dazzled Blue',
         hexCode: '#2e5894'
     },
     {
@@ -1428,7 +1428,7 @@ export default [
         hexCode: '#490206'
     },
     {
-        name: 'Dark Chocolate (Hershey'S)',
+        name: 'Dark Chocolate (Hershey\'S)',
         hexCode: '#3c1321'
     },
     {
@@ -1652,7 +1652,7 @@ export default [
         hexCode: '#00703c'
     },
     {
-        name: 'Davy'S Grey',
+        name: 'Davy\'S Grey',
         hexCode: '#555555'
     },
     {
@@ -2308,7 +2308,7 @@ export default [
         hexCode: '#f8f8ff'
     },
     {
-        name: 'Giant'S Club',
+        name: 'Giant\'S Club',
         hexCode: '#b05c52'
     },
     {
@@ -2576,7 +2576,7 @@ export default [
         hexCode: '#006db0'
     },
     {
-        name: 'Hooker'S Green',
+        name: 'Hooker\'S Green',
         hexCode: '#49796b'
     },
     {
@@ -3800,7 +3800,7 @@ export default [
         hexCode: '#c8509b'
     },
     {
-        name: 'Mummy'S Tomb',
+        name: 'Mummy\'S Tomb',
         hexCode: '#828e84'
     },
     {
@@ -4248,7 +4248,7 @@ export default [
         hexCode: '#800080'
     },
     {
-        name: 'Payne'S Grey',
+        name: 'Payne\'S Grey',
         hexCode: '#536878'
     },
     {
@@ -5076,7 +5076,7 @@ export default [
         hexCode: '#bcb88a'
     },
     {
-        name: 'St. Patrick'S Blue',
+        name: 'St. Patrick\'S Blue',
         hexCode: '#23297a'
     },
     {
@@ -5160,7 +5160,7 @@ export default [
         hexCode: '#ffd800'
     },
     {
-        name: 'Screamin' Green',
+        name: 'Screamin\' Green',
         hexCode: '#66ff66'
     },
     {

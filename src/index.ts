@@ -8,7 +8,7 @@ export * from './duration';
 export * from './email';
 export * from './gender';
 export * from './geographic';
-export * from './mobile';
 export * from './password';
 export * from './person-name';
+export * from './phone-no';
 export * from './random';
