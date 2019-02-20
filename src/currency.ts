@@ -50,7 +50,7 @@ export interface ICurrencyOptions {
     symbol?: ICSymbol;
 };
 
-const DEFAULTS: ICurrencyOptions = {
+const DEFAULTS: TRequired<ICurrencyOptions> = {
     min: 10,
     max: 1000,
     decimals: 2,

@@ -30,7 +30,7 @@ export interface IEmailOptions {
     hyphen?: boolean;
 };
 
-const DEFAULTS: IEmailOptions = {
+const DEFAULTS: TRequired<IEmailOptions> = {
     publicDomains: true,
     companyDomains: false,
     hyphen: false,

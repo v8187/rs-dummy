@@ -132,7 +132,7 @@ export interface ICCardOptions {
     cardTypes?: ICCardType[]; separator?: string;
 };
 
-const DEFAULTS: ICCardOptions = {
+const DEFAULTS: TRequired<ICCardOptions> = {
     cardTypes: [CCARD_TYPES[0]], separator: ' '
 };
 

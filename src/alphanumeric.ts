@@ -4,7 +4,7 @@ export interface IAlphanumericOptions {
     format?: string;
 };
 
-const DEFAULTS: IAlphanumericOptions = {
+const DEFAULTS: TRequired<IAlphanumericOptions> = {
     format: ''
 };
 

@@ -17,7 +17,7 @@ export interface IDurationOptions extends IFix {
     hours?: IDUnit; minutes?: IDUnit; seconds?: IDUnit; miliseconds?: IDUnit;
 };
 
-const DEFAULTS: IDurationOptions = {
+const DEFAULTS: TRequired<IDurationOptions> = {
     prefix: '', sufix: '',
     decades: { title: 'Decades', selected: false, min: 0, max: 9, sufix: 'Decades', prefix: '' },
     years: { title: 'Years', selected: false, min: 0, max: 1000, sufix: 'Years', prefix: '' },

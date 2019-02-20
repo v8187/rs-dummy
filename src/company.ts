@@ -10,7 +10,7 @@ export interface ICompanyOptions {
     min?: number; max?: number;
 };
 
-const DEFAULTS: ICompanyOptions = {
+const DEFAULTS: TRequired<ICompanyOptions> = {
     min: 2, max: 5
 };
 

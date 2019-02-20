@@ -34,7 +34,7 @@ export interface IDateTimeOptions {
     timeSeparator?: ETimeSeparator;
 };
 
-const DEFAULTS: IDateTimeOptions = {
+const DEFAULTS: TRequired<IDateTimeOptions> = {
     from: moment().subtract(1, 'month'),
     to: moment().add(1, 'month'),
     unixTimestampMilisecond: false,

@@ -1,11 +1,15 @@
-import { xToNum } from '@v8187/rs-utils';
+import { xToNum, deepMergeObject, randomItem, randomNum } from '@v8187/rs-utils';
 
-import countries from './jsons/countries.data';
+import countriesData from './jsons/countries.data';
 import { ICountry } from './geographic';
 
-export const CONUTRIES_LIST = countries;
+export const CONUTRIES_LIST = countriesData;
 
-export enum EMobileFormats {
+export enum EPhoneLength {
+    MIN = 8, MAX = 15
+};
+
+export enum EPhoneFormats {
     // FORMAT00 = 'xxxxxxxxxx',
     // FORMAT01 = '(xxx) xxx-xxxx',
     // FORMAT02 = '1-xxx-xxx-xxxx',
@@ -20,34 +24,48 @@ export enum EMobileFormats {
     PLAIN, GROUP_OF_2, GROUP_OF_3, GROUP_OF_4, GROUP_OF_5
 };
 
-export enum EMobileSeparator {
-    HYPHEN = '-', FULLSTOP = '.', SPACE = ' '
+export enum EPhoneSeparator {
+    HYPHEN = '-', FULLSTOP = '.', SPACE = ' ', NON = ''
 };
 
-export enum EMobileStartsWith {
-    PLUS = '+', ZEROS = '00', ISD = 'ISD'
+export enum EPhoneStartsWith {
+    PLUS = '+', ZEROS = '00', ISD = ''
 };
 
-export interface IMobileOptions {
+export interface IPhoneOptions {
     countries?: ICountry[];
-    format?: EMobileFormats;
+    format?: EPhoneFormats;
     isdCodeInBraces?: boolean;
     separateISD?: boolean;
-    separator?: EMobileSeparator;
-    startsWith?: EMobileStartsWith;
+    withISD?: boolean;
+    separator?: EPhoneSeparator;
+    startsWith?: EPhoneStartsWith;
 };
 
-const DEFAULTS: TRequired<IMobileOptions> = {
-    countries: CONUTRIES_LIST.filter((con: ICountry): boolean => con.code3 === 'IND'),
-    format: EMobileFormats.GROUP_OF_5,
+const DEFAULTS: TRequired<IPhoneOptions> = {
+    countries: CONUTRIES_LIST.filter((con: ICountry) => con.code3 === 'IND'),
+    format: EPhoneFormats.GROUP_OF_5,
     isdCodeInBraces: false,
     separateISD: true,
-    separator: EMobileSeparator.SPACE,
-    startsWith: EMobileStartsWith.PLUS
+    withISD: true,
+    separator: EPhoneSeparator.SPACE,
+    startsWith: EPhoneStartsWith.PLUS
 };
 
-export const phoneNo = (options: IMobileOptions = DEFAULTS): string => {
+export const phoneNo = (options: IPhoneOptions = DEFAULTS): string => {
 
     // return xToNum(options.format || DEFAULTS.format);
-    return '';
+    const {
+        countries, format, isdCodeInBraces, separateISD,
+        withISD, separator, startsWith
+    } = deepMergeObject({}, DEFAULTS, options),
+        isd = withISD ? randomItem(countries).isdCode : '';
+
+    let local = '' + xToNum(new Array(randomNum(EPhoneLength.MIN - isd.length, EPhoneLength.MAX - isd.length + 1)).join('x'));
+
+    if (format !== EPhoneFormats.PLAIN && separator !== EPhoneSeparator.NON) {
+        local = local.replace(new RegExp(`(\d${format})`, 'g'), `$1${separator}`).replace(/[^\d]$/, '');
+    }
+
+    return (isd ? `${isdCodeInBraces ? '(' : ''}${startsWith}${isd}${isdCodeInBraces ? ')' : ''}${separateISD ? ' ' : ''}` : '') + local;
 };

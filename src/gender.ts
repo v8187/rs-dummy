@@ -8,7 +8,7 @@ export interface IGenderOptions {
     format?: EGenderFormat;
 }
 
-const DEFAULTS: IGenderOptions = {
+const DEFAULTS: TRequired<IGenderOptions> = {
     format: EGenderFormat.FULL
 };
 
