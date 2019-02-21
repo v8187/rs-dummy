@@ -6,7 +6,7 @@ import { ICountry } from './geographic';
 export const CONUTRIES_LIST = countriesData;
 
 export enum EPhoneLength {
-    MIN = 8, MAX = 15
+    MIN = 8, MAX = 13
 };
 
 export enum EPhoneFormats {
@@ -21,7 +21,7 @@ export enum EPhoneFormats {
     // FORMAT08 = '(0xxxx) xxxxxxx',
     // FORMAT09 = '0xx-xxx-xxxx',
     // FORMAT10 = 'xxx-xxxx'
-    PLAIN, GROUP_OF_2, GROUP_OF_3, GROUP_OF_4, GROUP_OF_5
+    PLAIN, GROUP_OF_2 = 2, GROUP_OF_3 = 3, GROUP_OF_4 = 4, GROUP_OF_5 = 5
 };
 
 export enum EPhoneSeparator {
@@ -42,30 +42,29 @@ export interface IPhoneOptions {
     startsWith?: EPhoneStartsWith;
 };
 
-const DEFAULTS: TRequired<IPhoneOptions> = {
+const DEFAULTS = (): TRequired<IPhoneOptions> => ({
     countries: CONUTRIES_LIST.filter((con: ICountry) => con.code3 === 'IND'),
-    format: EPhoneFormats.GROUP_OF_5,
+    format: EPhoneFormats.PLAIN,
     isdCodeInBraces: false,
     separateISD: true,
     withISD: true,
     separator: EPhoneSeparator.SPACE,
     startsWith: EPhoneStartsWith.PLUS
-};
+});
 
-export const phoneNo = (options: IPhoneOptions = DEFAULTS): string => {
+export const phoneNo = (options: IPhoneOptions = DEFAULTS()): string => {
 
-    // return xToNum(options.format || DEFAULTS.format);
     const {
         countries, format, isdCodeInBraces, separateISD,
         withISD, separator, startsWith
-    } = deepMergeObject({}, DEFAULTS, options),
+    } = deepMergeObject(DEFAULTS(), options),
         isd = withISD ? randomItem(countries).isdCode : '';
 
-    let local = '' + xToNum(new Array(randomNum(EPhoneLength.MIN - isd.length, EPhoneLength.MAX - isd.length + 1)).join('x'));
+    let local = xToNum(new Array(randomNum(EPhoneLength.MIN - isd.length, EPhoneLength.MAX - isd.length) + 1).join('x'));
 
     if (format !== EPhoneFormats.PLAIN && separator !== EPhoneSeparator.NON) {
-        local = local.replace(new RegExp(`(\d${format})`, 'g'), `$1${separator}`).replace(/[^\d]$/, '');
+        local = local.replace(new RegExp(`(\\d{${format}})`, 'g'), `$1${separator}`).replace(/[^\d]$/, '');
     }
 
-    return (isd ? `${isdCodeInBraces ? '(' : ''}${startsWith}${isd}${isdCodeInBraces ? ')' : ''}${separateISD ? ' ' : ''}` : '') + local;
+    return (isd ? `${isdCodeInBraces ? '(' : ''}${startsWith}${isd}${isdCodeInBraces ? ')' : ''}${separateISD ? separator : ''}` : '') + local;
 };
