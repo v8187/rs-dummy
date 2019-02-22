@@ -8,12 +8,12 @@ describe('[Phone Number]', () => {
         expect(testValue1).toMatch(/^\+\d+ \d{6,11}$/);
     });
 
-    const testValue2 = phoneNo({ isdCodeInBraces: true, startsWith: EPhoneStartsWith.ZEROS });
+    const testValue2 = phoneNo({ isdInBraces: true, startsWith: EPhoneStartsWith.ZEROS });
     test(`Should ${clrExpected('starts with "00" & ISD wrapped in ()')} [ ${clrValue(testValue2)} ]`, () => {
         expect(testValue2).toMatch(/^\(00\d+\) \d{6,11}$/);
     });
 
-    const testValue3 = phoneNo({ isdCodeInBraces: true, startsWith: EPhoneStartsWith.ISD });
+    const testValue3 = phoneNo({ isdInBraces: true, startsWith: EPhoneStartsWith.ISD });
     test(`Should ${clrExpected('starts with ISD & ISD wrapped in ()')} [ ${clrValue(testValue3)} ]`, () => {
         expect(testValue3).toMatch(/^\(\d+\) \d{6,11}$/);
     });
@@ -23,7 +23,7 @@ describe('[Phone Number]', () => {
         expect(testValue4).toMatch(/^\d{8,13}$/);
     });
 
-    const testValue5 = phoneNo({ isdCodeInBraces: true, format: EPhoneFormats.GROUP_OF_3 });
+    const testValue5 = phoneNo({ isdInBraces: true, format: EPhoneFormats.GROUP_OF_3 });
     test(`Should ${clrExpected('ISD in () & group by 3 numbers')} [ ${clrValue(testValue5)} ]`, () => {
         expect(testValue5).toMatch(/^\(\+\d+\)( \d{3}){2,4}( \d{1,2})?$/);
     });
@@ -31,5 +31,10 @@ describe('[Phone Number]', () => {
     const testValue6 = phoneNo({ separator: EPhoneSeparator.HYPHEN, format: EPhoneFormats.GROUP_OF_5 });
     test(`Should ${clrExpected('group by 5 numbers & with "-"')} [ ${clrValue(testValue6)} ]`, () => {
         expect(testValue6).toMatch(/^\+\d+(\-\d{5}){1,2}(\-\d{1,4})?$/);
+    });
+
+    const testValue7 = phoneNo({ separator: EPhoneSeparator.NON });
+    test(`Should ${clrExpected('starts with "+" and without any separator')} [ ${clrValue(testValue7)} ]`, () => {
+        expect(testValue7).toMatch(/^\+\d{8,13}$/);
     });
 });

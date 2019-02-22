@@ -125,7 +125,7 @@ export interface ICCardFormat {
 };
 
 export interface ICCardType {
-    name: string; formats: ICCardFormat[];
+    name?: string; formats: ICCardFormat[];
 };
 
 export interface ICCardOptions {

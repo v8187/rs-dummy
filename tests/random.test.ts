@@ -1,4 +1,4 @@
-import { ALPHAS } from '../src/common';
+import { ALPHAS } from '../src/static/common';
 import { clrExpected, clrValue } from './helpers';
 
 import { randomAlphabet, randomAlphaNum, randomDate } from '../src/random';

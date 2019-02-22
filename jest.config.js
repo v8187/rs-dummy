@@ -1,22 +1,24 @@
 module.exports = {
-    'collectCoverageFrom': [
+    collectCoverageFrom: [
         'src/**/*.{js,jsx,ts,tsx}',
         '!**/node_modules/**'
     ],
-    'testMatch': [
+    // collectCoverage: true,
+    // mapCoverage: true,
+    testMatch: [
         '<rootDir>/tests/**/?(*.)test.ts',
         '<rootDir>/tests/**/date*.ts'
     ],
-    'testEnvironment': 'node',
-    'testURL': 'http://localhost',
-    'transform': {
+    testEnvironment: 'node',
+    testURL: 'http://localhost',
+    transform: {
         '^.+\\.(js|jsx|mjs)$': '<rootDir>/node_modules/babel-jest',
         '^.+\\.(ts|tsx)?$': 'ts-jest'
     },
-    'transformIgnorePatterns': [
+    transformIgnorePatterns: [
         '[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|ts|tsx)$'
     ],
-    'moduleFileExtensions': [
+    moduleFileExtensions: [
         'web.ts',
         'ts',
         'web.tsx',
@@ -29,9 +31,9 @@ module.exports = {
         'node',
         'mjs'
     ],
-    'globals': {
+    globals: {
         'ts-jest': {
-            'tsConfig': 'tsconfig.test.json'
+            tsConfig: 'tsconfig.test.json'
         }
     }
 };

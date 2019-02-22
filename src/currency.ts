@@ -36,9 +36,9 @@ export const CURRENCY_SYMBOLS = [
 ];
 
 export interface ICSymbol {
-    unicode: string;
-    htmlCode: string;
-    name: string;
+    unicode?: string;
+    htmlCode?: string;
+    name?: string;
     symbol: string;
 };
 

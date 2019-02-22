@@ -10,7 +10,7 @@
     "lint": "tslint -p tsconfig.json",
     "test": "jest",
     "test:watch": "jest --verbose --watchAll",
-    "test:one": "jest --watchAll tests/phone-no.test.ts",
+    "test:one": "jest --watchAll tests/currency.test.ts",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
