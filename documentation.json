@@ -1,0 +1,9066 @@
+{
+	"id": 0,
+	"name": "@v8187/rs-mock",
+	"kind": 0,
+	"flags": {},
+	"children": [
+		{
+			"id": 15,
+			"name": "\"address\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "D:/Workspaces/rs-mock/src/address.ts",
+			"children": [
+				{
+					"id": 33,
+					"name": "address",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 34,
+							"name": "address",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "address.ts",
+							"line": 21,
+							"character": 20
+						}
+					]
+				},
+				{
+					"id": 20,
+					"name": "area",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 21,
+							"name": "area",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "any"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "address.ts",
+							"line": 7,
+							"character": 10
+						}
+					]
+				},
+				{
+					"id": 31,
+					"name": "house",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 32,
+							"name": "house",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "address.ts",
+							"line": 18,
+							"character": 11
+						}
+					]
+				},
+				{
+					"id": 16,
+					"name": "numSufix",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 17,
+							"name": "numSufix",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "any"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "address.ts",
+							"line": 5,
+							"character": 12
+						}
+					]
+				},
+				{
+					"id": 18,
+					"name": "numSufixEmpty",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 19,
+							"name": "numSufixEmpty",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "any"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "address.ts",
+							"line": 6,
+							"character": 19
+						}
+					]
+				},
+				{
+					"id": 24,
+					"name": "postoffice",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 25,
+							"name": "postoffice",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "any"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "address.ts",
+							"line": 9,
+							"character": 16
+						}
+					]
+				},
+				{
+					"id": 26,
+					"name": "ranNumber",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 27,
+							"name": "ranNumber",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 28,
+									"name": "addBy",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									},
+									"defaultValue": "true"
+								},
+								{
+									"id": 29,
+									"name": "min",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "100"
+								},
+								{
+									"id": 30,
+									"name": "max",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "9999"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "address.ts",
+							"line": 10,
+							"character": 15
+						}
+					]
+				},
+				{
+					"id": 22,
+					"name": "street",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 23,
+							"name": "street",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "any"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "address.ts",
+							"line": 8,
+							"character": 12
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						33,
+						20,
+						31,
+						16,
+						18,
+						24,
+						26,
+						22
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "address.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 35,
+			"name": "\"alphanumeric\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "D:/Workspaces/rs-mock/src/alphanumeric.ts",
+			"children": [
+				{
+					"id": 36,
+					"name": "IAlphanumericOptions",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 37,
+							"name": "format",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "alphanumeric.ts",
+									"line": 4,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								37
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "alphanumeric.ts",
+							"line": 3,
+							"character": 37
+						}
+					]
+				},
+				{
+					"id": 40,
+					"name": "alphanumeric",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"comment": {
+						"shortText": "This method generates the random Alphanumeric string based on\ngiven string containing \"x\", \"a\" and \"A\".\n- \"x\" will be replaced by digits\n- \"a\" will be replaced by lowercase alphabets\n- \"A\" will be replaced by uppercase alphabets\n- Rest all characters will be returned as it is.\n- Empty string will be returned if no options are provided",
+						"returns": "string\n"
+					},
+					"signatures": [
+						{
+							"id": 41,
+							"name": "alphanumeric",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "This method generates the random Alphanumeric string based on\ngiven string containing \"x\", \"a\" and \"A\".\n- \"x\" will be replaced by digits\n- \"a\" will be replaced by lowercase alphabets\n- \"A\" will be replaced by uppercase alphabets\n- Rest all characters will be returned as it is.\n- Empty string will be returned if no options are provided",
+								"returns": "string\n"
+							},
+							"parameters": [
+								{
+									"id": 42,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"comment": {},
+									"type": {
+										"type": "reference",
+										"name": "IAlphanumericOptions",
+										"id": 36
+									},
+									"defaultValue": " DEFAULTS"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "alphanumeric.ts",
+							"line": 23,
+							"character": 25
+						}
+					]
+				},
+				{
+					"id": 38,
+					"name": "DEFAULTS",
+					"kind": 2097152,
+					"kindString": "Object literal",
+					"flags": {
+						"isConst": true
+					},
+					"children": [
+						{
+							"id": 39,
+							"name": "format",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "alphanumeric.ts",
+									"line": 8,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"defaultValue": "\"\""
+						}
+					],
+					"groups": [
+						{
+							"title": "Variables",
+							"kind": 32,
+							"children": [
+								39
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "alphanumeric.ts",
+							"line": 7,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "object"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Interfaces",
+					"kind": 256,
+					"children": [
+						36
+					]
+				},
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						40
+					]
+				},
+				{
+					"title": "Object literals",
+					"kind": 2097152,
+					"children": [
+						38
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "alphanumeric.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 43,
+			"name": "\"company\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "D:/Workspaces/rs-mock/src/company.ts",
+			"children": [
+				{
+					"id": 44,
+					"name": "ICompanyOptions",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 46,
+							"name": "max",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "company.ts",
+									"line": 10,
+									"character": 21
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
+							}
+						},
+						{
+							"id": 45,
+							"name": "min",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "company.ts",
+									"line": 10,
+									"character": 7
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								46,
+								45
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "company.ts",
+							"line": 9,
+							"character": 32
+						}
+					]
+				},
+				{
+					"id": 47,
+					"name": "COMPANY_SUFIXES",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "company.ts",
+							"line": 4,
+							"character": 28
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					},
+					"defaultValue": " [\n    'Company', 'Corp.', 'Corporation', 'Inc.', 'Incorporated',\n    'LLC', 'LLP', 'Ltd', 'Limited', 'Pvt. Ltd.', 'Private Limited',\n    'PC', 'Foundation', 'Institute', 'Associates', 'Industries', 'Consulting']"
+				},
+				{
+					"id": 51,
+					"name": "company",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 52,
+							"name": "company",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 53,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "ICompanyOptions",
+										"id": 44
+									},
+									"defaultValue": " DEFAULTS"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "company.ts",
+							"line": 17,
+							"character": 20
+						}
+					]
+				},
+				{
+					"id": 48,
+					"name": "DEFAULTS",
+					"kind": 2097152,
+					"kindString": "Object literal",
+					"flags": {
+						"isConst": true
+					},
+					"children": [
+						{
+							"id": 50,
+							"name": "max",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "company.ts",
+									"line": 14,
+									"character": 15
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"defaultValue": "5"
+						},
+						{
+							"id": 49,
+							"name": "min",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "company.ts",
+									"line": 14,
+									"character": 7
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"defaultValue": "2"
+						}
+					],
+					"groups": [
+						{
+							"title": "Variables",
+							"kind": 32,
+							"children": [
+								50,
+								49
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "company.ts",
+							"line": 13,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "object"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Interfaces",
+					"kind": 256,
+					"children": [
+						44
+					]
+				},
+				{
+					"title": "Variables",
+					"kind": 32,
+					"children": [
+						47
+					]
+				},
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						51
+					]
+				},
+				{
+					"title": "Object literals",
+					"kind": 2097152,
+					"children": [
+						48
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "company.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 54,
+			"name": "\"credit-card\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "D:/Workspaces/rs-mock/src/credit-card.ts",
+			"children": [
+				{
+					"id": 58,
+					"name": "ICCardFormat",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 59,
+							"name": "iins",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "credit-card.ts",
+									"line": 124,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "union",
+									"types": [
+										{
+											"type": "intrinsic",
+											"name": "number"
+										},
+										{
+											"type": "reference",
+											"name": "IMinMax",
+											"id": 55
+										}
+									]
+								}
+							}
+						},
+						{
+							"id": 60,
+							"name": "range",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "credit-card.ts",
+									"line": 124,
+									"character": 37
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "IMinMax",
+								"id": 55
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								59,
+								60
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "credit-card.ts",
+							"line": 123,
+							"character": 29
+						}
+					]
+				},
+				{
+					"id": 64,
+					"name": "ICCardOptions",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 65,
+							"name": "cardTypes",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "credit-card.ts",
+									"line": 132,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "ICCardType",
+									"id": 61
+								}
+							}
+						},
+						{
+							"id": 66,
+							"name": "separator",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "credit-card.ts",
+									"line": 132,
+									"character": 39
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								65,
+								66
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "credit-card.ts",
+							"line": 131,
+							"character": 30
+						}
+					]
+				},
+				{
+					"id": 61,
+					"name": "ICCardType",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 63,
+							"name": "formats",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "credit-card.ts",
+									"line": 128,
+									"character": 26
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "ICCardFormat",
+									"id": 58
+								}
+							}
+						},
+						{
+							"id": 62,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "credit-card.ts",
+									"line": 128,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								63,
+								62
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "credit-card.ts",
+							"line": 127,
+							"character": 27
+						}
+					]
+				},
+				{
+					"id": 55,
+					"name": "IMinMax",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {},
+					"children": [
+						{
+							"id": 57,
+							"name": "max",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "credit-card.ts",
+									"line": 120,
+									"character": 20
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 56,
+							"name": "min",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "credit-card.ts",
+									"line": 120,
+									"character": 7
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								57,
+								56
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "credit-card.ts",
+							"line": 119,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 67,
+					"name": "CCARD_TYPES",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "credit-card.ts",
+							"line": 3,
+							"character": 24
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reflection",
+							"declaration": {
+								"id": 68,
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"children": [
+									{
+										"id": 70,
+										"name": "formats",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "credit-card.ts",
+												"line": 23,
+												"character": 15
+											}
+										],
+										"type": {
+											"type": "array",
+											"elementType": {
+												"type": "reflection",
+												"declaration": {
+													"id": 71,
+													"name": "__type",
+													"kind": 65536,
+													"kindString": "Type literal",
+													"flags": {},
+													"children": [
+														{
+															"id": 72,
+															"name": "iins",
+															"kind": 32,
+															"kindString": "Variable",
+															"flags": {},
+															"sources": [
+																{
+																	"fileName": "credit-card.ts",
+																	"line": 26,
+																	"character": 16
+																}
+															],
+															"type": {
+																"type": "array",
+																"elementType": {
+																	"type": "union",
+																	"types": [
+																		{
+																			"type": "intrinsic",
+																			"name": "number"
+																		},
+																		{
+																			"type": "reflection",
+																			"declaration": {
+																				"id": 73,
+																				"name": "__type",
+																				"kind": 65536,
+																				"kindString": "Type literal",
+																				"flags": {},
+																				"children": [
+																					{
+																						"id": 75,
+																						"name": "max",
+																						"kind": 32,
+																						"kindString": "Variable",
+																						"flags": {},
+																						"sources": [
+																							{
+																								"fileName": "credit-card.ts",
+																								"line": 26,
+																								"character": 34
+																							}
+																						],
+																						"type": {
+																							"type": "intrinsic",
+																							"name": "number"
+																						},
+																						"defaultValue": "305"
+																					},
+																					{
+																						"id": 74,
+																						"name": "min",
+																						"kind": 32,
+																						"kindString": "Variable",
+																						"flags": {},
+																						"sources": [
+																							{
+																								"fileName": "credit-card.ts",
+																								"line": 26,
+																								"character": 24
+																							}
+																						],
+																						"type": {
+																							"type": "intrinsic",
+																							"name": "number"
+																						},
+																						"defaultValue": "300"
+																					}
+																				],
+																				"groups": [
+																					{
+																						"title": "Variables",
+																						"kind": 32,
+																						"children": [
+																							75,
+																							74
+																						]
+																					}
+																				]
+																			}
+																		}
+																	]
+																}
+															},
+															"defaultValue": " [{ min: 300, max: 305 }, 3095, 38, 39]"
+														},
+														{
+															"id": 76,
+															"name": "range",
+															"kind": 2097152,
+															"kindString": "Object literal",
+															"flags": {},
+															"children": [
+																{
+																	"id": 78,
+																	"name": "max",
+																	"kind": 32,
+																	"kindString": "Variable",
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "credit-card.ts",
+																			"line": 26,
+																			"character": 79
+																		}
+																	],
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "19"
+																},
+																{
+																	"id": 77,
+																	"name": "min",
+																	"kind": 32,
+																	"kindString": "Variable",
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "credit-card.ts",
+																			"line": 26,
+																			"character": 70
+																		}
+																	],
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "number"
+																	},
+																	"defaultValue": "16"
+																}
+															],
+															"groups": [
+																{
+																	"title": "Variables",
+																	"kind": 32,
+																	"children": [
+																		78,
+																		77
+																	]
+																}
+															],
+															"sources": [
+																{
+																	"fileName": "credit-card.ts",
+																	"line": 26,
+																	"character": 63
+																}
+															],
+															"type": {
+																"type": "intrinsic",
+																"name": "object"
+															}
+														}
+													],
+													"groups": [
+														{
+															"title": "Variables",
+															"kind": 32,
+															"children": [
+																72
+															]
+														},
+														{
+															"title": "Object literals",
+															"kind": 2097152,
+															"children": [
+																76
+															]
+														}
+													]
+												}
+											}
+										},
+										"defaultValue": " [{\n            iins: [36], range: { min: 14, max: 19 }\n        }, {\n            iins: [{ min: 300, max: 305 }, 3095, 38, 39], range: { min: 16, max: 19 }\n        }]"
+									},
+									{
+										"id": 69,
+										"name": "name",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "credit-card.ts",
+												"line": 22,
+												"character": 12
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										},
+										"defaultValue": "\"Diners Club International\""
+									}
+								],
+								"groups": [
+									{
+										"title": "Variables",
+										"kind": 32,
+										"children": [
+											70,
+											69
+										]
+									}
+								]
+							}
+						}
+					},
+					"defaultValue": " [\n    // American Express 34, 37 - 15 Luhn algorithm\n    {\n        name: 'American Express',\n        formats: [{\n            iins: [34, 37], range: { min: 15, max: 15 }\n        }]\n    }\n    // China UnionPay 62 - 16–19\n    , {\n        name: 'China UnionPay',\n        formats: [{\n            iins: [62], range: { min: 16, max: 19 }\n        }]\n    }\n    // Diners Club International\n    // 36 - 14–19 Luhn algorithm\n    // 300–305, 3095, 38–39 - 16–19\n    , {\n        name: 'Diners Club International',\n        formats: [{\n            iins: [36], range: { min: 14, max: 19 }\n        }, {\n            iins: [{ min: 300, max: 305 }, 3095, 38, 39], range: { min: 16, max: 19 }\n        }]\n    }\n    // Diners Club United States & Canada 54, 55 (MasterCard co-branded) - 16\n    , {\n        name: 'Diners Club United States & Canada',\n        formats: [{\n            iins: [54, 55], range: { min: 16, max: 16 }\n        }]\n    }\n    // Discover Card 6011, 64, 65 - 16–19\n    , {\n        name: 'Discover Card',\n        formats: [{\n            iins: [6011, 64, 65], range: { min: 16, max: 19 }\n        }]\n    }\n    // RuPay 60, 6521 - 16\n    , {\n        name: 'RuPay',\n        formats: [{\n            iins: [60, 6521], range: { min: 16, max: 16 }\n        }]\n    }\n    // JCB 3528–3589 - 16–19\n    , {\n        name: 'JCB',\n        formats: [{\n            iins: [{ min: 3528, max: 3589 }], range: { min: 16, max: 19 }\n        }]\n    }\n    // Maestro 50, 56–58, 639, 67 - 12–19\n    , {\n        name: 'Maestro',\n        formats: [{\n            iins: [50, 56, 57, 58, 639, 67], range: { min: 12, max: 19 }\n        }]\n    }\n    // Dankort 5019 - 16\n    // 4571 (Visa co-branded) - 16\n    , {\n        name: 'Dankort',\n        formats: [{\n            iins: [5019, 4571], range: { min: 16, max: 16 }\n        }]\n    }\n    // MIR 2200–2204 - 16\n    , {\n        name: 'MIR',\n        formats: [{\n            iins: [{ min: 2200, max: 2204 }], range: { min: 16, max: 16 }\n        }]\n    }\n    // Mastercard 222100–272099 - 2017 16\n    // 51–55 - 16\n    , {\n        name: 'Mastercard',\n        formats: [{\n            iins: [{ min: 222100, max: 272099 }], range: { min: 16, max: 16 }\n        }, {\n            iins: [{ min: 51, max: 55 }], range: { min: 16, max: 16 }\n        }]\n    }\n    // Troy 979200–979289 - 16\n    , {\n        name: 'Troy',\n        formats: [{\n            iins: [{ min: 979200, max: 979289 }], range: { min: 16, max: 16 }\n        }]\n    }\n    // Visa 4 (including related/partner brands: Dankort, Electron, etc.) - 16\n    , {\n        name: 'Visa',\n        formats: [{\n            iins: [4], range: { min: 16, max: 16 }\n        }]\n    }\n    // UATP 1 - 15\n    , {\n        name: 'UATP',\n        formats: [{\n            iins: [1], range: { min: 15, max: 15 }\n        }]\n    }\n    // Verve 506099–506198, 650002–650027 - 16, 19\n    , {\n        name: 'Verve',\n        formats: [{\n            iins: [{ min: 506099, max: 506198 }, { min: 650002, max: 650027 }], range: { min: 16, max: 19 }\n        }]\n    }\n]"
+				},
+				{
+					"id": 93,
+					"name": "creditCard",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 94,
+							"name": "creditCard",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 95,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "ICCardOptions",
+										"id": 64
+									},
+									"defaultValue": " DEFAULTS"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "credit-card.ts",
+							"line": 139,
+							"character": 23
+						}
+					]
+				},
+				{
+					"id": 79,
+					"name": "DEFAULTS",
+					"kind": 2097152,
+					"kindString": "Object literal",
+					"flags": {
+						"isConst": true
+					},
+					"children": [
+						{
+							"id": 80,
+							"name": "cardTypes",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "credit-card.ts",
+									"line": 136,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reflection",
+									"declaration": {
+										"id": 81,
+										"name": "__type",
+										"kind": 65536,
+										"kindString": "Type literal",
+										"flags": {},
+										"children": [
+											{
+												"id": 83,
+												"name": "formats",
+												"kind": 32,
+												"kindString": "Variable",
+												"flags": {},
+												"sources": [
+													{
+														"fileName": "credit-card.ts",
+														"line": 23,
+														"character": 15
+													}
+												],
+												"type": {
+													"type": "array",
+													"elementType": {
+														"type": "reflection",
+														"declaration": {
+															"id": 84,
+															"name": "__type",
+															"kind": 65536,
+															"kindString": "Type literal",
+															"flags": {},
+															"children": [
+																{
+																	"id": 85,
+																	"name": "iins",
+																	"kind": 32,
+																	"kindString": "Variable",
+																	"flags": {},
+																	"sources": [
+																		{
+																			"fileName": "credit-card.ts",
+																			"line": 26,
+																			"character": 16
+																		}
+																	],
+																	"type": {
+																		"type": "array",
+																		"elementType": {
+																			"type": "union",
+																			"types": [
+																				{
+																					"type": "intrinsic",
+																					"name": "number"
+																				},
+																				{
+																					"type": "reflection",
+																					"declaration": {
+																						"id": 86,
+																						"name": "__type",
+																						"kind": 65536,
+																						"kindString": "Type literal",
+																						"flags": {},
+																						"children": [
+																							{
+																								"id": 88,
+																								"name": "max",
+																								"kind": 32,
+																								"kindString": "Variable",
+																								"flags": {},
+																								"sources": [
+																									{
+																										"fileName": "credit-card.ts",
+																										"line": 26,
+																										"character": 34
+																									}
+																								],
+																								"type": {
+																									"type": "intrinsic",
+																									"name": "number"
+																								},
+																								"defaultValue": "305"
+																							},
+																							{
+																								"id": 87,
+																								"name": "min",
+																								"kind": 32,
+																								"kindString": "Variable",
+																								"flags": {},
+																								"sources": [
+																									{
+																										"fileName": "credit-card.ts",
+																										"line": 26,
+																										"character": 24
+																									}
+																								],
+																								"type": {
+																									"type": "intrinsic",
+																									"name": "number"
+																								},
+																								"defaultValue": "300"
+																							}
+																						],
+																						"groups": [
+																							{
+																								"title": "Variables",
+																								"kind": 32,
+																								"children": [
+																									88,
+																									87
+																								]
+																							}
+																						]
+																					}
+																				}
+																			]
+																		}
+																	},
+																	"defaultValue": " [{ min: 300, max: 305 }, 3095, 38, 39]"
+																},
+																{
+																	"id": 89,
+																	"name": "range",
+																	"kind": 2097152,
+																	"kindString": "Object literal",
+																	"flags": {},
+																	"children": [
+																		{
+																			"id": 91,
+																			"name": "max",
+																			"kind": 32,
+																			"kindString": "Variable",
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "credit-card.ts",
+																					"line": 26,
+																					"character": 79
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "number"
+																			},
+																			"defaultValue": "19"
+																		},
+																		{
+																			"id": 90,
+																			"name": "min",
+																			"kind": 32,
+																			"kindString": "Variable",
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "credit-card.ts",
+																					"line": 26,
+																					"character": 70
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "number"
+																			},
+																			"defaultValue": "16"
+																		}
+																	],
+																	"groups": [
+																		{
+																			"title": "Variables",
+																			"kind": 32,
+																			"children": [
+																				91,
+																				90
+																			]
+																		}
+																	],
+																	"sources": [
+																		{
+																			"fileName": "credit-card.ts",
+																			"line": 26,
+																			"character": 63
+																		}
+																	],
+																	"type": {
+																		"type": "intrinsic",
+																		"name": "object"
+																	}
+																}
+															],
+															"groups": [
+																{
+																	"title": "Variables",
+																	"kind": 32,
+																	"children": [
+																		85
+																	]
+																},
+																{
+																	"title": "Object literals",
+																	"kind": 2097152,
+																	"children": [
+																		89
+																	]
+																}
+															]
+														}
+													}
+												},
+												"defaultValue": " [{\n            iins: [36], range: { min: 14, max: 19 }\n        }, {\n            iins: [{ min: 300, max: 305 }, 3095, 38, 39], range: { min: 16, max: 19 }\n        }]"
+											},
+											{
+												"id": 82,
+												"name": "name",
+												"kind": 32,
+												"kindString": "Variable",
+												"flags": {},
+												"sources": [
+													{
+														"fileName": "credit-card.ts",
+														"line": 22,
+														"character": 12
+													}
+												],
+												"type": {
+													"type": "intrinsic",
+													"name": "string"
+												},
+												"defaultValue": "\"Diners Club International\""
+											}
+										],
+										"groups": [
+											{
+												"title": "Variables",
+												"kind": 32,
+												"children": [
+													83,
+													82
+												]
+											}
+										]
+									}
+								}
+							},
+							"defaultValue": " [CCARD_TYPES[0]]"
+						},
+						{
+							"id": 92,
+							"name": "separator",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "credit-card.ts",
+									"line": 136,
+									"character": 42
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"defaultValue": "\" \""
+						}
+					],
+					"groups": [
+						{
+							"title": "Variables",
+							"kind": 32,
+							"children": [
+								80,
+								92
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "credit-card.ts",
+							"line": 135,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "object"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Interfaces",
+					"kind": 256,
+					"children": [
+						58,
+						64,
+						61,
+						55
+					]
+				},
+				{
+					"title": "Variables",
+					"kind": 32,
+					"children": [
+						67
+					]
+				},
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						93
+					]
+				},
+				{
+					"title": "Object literals",
+					"kind": 2097152,
+					"children": [
+						79
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "credit-card.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 96,
+			"name": "\"currency\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "D:/Workspaces/rs-mock/src/currency.ts",
+			"children": [
+				{
+					"id": 97,
+					"name": "ICSymbol",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 99,
+							"name": "htmlCode",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "currency.ts",
+									"line": 40,
+									"character": 12
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							}
+						},
+						{
+							"id": 100,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "currency.ts",
+									"line": 41,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							}
+						},
+						{
+							"id": 101,
+							"name": "symbol",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "currency.ts",
+									"line": 42,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 98,
+							"name": "unicode",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "currency.ts",
+									"line": 39,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								99,
+								100,
+								101,
+								98
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "currency.ts",
+							"line": 38,
+							"character": 25
+						}
+					]
+				},
+				{
+					"id": 102,
+					"name": "ICurrencyOptions",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 105,
+							"name": "decimals",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "currency.ts",
+									"line": 48,
+									"character": 12
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
+							}
+						},
+						{
+							"id": 104,
+							"name": "max",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "currency.ts",
+									"line": 47,
+									"character": 7
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
+							}
+						},
+						{
+							"id": 103,
+							"name": "min",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "currency.ts",
+									"line": 46,
+									"character": 7
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
+							}
+						},
+						{
+							"id": 106,
+							"name": "separator",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "currency.ts",
+									"line": 49,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							}
+						},
+						{
+							"id": 107,
+							"name": "symbol",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "currency.ts",
+									"line": 50,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "ICSymbol",
+								"id": 97
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								105,
+								104,
+								103,
+								106,
+								107
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "currency.ts",
+							"line": 45,
+							"character": 33
+						}
+					]
+				},
+				{
+					"id": 108,
+					"name": "CURRENCY_SYMBOLS",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "currency.ts",
+							"line": 3,
+							"character": 29
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reflection",
+							"declaration": {
+								"id": 109,
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"children": [
+									{
+										"id": 111,
+										"name": "htmlCode",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "currency.ts",
+												"line": 4,
+												"character": 33
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										},
+										"defaultValue": "\"\\0024\""
+									},
+									{
+										"id": 112,
+										"name": "name",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "currency.ts",
+												"line": 4,
+												"character": 49
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										},
+										"defaultValue": "\"DOLLAR SIGN\""
+									},
+									{
+										"id": 113,
+										"name": "symbol",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "currency.ts",
+												"line": 4,
+												"character": 72
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										},
+										"defaultValue": "\"$\""
+									},
+									{
+										"id": 110,
+										"name": "unicode",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "currency.ts",
+												"line": 4,
+												"character": 13
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										},
+										"defaultValue": "\"U+0024\""
+									}
+								],
+								"groups": [
+									{
+										"title": "Variables",
+										"kind": 32,
+										"children": [
+											111,
+											112,
+											113,
+											110
+										]
+									}
+								]
+							}
+						}
+					},
+					"defaultValue": " [\n    { unicode: 'U+0024', htmlCode: '\\\\0024', name: 'DOLLAR SIGN', symbol: '$' },\n    { unicode: 'U+00A2', htmlCode: '\\\\00A2', name: 'CENT SIGN', symbol: '¢' },\n    { unicode: 'U+00A3', htmlCode: '\\\\00A3', name: 'POUND SIGN', symbol: '£' },\n    { unicode: 'U+00A5', htmlCode: '\\\\00A5', name: 'YEN SIGN', symbol: '¥' },\n    { unicode: 'U+0E3F', htmlCode: '\\\\0E3F', name: 'THAI CURRENCY SYMBOL BAHT', symbol: '฿' },\n    { unicode: 'U+20A0', htmlCode: '\\\\20A0', name: 'EURO-CURRENCY SIGN', symbol: '₠' },\n    { unicode: 'U+20A1', htmlCode: '\\\\20A1', name: 'COLON SIGN', symbol: '₡' },\n    { unicode: 'U+20A2', htmlCode: '\\\\20A2', name: 'CRUZEIRO SIGN', symbol: '₢' },\n    { unicode: 'U+20A3', htmlCode: '\\\\20A3', name: 'FRENCH FRANC SIGN', symbol: '₣' },\n    { unicode: 'U+20A4', htmlCode: '\\\\20A4', name: 'LIRA SIGN', symbol: '₤' },\n    { unicode: 'U+20A6', htmlCode: '\\\\20A6', name: 'NAIRA SIGN', symbol: '₦' },\n    { unicode: 'U+20A7', htmlCode: '\\\\20A7', name: 'PESETA SIGN', symbol: '₧' },\n    { unicode: 'U+20A9', htmlCode: '\\\\20A9', name: 'WON SIGN', symbol: '₩' },\n    { unicode: 'U+20AA', htmlCode: '\\\\20AA', name: 'NEW SHEQEL SIGN', symbol: '₪' },\n    { unicode: 'U+20AB', htmlCode: '\\\\20AB', name: 'DONG SIGN', symbol: '₫' },\n    { unicode: 'U+20AC', htmlCode: '\\\\20AC', name: 'EURO SIGN', symbol: '€' },\n    { unicode: 'U+20AD', htmlCode: '\\\\20AD', name: 'KIP SIGN', symbol: '₭' },\n    { unicode: 'U+20AE', htmlCode: '\\\\20AE', name: 'TUGRIK SIGN', symbol: '₮' },\n    { unicode: 'U+20AF', htmlCode: '\\\\20AF', name: 'DRACHMA SIGN', symbol: '₯' },\n    { unicode: 'U+20B0', htmlCode: '\\\\20B0', name: 'GERMAN PENNY SIGN', symbol: '₰' },\n    { unicode: 'U+20B1', htmlCode: '\\\\20B1', name: 'PESO SIGN', symbol: '₱' },\n    { unicode: 'U+20B2', htmlCode: '\\\\20B2', name: 'GUARANI SIGN', symbol: '₲' },\n    { unicode: 'U+20B3', htmlCode: '\\\\20B3', name: 'AUSTRAL SIGN', symbol: '₳' },\n    { unicode: 'U+20B4', htmlCode: '\\\\20B4', name: 'HRYVNIA SIGN', symbol: '₴' },\n    { unicode: 'U+20B5', htmlCode: '\\\\20B5', name: 'CEDI SIGN', symbol: '₵' },\n    { unicode: 'U+20B8', htmlCode: '\\\\20B8', name: 'TENGE SIGN', symbol: '₸' },\n    { unicode: 'U+20B9', htmlCode: '\\\\20B9', name: 'INDIAN RUPEE SIGN', symbol: '₹' },\n    { unicode: 'U+20BA', htmlCode: '\\\\20BA', name: 'TURKISH LIRA SIGN', symbol: '₺' },\n    { unicode: 'U+20BC', htmlCode: '\\\\20BC', name: 'MANAT SIGN', symbol: '₼' },\n    { unicode: 'U+20BD', htmlCode: '\\\\20BD', name: 'RUBLE SIGN', symbol: '₽' },\n    { unicode: 'U+20BE', htmlCode: '\\\\20BE', name: 'LARI SIGN', symbol: '₾' },\n    { unicode: 'U+20BF', htmlCode: '\\\\20BF', name: 'BITCOIN SIGN', symbol: '₿' }\n]"
+				},
+				{
+					"id": 120,
+					"name": "currency",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 121,
+							"name": "currency",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 122,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "ICurrencyOptions",
+										"id": 102
+									},
+									"defaultValue": " DEFAULTS"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "currency.ts",
+							"line": 61,
+							"character": 21
+						}
+					]
+				},
+				{
+					"id": 114,
+					"name": "DEFAULTS",
+					"kind": 2097152,
+					"kindString": "Object literal",
+					"flags": {
+						"isConst": true
+					},
+					"children": [
+						{
+							"id": 117,
+							"name": "decimals",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "currency.ts",
+									"line": 56,
+									"character": 12
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"defaultValue": "2"
+						},
+						{
+							"id": 116,
+							"name": "max",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "currency.ts",
+									"line": 55,
+									"character": 7
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"defaultValue": "1000"
+						},
+						{
+							"id": 115,
+							"name": "min",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "currency.ts",
+									"line": 54,
+									"character": 7
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"defaultValue": "10"
+						},
+						{
+							"id": 118,
+							"name": "separator",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "currency.ts",
+									"line": 57,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"defaultValue": "\",\""
+						},
+						{
+							"id": 119,
+							"name": "symbol",
+							"kind": 2097152,
+							"kindString": "Object literal",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "currency.ts",
+									"line": 58,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "object"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Variables",
+							"kind": 32,
+							"children": [
+								117,
+								116,
+								115,
+								118
+							]
+						},
+						{
+							"title": "Object literals",
+							"kind": 2097152,
+							"children": [
+								119
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "currency.ts",
+							"line": 53,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "object"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Interfaces",
+					"kind": 256,
+					"children": [
+						97,
+						102
+					]
+				},
+				{
+					"title": "Variables",
+					"kind": 32,
+					"children": [
+						108
+					]
+				},
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						120
+					]
+				},
+				{
+					"title": "Object literals",
+					"kind": 2097152,
+					"children": [
+						114
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "currency.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 123,
+			"name": "\"date-time\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "D:/Workspaces/rs-mock/src/date-time.ts",
+			"children": [
+				{
+					"id": 133,
+					"name": "EDateSeparator",
+					"kind": 4,
+					"kindString": "Enumeration",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 136,
+							"name": "COMMA",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 16,
+									"character": 9
+								}
+							],
+							"defaultValue": "\",\""
+						},
+						{
+							"id": 135,
+							"name": "FULLSTOP",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 15,
+									"character": 26
+								}
+							],
+							"defaultValue": "\".\""
+						},
+						{
+							"id": 134,
+							"name": "HYPHEN",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 15,
+									"character": 10
+								}
+							],
+							"defaultValue": "\"-\""
+						},
+						{
+							"id": 137,
+							"name": "SLASH",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 16,
+									"character": 22
+								}
+							],
+							"defaultValue": "\"/\""
+						},
+						{
+							"id": 138,
+							"name": "SPACE",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 16,
+									"character": 35
+								}
+							],
+							"defaultValue": "\" \""
+						}
+					],
+					"groups": [
+						{
+							"title": "Enumeration members",
+							"kind": 16,
+							"children": [
+								136,
+								135,
+								134,
+								137,
+								138
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "date-time.ts",
+							"line": 14,
+							"character": 26
+						}
+					]
+				},
+				{
+					"id": 129,
+					"name": "EDateSequence",
+					"kind": 4,
+					"kindString": "Enumeration",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 131,
+							"name": "DMY",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 11,
+									"character": 20
+								}
+							],
+							"defaultValue": "\"DMY\""
+						},
+						{
+							"id": 130,
+							"name": "MDY",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 11,
+									"character": 7
+								}
+							],
+							"defaultValue": "\"MDY\""
+						},
+						{
+							"id": 132,
+							"name": "YMD",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 11,
+									"character": 33
+								}
+							],
+							"defaultValue": "\"YMD\""
+						}
+					],
+					"groups": [
+						{
+							"title": "Enumeration members",
+							"kind": 16,
+							"children": [
+								131,
+								130,
+								132
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "date-time.ts",
+							"line": 10,
+							"character": 25
+						}
+					]
+				},
+				{
+					"id": 139,
+					"name": "ETimeSeparator",
+					"kind": 4,
+					"kindString": "Enumeration",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 142,
+							"name": "COLON",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 20,
+									"character": 39
+								}
+							],
+							"defaultValue": "\":\""
+						},
+						{
+							"id": 141,
+							"name": "FULLSTOP",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 20,
+									"character": 26
+								}
+							],
+							"defaultValue": "\".\""
+						},
+						{
+							"id": 140,
+							"name": "HYPHEN",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 20,
+									"character": 10
+								}
+							],
+							"defaultValue": "\"-\""
+						}
+					],
+					"groups": [
+						{
+							"title": "Enumeration members",
+							"kind": 16,
+							"children": [
+								142,
+								141,
+								140
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "date-time.ts",
+							"line": 19,
+							"character": 26
+						}
+					]
+				},
+				{
+					"id": 124,
+					"name": "EVariant",
+					"kind": 4,
+					"kindString": "Enumeration",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 128,
+							"name": "FULL",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 7,
+									"character": 59
+								}
+							],
+							"defaultValue": "\"Full\""
+						},
+						{
+							"id": 127,
+							"name": "LONG",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 7,
+									"character": 44
+								}
+							],
+							"defaultValue": "\"Long\""
+						},
+						{
+							"id": 126,
+							"name": "MEDIUM",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 7,
+									"character": 27
+								}
+							],
+							"defaultValue": "\"Medium\""
+						},
+						{
+							"id": 125,
+							"name": "SHORT",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 7,
+									"character": 9
+								}
+							],
+							"defaultValue": "\"Short\""
+						}
+					],
+					"groups": [
+						{
+							"title": "Enumeration members",
+							"kind": 16,
+							"children": [
+								128,
+								127,
+								126,
+								125
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "date-time.ts",
+							"line": 6,
+							"character": 20
+						}
+					]
+				},
+				{
+					"id": 143,
+					"name": "IDateTimeOptions",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 151,
+							"name": "dateSeparator",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 31,
+									"character": 17
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "EDateSeparator",
+								"id": 133
+							}
+						},
+						{
+							"id": 150,
+							"name": "dateSequence",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 30,
+									"character": 16
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "EDateSequence",
+								"id": 129
+							}
+						},
+						{
+							"id": 144,
+							"name": "from",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 24,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Moment"
+							}
+						},
+						{
+							"id": 153,
+							"name": "hasTime",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 33,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "false"
+									},
+									{
+										"type": "intrinsic",
+										"name": "true"
+									}
+								]
+							}
+						},
+						{
+							"id": 152,
+							"name": "onlyTime",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 32,
+									"character": 12
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "false"
+									},
+									{
+										"type": "intrinsic",
+										"name": "true"
+									}
+								]
+							}
+						},
+						{
+							"id": 148,
+							"name": "sqlTimestamp",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 28,
+									"character": 16
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "false"
+									},
+									{
+										"type": "intrinsic",
+										"name": "true"
+									}
+								]
+							}
+						},
+						{
+							"id": 154,
+							"name": "timeSeparator",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 34,
+									"character": 17
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "ETimeSeparator",
+								"id": 139
+							}
+						},
+						{
+							"id": 145,
+							"name": "to",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 25,
+									"character": 6
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Moment"
+							}
+						},
+						{
+							"id": 147,
+							"name": "unixTimestampMilisecond",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 27,
+									"character": 27
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "false"
+									},
+									{
+										"type": "intrinsic",
+										"name": "true"
+									}
+								]
+							}
+						},
+						{
+							"id": 146,
+							"name": "unixTimestampSecond",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 26,
+									"character": 23
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "false"
+									},
+									{
+										"type": "intrinsic",
+										"name": "true"
+									}
+								]
+							}
+						},
+						{
+							"id": 149,
+							"name": "variant",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 29,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "EVariant",
+								"id": 124
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								151,
+								150,
+								144,
+								153,
+								152,
+								148,
+								154,
+								145,
+								147,
+								146,
+								149
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "date-time.ts",
+							"line": 23,
+							"character": 33
+						}
+					]
+				},
+				{
+					"id": 167,
+					"name": "dateTime",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 168,
+							"name": "dateTime",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 169,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "IDateTimeOptions",
+										"id": 143
+									},
+									"defaultValue": " DEFAULTS"
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "date-time.ts",
+							"line": 51,
+							"character": 21
+						}
+					]
+				},
+				{
+					"id": 155,
+					"name": "DEFAULTS",
+					"kind": 2097152,
+					"kindString": "Object literal",
+					"flags": {
+						"isConst": true
+					},
+					"children": [
+						{
+							"id": 165,
+							"name": "dateSeparator",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 47,
+									"character": 17
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "SLASH",
+								"id": 137
+							},
+							"defaultValue": " EDateSeparator.SLASH"
+						},
+						{
+							"id": 164,
+							"name": "dateSequence",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 46,
+									"character": 16
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "MDY",
+								"id": 130
+							},
+							"defaultValue": " EDateSequence.MDY"
+						},
+						{
+							"id": 156,
+							"name": "from",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 38,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Moment"
+							},
+							"defaultValue": " moment().subtract(1, 'month')"
+						},
+						{
+							"id": 162,
+							"name": "hasTime",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 44,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "false"
+							},
+							"defaultValue": "false"
+						},
+						{
+							"id": 161,
+							"name": "onlyTime",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 43,
+									"character": 12
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "false"
+							},
+							"defaultValue": "false"
+						},
+						{
+							"id": 160,
+							"name": "sqlTimestamp",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 42,
+									"character": 16
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "false"
+							},
+							"defaultValue": "false"
+						},
+						{
+							"id": 166,
+							"name": "timeSeparator",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 48,
+									"character": 17
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "COLON",
+								"id": 142
+							},
+							"defaultValue": " ETimeSeparator.COLON"
+						},
+						{
+							"id": 157,
+							"name": "to",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 39,
+									"character": 6
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Moment"
+							},
+							"defaultValue": " moment().add(1, 'month')"
+						},
+						{
+							"id": 158,
+							"name": "unixTimestampMilisecond",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 40,
+									"character": 27
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "false"
+							},
+							"defaultValue": "false"
+						},
+						{
+							"id": 159,
+							"name": "unixTimestampSecond",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 41,
+									"character": 23
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "false"
+							},
+							"defaultValue": "false"
+						},
+						{
+							"id": 163,
+							"name": "variant",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "date-time.ts",
+									"line": 45,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "FULL",
+								"id": 128
+							},
+							"defaultValue": " EVariant.FULL"
+						}
+					],
+					"groups": [
+						{
+							"title": "Variables",
+							"kind": 32,
+							"children": [
+								165,
+								164,
+								156,
+								162,
+								161,
+								160,
+								166,
+								157,
+								158,
+								159,
+								163
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "date-time.ts",
+							"line": 37,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "object"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Enumerations",
+					"kind": 4,
+					"children": [
+						133,
+						129,
+						139,
+						124
+					]
+				},
+				{
+					"title": "Interfaces",
+					"kind": 256,
+					"children": [
+						143
+					]
+				},
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						167
+					]
+				},
+				{
+					"title": "Object literals",
+					"kind": 2097152,
+					"children": [
+						155
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "date-time.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 170,
+			"name": "\"duration\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "D:/Workspaces/rs-mock/src/duration.ts",
+			"children": [
+				{
+					"id": 174,
+					"name": "IDUnit",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 178,
+							"name": "max",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 12,
+									"character": 57
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
+							}
+						},
+						{
+							"id": 177,
+							"name": "min",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 12,
+									"character": 43
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "number"
+									}
+								]
+							}
+						},
+						{
+							"id": 180,
+							"name": "prefix",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 8,
+									"character": 26
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "IFix.prefix",
+								"id": 173
+							}
+						},
+						{
+							"id": 176,
+							"name": "selected",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 12,
+									"character": 28
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "false"
+									},
+									{
+										"type": "intrinsic",
+										"name": "true"
+									}
+								]
+							}
+						},
+						{
+							"id": 179,
+							"name": "sufix",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 8,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "IFix.sufix",
+								"id": 172
+							}
+						},
+						{
+							"id": 175,
+							"name": "title",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 12,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								178,
+								177,
+								180,
+								176,
+								179,
+								175
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "duration.ts",
+							"line": 11,
+							"character": 23
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "IFix",
+							"id": 171
+						}
+					]
+				},
+				{
+					"id": 181,
+					"name": "IDurationOptions",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 186,
+							"name": "days",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 16,
+									"character": 75
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "IDUnit",
+								"id": 174
+							}
+						},
+						{
+							"id": 182,
+							"name": "decades",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 16,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "IDUnit",
+								"id": 174
+							}
+						},
+						{
+							"id": 187,
+							"name": "hours",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 17,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "IDUnit",
+								"id": 174
+							}
+						},
+						{
+							"id": 190,
+							"name": "miliseconds",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 17,
+									"character": 67
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "IDUnit",
+								"id": 174
+							}
+						},
+						{
+							"id": 188,
+							"name": "minutes",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 17,
+									"character": 27
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "IDUnit",
+								"id": 174
+							}
+						},
+						{
+							"id": 184,
+							"name": "months",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 16,
+									"character": 44
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "IDUnit",
+								"id": 174
+							}
+						},
+						{
+							"id": 192,
+							"name": "prefix",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 8,
+									"character": 26
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "IFix.prefix",
+								"id": 173
+							}
+						},
+						{
+							"id": 189,
+							"name": "seconds",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 17,
+									"character": 45
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "IDUnit",
+								"id": 174
+							}
+						},
+						{
+							"id": 191,
+							"name": "sufix",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 8,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "IFix.sufix",
+								"id": 172
+							}
+						},
+						{
+							"id": 185,
+							"name": "weeks",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 16,
+									"character": 60
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "IDUnit",
+								"id": 174
+							}
+						},
+						{
+							"id": 183,
+							"name": "years",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 16,
+									"character": 27
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "IDUnit",
+								"id": 174
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								186,
+								182,
+								187,
+								190,
+								188,
+								184,
+								192,
+								189,
+								191,
+								185,
+								183
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "duration.ts",
+							"line": 15,
+							"character": 33
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "IFix",
+							"id": 171
+						}
+					]
+				},
+				{
+					"id": 171,
+					"name": "IFix",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {},
+					"children": [
+						{
+							"id": 173,
+							"name": "prefix",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 8,
+									"character": 26
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							}
+						},
+						{
+							"id": 172,
+							"name": "sufix",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 8,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "string"
+									}
+								]
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								173,
+								172
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "duration.ts",
+							"line": 7,
+							"character": 14
+						}
+					],
+					"extendedBy": [
+						{
+							"type": "reference",
+							"name": "IDUnit",
+							"id": 174
+						},
+						{
+							"type": "reference",
+							"name": "IDurationOptions",
+							"id": 181
+						}
+					]
+				},
+				{
+					"id": 193,
+					"name": "DURATION_UNITS",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "duration.ts",
+							"line": 3,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					},
+					"defaultValue": " [\n    'decades', 'years', 'months', 'weeks', 'days',\n    'hours', 'minutes', 'seconds', 'miliseconds']"
+				},
+				{
+					"id": 260,
+					"name": "duration",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 261,
+							"name": "duration",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 262,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "IDurationOptions",
+										"id": 181
+									},
+									"defaultValue": " DEFAULTS"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "duration.ts",
+							"line": 33,
+							"character": 21
+						}
+					]
+				},
+				{
+					"id": 194,
+					"name": "DEFAULTS",
+					"kind": 2097152,
+					"kindString": "Object literal",
+					"flags": {
+						"isConst": true
+					},
+					"children": [
+						{
+							"id": 195,
+							"name": "prefix",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 21,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"defaultValue": "\"\""
+						},
+						{
+							"id": 196,
+							"name": "sufix",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 21,
+									"character": 21
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							},
+							"defaultValue": "\"\""
+						},
+						{
+							"id": 225,
+							"name": "days",
+							"kind": 2097152,
+							"kindString": "Object literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 229,
+									"name": "max",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 26,
+											"character": 54
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "29"
+								},
+								{
+									"id": 228,
+									"name": "min",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 26,
+											"character": 46
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								},
+								{
+									"id": 231,
+									"name": "prefix",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 26,
+											"character": 81
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"\""
+								},
+								{
+									"id": 227,
+									"name": "selected",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 26,
+											"character": 35
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "true"
+									},
+									"defaultValue": "true"
+								},
+								{
+									"id": 230,
+									"name": "sufix",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 26,
+											"character": 65
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"Days\""
+								},
+								{
+									"id": 226,
+									"name": "title",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 26,
+											"character": 17
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"Days\""
+								}
+							],
+							"groups": [
+								{
+									"title": "Variables",
+									"kind": 32,
+									"children": [
+										229,
+										228,
+										231,
+										227,
+										230,
+										226
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 26,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "object"
+							}
+						},
+						{
+							"id": 197,
+							"name": "decades",
+							"kind": 2097152,
+							"kindString": "Object literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 201,
+									"name": "max",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 22,
+											"character": 61
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "9"
+								},
+								{
+									"id": 200,
+									"name": "min",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 22,
+											"character": 53
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								},
+								{
+									"id": 203,
+									"name": "prefix",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 22,
+											"character": 90
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"\""
+								},
+								{
+									"id": 199,
+									"name": "selected",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 22,
+											"character": 41
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "false"
+									},
+									"defaultValue": "false"
+								},
+								{
+									"id": 202,
+									"name": "sufix",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 22,
+											"character": 71
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"Decades\""
+								},
+								{
+									"id": 198,
+									"name": "title",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 22,
+											"character": 20
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"Decades\""
+								}
+							],
+							"groups": [
+								{
+									"title": "Variables",
+									"kind": 32,
+									"children": [
+										201,
+										200,
+										203,
+										199,
+										202,
+										198
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 22,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "object"
+							}
+						},
+						{
+							"id": 232,
+							"name": "hours",
+							"kind": 2097152,
+							"kindString": "Object literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 236,
+									"name": "max",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 27,
+											"character": 57
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "23"
+								},
+								{
+									"id": 235,
+									"name": "min",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 27,
+											"character": 49
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								},
+								{
+									"id": 238,
+									"name": "prefix",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 27,
+											"character": 85
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"\""
+								},
+								{
+									"id": 234,
+									"name": "selected",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 27,
+											"character": 37
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "false"
+									},
+									"defaultValue": "false"
+								},
+								{
+									"id": 237,
+									"name": "sufix",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 27,
+											"character": 68
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"Hours\""
+								},
+								{
+									"id": 233,
+									"name": "title",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 27,
+											"character": 18
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"Hours\""
+								}
+							],
+							"groups": [
+								{
+									"title": "Variables",
+									"kind": 32,
+									"children": [
+										236,
+										235,
+										238,
+										234,
+										237,
+										233
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 27,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "object"
+							}
+						},
+						{
+							"id": 253,
+							"name": "miliseconds",
+							"kind": 2097152,
+							"kindString": "Object literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 257,
+									"name": "max",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 30,
+											"character": 69
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "999"
+								},
+								{
+									"id": 256,
+									"name": "min",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 30,
+											"character": 61
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								},
+								{
+									"id": 259,
+									"name": "prefix",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 30,
+											"character": 104
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"\""
+								},
+								{
+									"id": 255,
+									"name": "selected",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 30,
+											"character": 49
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "false"
+									},
+									"defaultValue": "false"
+								},
+								{
+									"id": 258,
+									"name": "sufix",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 30,
+											"character": 81
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"Miliseconds\""
+								},
+								{
+									"id": 254,
+									"name": "title",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 30,
+											"character": 24
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"Miliseconds\""
+								}
+							],
+							"groups": [
+								{
+									"title": "Variables",
+									"kind": 32,
+									"children": [
+										257,
+										256,
+										259,
+										255,
+										258,
+										254
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 30,
+									"character": 15
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "object"
+							}
+						},
+						{
+							"id": 239,
+							"name": "minutes",
+							"kind": 2097152,
+							"kindString": "Object literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 243,
+									"name": "max",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 28,
+											"character": 61
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "59"
+								},
+								{
+									"id": 242,
+									"name": "min",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 28,
+											"character": 53
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								},
+								{
+									"id": 245,
+									"name": "prefix",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 28,
+											"character": 91
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"\""
+								},
+								{
+									"id": 241,
+									"name": "selected",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 28,
+											"character": 41
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "false"
+									},
+									"defaultValue": "false"
+								},
+								{
+									"id": 244,
+									"name": "sufix",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 28,
+											"character": 72
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"Minutes\""
+								},
+								{
+									"id": 240,
+									"name": "title",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 28,
+											"character": 20
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"Minutes\""
+								}
+							],
+							"groups": [
+								{
+									"title": "Variables",
+									"kind": 32,
+									"children": [
+										243,
+										242,
+										245,
+										241,
+										244,
+										240
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 28,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "object"
+							}
+						},
+						{
+							"id": 211,
+							"name": "months",
+							"kind": 2097152,
+							"kindString": "Object literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 215,
+									"name": "max",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 24,
+											"character": 59
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "11"
+								},
+								{
+									"id": 214,
+									"name": "min",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 24,
+											"character": 51
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								},
+								{
+									"id": 217,
+									"name": "prefix",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 24,
+											"character": 88
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"\""
+								},
+								{
+									"id": 213,
+									"name": "selected",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 24,
+											"character": 39
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "false"
+									},
+									"defaultValue": "false"
+								},
+								{
+									"id": 216,
+									"name": "sufix",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 24,
+											"character": 70
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"Months\""
+								},
+								{
+									"id": 212,
+									"name": "title",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 24,
+											"character": 19
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"Months\""
+								}
+							],
+							"groups": [
+								{
+									"title": "Variables",
+									"kind": 32,
+									"children": [
+										215,
+										214,
+										217,
+										213,
+										216,
+										212
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 24,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "object"
+							}
+						},
+						{
+							"id": 246,
+							"name": "seconds",
+							"kind": 2097152,
+							"kindString": "Object literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 250,
+									"name": "max",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 29,
+											"character": 61
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "59"
+								},
+								{
+									"id": 249,
+									"name": "min",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 29,
+											"character": 53
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								},
+								{
+									"id": 252,
+									"name": "prefix",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 29,
+											"character": 91
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"\""
+								},
+								{
+									"id": 248,
+									"name": "selected",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 29,
+											"character": 41
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "false"
+									},
+									"defaultValue": "false"
+								},
+								{
+									"id": 251,
+									"name": "sufix",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 29,
+											"character": 72
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"Seconds\""
+								},
+								{
+									"id": 247,
+									"name": "title",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 29,
+											"character": 20
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"Seconds\""
+								}
+							],
+							"groups": [
+								{
+									"title": "Variables",
+									"kind": 32,
+									"children": [
+										250,
+										249,
+										252,
+										248,
+										251,
+										247
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 29,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "object"
+							}
+						},
+						{
+							"id": 218,
+							"name": "weeks",
+							"kind": 2097152,
+							"kindString": "Object literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 222,
+									"name": "max",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 25,
+											"character": 57
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "4"
+								},
+								{
+									"id": 221,
+									"name": "min",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 25,
+											"character": 49
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								},
+								{
+									"id": 224,
+									"name": "prefix",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 25,
+											"character": 84
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"\""
+								},
+								{
+									"id": 220,
+									"name": "selected",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 25,
+											"character": 37
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "false"
+									},
+									"defaultValue": "false"
+								},
+								{
+									"id": 223,
+									"name": "sufix",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 25,
+											"character": 67
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"Weeks\""
+								},
+								{
+									"id": 219,
+									"name": "title",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 25,
+											"character": 18
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"Weeks\""
+								}
+							],
+							"groups": [
+								{
+									"title": "Variables",
+									"kind": 32,
+									"children": [
+										222,
+										221,
+										224,
+										220,
+										223,
+										219
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 25,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "object"
+							}
+						},
+						{
+							"id": 204,
+							"name": "years",
+							"kind": 2097152,
+							"kindString": "Object literal",
+							"flags": {},
+							"children": [
+								{
+									"id": 208,
+									"name": "max",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 23,
+											"character": 57
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "1000"
+								},
+								{
+									"id": 207,
+									"name": "min",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 23,
+											"character": 49
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "0"
+								},
+								{
+									"id": 210,
+									"name": "prefix",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 23,
+											"character": 87
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"\""
+								},
+								{
+									"id": 206,
+									"name": "selected",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 23,
+											"character": 37
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "false"
+									},
+									"defaultValue": "false"
+								},
+								{
+									"id": 209,
+									"name": "sufix",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 23,
+											"character": 70
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"Years\""
+								},
+								{
+									"id": 205,
+									"name": "title",
+									"kind": 32,
+									"kindString": "Variable",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "duration.ts",
+											"line": 23,
+											"character": 18
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"Years\""
+								}
+							],
+							"groups": [
+								{
+									"title": "Variables",
+									"kind": 32,
+									"children": [
+										208,
+										207,
+										210,
+										206,
+										209,
+										205
+									]
+								}
+							],
+							"sources": [
+								{
+									"fileName": "duration.ts",
+									"line": 23,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "object"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Variables",
+							"kind": 32,
+							"children": [
+								195,
+								196
+							]
+						},
+						{
+							"title": "Object literals",
+							"kind": 2097152,
+							"children": [
+								225,
+								197,
+								232,
+								253,
+								239,
+								211,
+								246,
+								218,
+								204
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "duration.ts",
+							"line": 20,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "object"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Interfaces",
+					"kind": 256,
+					"children": [
+						174,
+						181,
+						171
+					]
+				},
+				{
+					"title": "Variables",
+					"kind": 32,
+					"children": [
+						193
+					]
+				},
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						260
+					]
+				},
+				{
+					"title": "Object literals",
+					"kind": 2097152,
+					"children": [
+						194
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "duration.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 267,
+			"name": "\"email\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "D:/Workspaces/rs-mock/src/email.ts",
+			"children": [
+				{
+					"id": 268,
+					"name": "IEmailOptions",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 270,
+							"name": "companyDomains",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "email.ts",
+									"line": 25,
+									"character": 18
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "false"
+									},
+									{
+										"type": "intrinsic",
+										"name": "true"
+									}
+								]
+							}
+						},
+						{
+							"id": 273,
+							"name": "fullstop",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "email.ts",
+									"line": 28,
+									"character": 12
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "false"
+									},
+									{
+										"type": "intrinsic",
+										"name": "true"
+									}
+								]
+							}
+						},
+						{
+							"id": 275,
+							"name": "hyphen",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "email.ts",
+									"line": 30,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "false"
+									},
+									{
+										"type": "intrinsic",
+										"name": "true"
+									}
+								]
+							}
+						},
+						{
+							"id": 271,
+							"name": "personName",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "email.ts",
+									"line": 26,
+									"character": 14
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "false"
+									},
+									{
+										"type": "intrinsic",
+										"name": "true"
+									}
+								]
+							}
+						},
+						{
+							"id": 269,
+							"name": "publicDomains",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "email.ts",
+									"line": 24,
+									"character": 17
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "false"
+									},
+									{
+										"type": "intrinsic",
+										"name": "true"
+									}
+								]
+							}
+						},
+						{
+							"id": 272,
+							"name": "randomChars",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "email.ts",
+									"line": 27,
+									"character": 15
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "false"
+									},
+									{
+										"type": "intrinsic",
+										"name": "true"
+									}
+								]
+							}
+						},
+						{
+							"id": 274,
+							"name": "underscore",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "email.ts",
+									"line": 29,
+									"character": 14
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "false"
+									},
+									{
+										"type": "intrinsic",
+										"name": "true"
+									}
+								]
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								270,
+								273,
+								275,
+								271,
+								269,
+								272,
+								274
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "email.ts",
+							"line": 23,
+							"character": 30
+						}
+					]
+				},
+				{
+					"id": 276,
+					"name": "PUBLIC_DOMAINS",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "email.ts",
+							"line": 6,
+							"character": 27
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					},
+					"defaultValue": " [\n    'google', 'gmail', 'yahoo', 'reddif', 'hotmail', 'outlook', 'gmx',\n    'msnmail', 'facebook', 'ymail', 'aolmail', 'fastmail', 'hushmail', 'runbox']"
+				},
+				{
+					"id": 284,
+					"name": "RANDOM_OPTIONS",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "email.ts",
+							"line": 20,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					},
+					"defaultValue": " ['aaaa aa', 'aaa axxxx', 'axaxa xa', 'xxxx xx', 'xxxxxx xxxxx',\n    'aaaaaa aaaaa', 'aaaxxaaa aaa', 'aaa aaaxxaa']"
+				},
+				{
+					"id": 277,
+					"name": "SUB_DOMAINS",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "email.ts",
+							"line": 10,
+							"character": 24
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
+					},
+					"defaultValue": " ['com', 'ca', 'in', 'fa', 'org', 'net', 'es', 'cs', 'eu']"
+				},
+				{
+					"id": 278,
+					"name": "NAME_OPTIONS",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 279,
+							"name": "NAME_OPTIONS",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "reflection",
+								"declaration": {
+									"id": 280,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {},
+									"children": [
+										{
+											"id": 283,
+											"name": "female",
+											"kind": 32,
+											"kindString": "Variable",
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "email.ts",
+													"line": 17,
+													"character": 10
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											},
+											"defaultValue": "true"
+										},
+										{
+											"id": 281,
+											"name": "formats",
+											"kind": 32,
+											"kindString": "Variable",
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "email.ts",
+													"line": 13,
+													"character": 11
+												}
+											],
+											"type": {
+												"type": "array",
+												"elementType": {
+													"type": "intrinsic",
+													"name": "any"
+												}
+											},
+											"defaultValue": " [randomItem([{ value: 'name-int' },\n    { value: 'name-sur' },\n    { value: 'name-int-sur' }])]"
+										},
+										{
+											"id": 282,
+											"name": "male",
+											"kind": 32,
+											"kindString": "Variable",
+											"flags": {},
+											"sources": [
+												{
+													"fileName": "email.ts",
+													"line": 16,
+													"character": 8
+												}
+											],
+											"type": {
+												"type": "intrinsic",
+												"name": "boolean"
+											},
+											"defaultValue": "true"
+										}
+									],
+									"groups": [
+										{
+											"title": "Variables",
+											"kind": 32,
+											"children": [
+												283,
+												281,
+												282
+											]
+										}
+									]
+								}
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "email.ts",
+							"line": 12,
+							"character": 18
+						}
+					]
+				},
+				{
+					"id": 293,
+					"name": "email",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 294,
+							"name": "email",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 295,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "IEmailOptions",
+										"id": 268
+									},
+									"defaultValue": " DEFAULTS"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "email.ts",
+							"line": 51,
+							"character": 18
+						}
+					]
+				},
+				{
+					"id": 296,
+					"name": "replaceSpecial",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 297,
+							"name": "replaceSpecial",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 298,
+									"name": "value",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								},
+								{
+									"id": 299,
+									"name": "replaceWith",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"defaultValue": "\"\""
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "email.ts",
+							"line": 76,
+							"character": 20
+						}
+					]
+				},
+				{
+					"id": 285,
+					"name": "DEFAULTS",
+					"kind": 2097152,
+					"kindString": "Object literal",
+					"flags": {
+						"isConst": true
+					},
+					"children": [
+						{
+							"id": 287,
+							"name": "companyDomains",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "email.ts",
+									"line": 35,
+									"character": 18
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "false"
+							},
+							"defaultValue": "false"
+						},
+						{
+							"id": 289,
+							"name": "fullstop",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "email.ts",
+									"line": 37,
+									"character": 12
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "true"
+							},
+							"defaultValue": "true"
+						},
+						{
+							"id": 288,
+							"name": "hyphen",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "email.ts",
+									"line": 36,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "false"
+							},
+							"defaultValue": "false"
+						},
+						{
+							"id": 290,
+							"name": "personName",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "email.ts",
+									"line": 38,
+									"character": 14
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "true"
+							},
+							"defaultValue": "true"
+						},
+						{
+							"id": 286,
+							"name": "publicDomains",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "email.ts",
+									"line": 34,
+									"character": 17
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "true"
+							},
+							"defaultValue": "true"
+						},
+						{
+							"id": 291,
+							"name": "randomChars",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "email.ts",
+									"line": 39,
+									"character": 15
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "false"
+							},
+							"defaultValue": "false"
+						},
+						{
+							"id": 292,
+							"name": "underscore",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "email.ts",
+									"line": 40,
+									"character": 14
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "false"
+							},
+							"defaultValue": "false"
+						}
+					],
+					"groups": [
+						{
+							"title": "Variables",
+							"kind": 32,
+							"children": [
+								287,
+								289,
+								288,
+								290,
+								286,
+								291,
+								292
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "email.ts",
+							"line": 33,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "object"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Interfaces",
+					"kind": 256,
+					"children": [
+						268
+					]
+				},
+				{
+					"title": "Variables",
+					"kind": 32,
+					"children": [
+						276,
+						284,
+						277
+					]
+				},
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						278,
+						293,
+						296
+					]
+				},
+				{
+					"title": "Object literals",
+					"kind": 2097152,
+					"children": [
+						285
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "email.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 300,
+			"name": "\"gender\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "D:/Workspaces/rs-mock/src/gender.ts",
+			"children": [
+				{
+					"id": 301,
+					"name": "EGenderFormat",
+					"kind": 4,
+					"kindString": "Enumeration",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 304,
+							"name": "FULL",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "gender.ts",
+									"line": 4,
+									"character": 50
+								}
+							],
+							"defaultValue": "\"Male/Female\""
+						},
+						{
+							"id": 302,
+							"name": "SHORT_LOWER",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "gender.ts",
+									"line": 4,
+									"character": 15
+								}
+							],
+							"defaultValue": "\"m/f\""
+						},
+						{
+							"id": 303,
+							"name": "SHORT_UPPER",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "gender.ts",
+									"line": 4,
+									"character": 36
+								}
+							],
+							"defaultValue": "\"M/F\""
+						}
+					],
+					"groups": [
+						{
+							"title": "Enumeration members",
+							"kind": 16,
+							"children": [
+								304,
+								302,
+								303
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "gender.ts",
+							"line": 3,
+							"character": 25
+						}
+					]
+				},
+				{
+					"id": 305,
+					"name": "IGenderOptions",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 306,
+							"name": "format",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "gender.ts",
+									"line": 8,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "EGenderFormat",
+								"id": 301
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								306
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "gender.ts",
+							"line": 7,
+							"character": 31
+						}
+					]
+				},
+				{
+					"id": 309,
+					"name": "gender",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 310,
+							"name": "gender",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 311,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "IGenderOptions",
+										"id": 305
+									},
+									"defaultValue": " DEFAULTS"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "gender.ts",
+							"line": 15,
+							"character": 19
+						}
+					]
+				},
+				{
+					"id": 307,
+					"name": "DEFAULTS",
+					"kind": 2097152,
+					"kindString": "Object literal",
+					"flags": {
+						"isConst": true
+					},
+					"children": [
+						{
+							"id": 308,
+							"name": "format",
+							"kind": 32,
+							"kindString": "Variable",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "gender.ts",
+									"line": 12,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "FULL",
+								"id": 304
+							},
+							"defaultValue": " EGenderFormat.FULL"
+						}
+					],
+					"groups": [
+						{
+							"title": "Variables",
+							"kind": 32,
+							"children": [
+								308
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "gender.ts",
+							"line": 11,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "object"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Enumerations",
+					"kind": 4,
+					"children": [
+						301
+					]
+				},
+				{
+					"title": "Interfaces",
+					"kind": 256,
+					"children": [
+						305
+					]
+				},
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						309
+					]
+				},
+				{
+					"title": "Object literals",
+					"kind": 2097152,
+					"children": [
+						307
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "gender.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 312,
+			"name": "\"geographic\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "D:/Workspaces/rs-mock/src/geographic.ts",
+			"children": [
+				{
+					"id": 326,
+					"name": "ICityOptions",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 328,
+							"name": "countries",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "geographic.ts",
+									"line": 31,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "ICountry",
+									"id": 313
+								}
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "ICountryBasedOptions.countries",
+								"id": 325
+							}
+						},
+						{
+							"id": 327,
+							"name": "states",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "geographic.ts",
+									"line": 35,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "IState",
+									"id": 318
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								328,
+								327
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "geographic.ts",
+							"line": 34,
+							"character": 29
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "ICountryBasedOptions",
+							"id": 324
+						}
+					]
+				},
+				{
+					"id": 313,
+					"name": "ICountry",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 316,
+							"name": "code2",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "geographic.ts",
+									"line": 18,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 317,
+							"name": "code3",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "geographic.ts",
+									"line": 19,
+									"character": 9
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 315,
+							"name": "isdCode",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "geographic.ts",
+									"line": 17,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 314,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "geographic.ts",
+									"line": 16,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								316,
+								317,
+								315,
+								314
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "geographic.ts",
+							"line": 15,
+							"character": 25
+						}
+					]
+				},
+				{
+					"id": 324,
+					"name": "ICountryBasedOptions",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 325,
+							"name": "countries",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "geographic.ts",
+									"line": 31,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "ICountry",
+									"id": 313
+								}
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								325
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "geographic.ts",
+							"line": 30,
+							"character": 37
+						}
+					],
+					"extendedBy": [
+						{
+							"type": "reference",
+							"name": "ICityOptions",
+							"id": 326
+						}
+					]
+				},
+				{
+					"id": 318,
+					"name": "IState",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 321,
+							"name": "country",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "geographic.ts",
+									"line": 25,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 319,
+							"name": "id",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "geographic.ts",
+									"line": 23,
+									"character": 6
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 322,
+							"name": "latitude",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "geographic.ts",
+									"line": 26,
+									"character": 12
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 323,
+							"name": "longitude",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "geographic.ts",
+									"line": 27,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 320,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "geographic.ts",
+									"line": 24,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								321,
+								319,
+								322,
+								323,
+								320
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "geographic.ts",
+							"line": 22,
+							"character": 23
+						}
+					]
+				},
+				{
+					"id": 342,
+					"name": "CITIES_LIST",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "geographic.ts",
+							"line": 9,
+							"character": 24
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reflection",
+							"declaration": {
+								"id": 343,
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"children": [
+									{
+										"id": 347,
+										"name": "country",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "jsons/cities.data.ts",
+												"line": 1,
+												"character": 71
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										},
+										"defaultValue": "\"USA\""
+									},
+									{
+										"id": 344,
+										"name": "id",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "jsons/cities.data.ts",
+												"line": 1,
+												"character": 23
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										},
+										"defaultValue": "100"
+									},
+									{
+										"id": 348,
+										"name": "latitude",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "jsons/cities.data.ts",
+												"line": 1,
+												"character": 87
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										},
+										"defaultValue": "33.18"
+									},
+									{
+										"id": 349,
+										"name": "longitude",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "jsons/cities.data.ts",
+												"line": 1,
+												"character": 104
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										},
+										"defaultValue": " -116.27"
+									},
+									{
+										"id": 345,
+										"name": "name",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "jsons/cities.data.ts",
+												"line": 1,
+												"character": 33
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										},
+										"defaultValue": "\"Borrego Springs\""
+									},
+									{
+										"id": 346,
+										"name": "state",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "jsons/cities.data.ts",
+												"line": 1,
+												"character": 58
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										},
+										"defaultValue": "\"5\""
+									}
+								],
+								"groups": [
+									{
+										"title": "Variables",
+										"kind": 32,
+										"children": [
+											347,
+											344,
+											348,
+											349,
+											345,
+											346
+										]
+									}
+								]
+							}
+						}
+					},
+					"defaultValue": " citiesData"
+				},
+				{
+					"id": 329,
+					"name": "CONUTRIES_LIST",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "geographic.ts",
+							"line": 7,
+							"character": 27
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reflection",
+							"declaration": {
+								"id": 330,
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"children": [
+									{
+										"id": 333,
+										"name": "code2",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "jsons/countries.data.ts",
+												"line": 2,
+												"character": 47
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										},
+										"defaultValue": "\"AF\""
+									},
+									{
+										"id": 334,
+										"name": "code3",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "jsons/countries.data.ts",
+												"line": 2,
+												"character": 60
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										},
+										"defaultValue": "\"AFG\""
+									},
+									{
+										"id": 332,
+										"name": "isdCode",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "jsons/countries.data.ts",
+												"line": 2,
+												"character": 34
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										},
+										"defaultValue": "\"93\""
+									},
+									{
+										"id": 331,
+										"name": "name",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "jsons/countries.data.ts",
+												"line": 2,
+												"character": 10
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										},
+										"defaultValue": "\"Afghanistan\""
+									}
+								],
+								"groups": [
+									{
+										"title": "Variables",
+										"kind": 32,
+										"children": [
+											333,
+											334,
+											332,
+											331
+										]
+									}
+								]
+							}
+						}
+					},
+					"defaultValue": " countriesData"
+				},
+				{
+					"id": 335,
+					"name": "STATES_LIST",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "geographic.ts",
+							"line": 8,
+							"character": 24
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reflection",
+							"declaration": {
+								"id": 336,
+								"name": "__type",
+								"kind": 65536,
+								"kindString": "Type literal",
+								"flags": {},
+								"children": [
+									{
+										"id": 339,
+										"name": "country",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "jsons/states.data.ts",
+												"line": 1,
+												"character": 52
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										},
+										"defaultValue": "\"USA\""
+									},
+									{
+										"id": 337,
+										"name": "id",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "jsons/states.data.ts",
+												"line": 1,
+												"character": 20
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										},
+										"defaultValue": "5"
+									},
+									{
+										"id": 340,
+										"name": "latitude",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "jsons/states.data.ts",
+												"line": 1,
+												"character": 69
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										},
+										"defaultValue": "37.42"
+									},
+									{
+										"id": 341,
+										"name": "longitude",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "jsons/states.data.ts",
+												"line": 1,
+												"character": 87
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "number"
+										},
+										"defaultValue": " -122.06"
+									},
+									{
+										"id": 338,
+										"name": "name",
+										"kind": 32,
+										"kindString": "Variable",
+										"flags": {},
+										"sources": [
+											{
+												"fileName": "jsons/states.data.ts",
+												"line": 1,
+												"character": 29
+											}
+										],
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										},
+										"defaultValue": "\"California\""
+									}
+								],
+								"groups": [
+									{
+										"title": "Variables",
+										"kind": 32,
+										"children": [
+											339,
+											337,
+											340,
+											341,
+											338
+										]
+									}
+								]
+							}
+						}
+					},
+					"defaultValue": " statesData"
+				},
+				{
+					"id": 358,
+					"name": "city",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 359,
+							"name": "city",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 360,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "ICityOptions",
+										"id": 326
+									},
+									"defaultValue": " {}"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "geographic.ts",
+							"line": 48,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 353,
+					"name": "country",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 354,
+							"name": "country",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "geographic.ts",
+							"line": 38,
+							"character": 20
+						}
+					]
+				},
+				{
+					"id": 350,
+					"name": "countryNames",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 351,
+							"name": "countryNames",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 352,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "any"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "geographic.ts",
+							"line": 11,
+							"character": 18
+						}
+					]
+				},
+				{
+					"id": 361,
+					"name": "latLong",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 362,
+							"name": "latLong",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 363,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "ICountryBasedOptions",
+										"id": 324
+									},
+									"defaultValue": " {}"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "geographic.ts",
+							"line": 59,
+							"character": 20
+						}
+					]
+				},
+				{
+					"id": 355,
+					"name": "state",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 356,
+							"name": "state",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 357,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "ICountryBasedOptions",
+										"id": 324
+									},
+									"defaultValue": " {}"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "geographic.ts",
+							"line": 42,
+							"character": 18
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Interfaces",
+					"kind": 256,
+					"children": [
+						326,
+						313,
+						324,
+						318
+					]
+				},
+				{
+					"title": "Variables",
+					"kind": 32,
+					"children": [
+						342,
+						329,
+						335
+					]
+				},
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						358,
+						353,
+						350,
+						361,
+						355
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "geographic.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 408,
+			"name": "\"index\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "D:/Workspaces/rs-mock/src/index.ts",
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 364,
+			"name": "\"password\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "D:/Workspaces/rs-mock/src/password.ts",
+			"children": [
+				{
+					"id": 365,
+					"name": "TYPES",
+					"kind": 4,
+					"kindString": "Enumeration",
+					"flags": {},
+					"children": [
+						{
+							"id": 366,
+							"name": "ALPHA",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "password.ts",
+									"line": 4,
+									"character": 18
+								}
+							]
+						},
+						{
+							"id": 367,
+							"name": "DIGIT",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "password.ts",
+									"line": 4,
+									"character": 25
+								}
+							]
+						},
+						{
+							"id": 368,
+							"name": "SPECIAL",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "password.ts",
+									"line": 4,
+									"character": 34
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Enumeration members",
+							"kind": 16,
+							"children": [
+								366,
+								367,
+								368
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "password.ts",
+							"line": 4,
+							"character": 10
+						}
+					]
+				},
+				{
+					"id": 369,
+					"name": "SPECIAL_CHARS",
+					"kind": 32,
+					"kindString": "Variable",
+					"flags": {
+						"isConst": true
+					},
+					"sources": [
+						{
+							"fileName": "password.ts",
+							"line": 5,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "stringLiteral",
+						"value": "`-=[]\\;',./~!@#$%^&*()_+{}|:\"<>?"
+					},
+					"defaultValue": "\"`-=[]\\;',./~!@#$%^&*()_+{}|:\"<>?\""
+				},
+				{
+					"id": 370,
+					"name": "password",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 371,
+							"name": "password",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 372,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "password.ts",
+							"line": 7,
+							"character": 21
+						}
+					]
+				},
+				{
+					"id": 373,
+					"name": "randomAny",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 374,
+							"name": "randomAny",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 375,
+									"name": "list",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "any"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "password.ts",
+							"line": 48,
+							"character": 15
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Enumerations",
+					"kind": 4,
+					"children": [
+						365
+					]
+				},
+				{
+					"title": "Variables",
+					"kind": 32,
+					"children": [
+						369
+					]
+				},
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						370,
+						373
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "password.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 263,
+			"name": "\"person-name\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "D:/Workspaces/rs-mock/src/person-name.ts",
+			"children": [
+				{
+					"id": 264,
+					"name": "personName",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 265,
+							"name": "personName",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 266,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "person-name.ts",
+							"line": 7,
+							"character": 23
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						264
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "person-name.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 376,
+			"name": "\"phone-no\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "D:/Workspaces/rs-mock/src/phone-no.ts",
+			"children": [
+				{
+					"id": 380,
+					"name": "EPhoneFormats",
+					"kind": 4,
+					"kindString": "Enumeration",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 382,
+							"name": "GROUP_OF_2",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "phone-no.ts",
+									"line": 10,
+									"character": 21
+								}
+							],
+							"defaultValue": "2"
+						},
+						{
+							"id": 383,
+							"name": "GROUP_OF_3",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "phone-no.ts",
+									"line": 10,
+									"character": 37
+								}
+							],
+							"defaultValue": "3"
+						},
+						{
+							"id": 384,
+							"name": "GROUP_OF_4",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "phone-no.ts",
+									"line": 10,
+									"character": 53
+								}
+							],
+							"defaultValue": "4"
+						},
+						{
+							"id": 385,
+							"name": "GROUP_OF_5",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "phone-no.ts",
+									"line": 10,
+									"character": 69
+								}
+							],
+							"defaultValue": "5"
+						},
+						{
+							"id": 381,
+							"name": "PLAIN",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "phone-no.ts",
+									"line": 10,
+									"character": 9
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Enumeration members",
+							"kind": 16,
+							"children": [
+								382,
+								383,
+								384,
+								385,
+								381
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "phone-no.ts",
+							"line": 9,
+							"character": 25
+						}
+					]
+				},
+				{
+					"id": 377,
+					"name": "EPhoneLength",
+					"kind": 4,
+					"kindString": "Enumeration",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 379,
+							"name": "MAX",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "phone-no.ts",
+									"line": 6,
+									"character": 16
+								}
+							],
+							"defaultValue": "13"
+						},
+						{
+							"id": 378,
+							"name": "MIN",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "phone-no.ts",
+									"line": 6,
+									"character": 7
+								}
+							],
+							"defaultValue": "8"
+						}
+					],
+					"groups": [
+						{
+							"title": "Enumeration members",
+							"kind": 16,
+							"children": [
+								379,
+								378
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "phone-no.ts",
+							"line": 5,
+							"character": 24
+						}
+					]
+				},
+				{
+					"id": 386,
+					"name": "EPhoneSeparator",
+					"kind": 4,
+					"kindString": "Enumeration",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 388,
+							"name": "FULLSTOP",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "phone-no.ts",
+									"line": 14,
+									"character": 26
+								}
+							],
+							"defaultValue": "\".\""
+						},
+						{
+							"id": 387,
+							"name": "HYPHEN",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "phone-no.ts",
+									"line": 14,
+									"character": 10
+								}
+							],
+							"defaultValue": "\"-\""
+						},
+						{
+							"id": 390,
+							"name": "NON",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "phone-no.ts",
+									"line": 14,
+									"character": 50
+								}
+							],
+							"defaultValue": "\"\""
+						},
+						{
+							"id": 389,
+							"name": "SPACE",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "phone-no.ts",
+									"line": 14,
+									"character": 39
+								}
+							],
+							"defaultValue": "\" \""
+						}
+					],
+					"groups": [
+						{
+							"title": "Enumeration members",
+							"kind": 16,
+							"children": [
+								388,
+								387,
+								390,
+								389
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "phone-no.ts",
+							"line": 13,
+							"character": 27
+						}
+					]
+				},
+				{
+					"id": 391,
+					"name": "EPhoneStartsWith",
+					"kind": 4,
+					"kindString": "Enumeration",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 394,
+							"name": "ISD",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "phone-no.ts",
+									"line": 18,
+									"character": 33
+								}
+							],
+							"defaultValue": "\"\""
+						},
+						{
+							"id": 392,
+							"name": "PLUS",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "phone-no.ts",
+									"line": 18,
+									"character": 8
+								}
+							],
+							"defaultValue": "\"+\""
+						},
+						{
+							"id": 393,
+							"name": "ZEROS",
+							"kind": 16,
+							"kindString": "Enumeration member",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "phone-no.ts",
+									"line": 18,
+									"character": 21
+								}
+							],
+							"defaultValue": "\"00\""
+						}
+					],
+					"groups": [
+						{
+							"title": "Enumeration members",
+							"kind": 16,
+							"children": [
+								394,
+								392,
+								393
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "phone-no.ts",
+							"line": 17,
+							"character": 28
+						}
+					]
+				},
+				{
+					"id": 395,
+					"name": "IPhoneOptions",
+					"kind": 256,
+					"kindString": "Interface",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 396,
+							"name": "countries",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "phone-no.ts",
+									"line": 22,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "ICountry",
+									"id": 313
+								}
+							}
+						},
+						{
+							"id": 397,
+							"name": "format",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "phone-no.ts",
+									"line": 23,
+									"character": 10
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "EPhoneFormats",
+								"id": 380
+							}
+						},
+						{
+							"id": 398,
+							"name": "isdInBraces",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "phone-no.ts",
+									"line": 24,
+									"character": 15
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "false"
+									},
+									{
+										"type": "intrinsic",
+										"name": "true"
+									}
+								]
+							}
+						},
+						{
+							"id": 399,
+							"name": "separateISD",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "phone-no.ts",
+									"line": 25,
+									"character": 15
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "false"
+									},
+									{
+										"type": "intrinsic",
+										"name": "true"
+									}
+								]
+							}
+						},
+						{
+							"id": 401,
+							"name": "separator",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "phone-no.ts",
+									"line": 27,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "EPhoneSeparator",
+								"id": 386
+							}
+						},
+						{
+							"id": 402,
+							"name": "startsWith",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "phone-no.ts",
+									"line": 28,
+									"character": 14
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "EPhoneStartsWith",
+								"id": 391
+							}
+						},
+						{
+							"id": 400,
+							"name": "withISD",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "phone-no.ts",
+									"line": 26,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "intrinsic",
+										"name": "false"
+									},
+									{
+										"type": "intrinsic",
+										"name": "true"
+									}
+								]
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								396,
+								397,
+								398,
+								399,
+								401,
+								402,
+								400
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "phone-no.ts",
+							"line": 21,
+							"character": 30
+						}
+					]
+				},
+				{
+					"id": 403,
+					"name": "DEFAULTS",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 404,
+							"name": "DEFAULTS",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "TRequired",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"name": "IPhoneOptions",
+										"id": 395
+									}
+								]
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "phone-no.ts",
+							"line": 31,
+							"character": 14
+						}
+					]
+				},
+				{
+					"id": 405,
+					"name": "phoneNo",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"comment": {
+						"shortText": "This method generates the random Phone number based on provided\nconfigurations.",
+						"returns": "string\n"
+					},
+					"signatures": [
+						{
+							"id": 406,
+							"name": "phoneNo",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "This method generates the random Phone number based on provided\nconfigurations.",
+								"returns": "string\n"
+							},
+							"parameters": [
+								{
+									"id": 407,
+									"name": "options",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "IPhoneOptions",
+										"id": 395
+									},
+									"defaultValue": " DEFAULTS()"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "phone-no.ts",
+							"line": 47,
+							"character": 20
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Enumerations",
+					"kind": 4,
+					"children": [
+						380,
+						377,
+						386,
+						391
+					]
+				},
+				{
+					"title": "Interfaces",
+					"kind": 256,
+					"children": [
+						395
+					]
+				},
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						403,
+						405
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "phone-no.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "\"random\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "D:/Workspaces/rs-mock/src/random.ts",
+			"children": [
+				{
+					"id": 4,
+					"name": "randomAlphaNum",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 5,
+							"name": "randomAlphaNum",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 6,
+									"name": "format",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "random.ts",
+							"line": 8,
+							"character": 27
+						}
+					]
+				},
+				{
+					"id": 2,
+					"name": "randomAlphabet",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 3,
+							"name": "randomAlphabet",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "random.ts",
+							"line": 4,
+							"character": 27
+						}
+					]
+				},
+				{
+					"id": 11,
+					"name": "randomDate",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 12,
+							"name": "randomDate",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 13,
+									"name": "start",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								},
+								{
+									"id": 14,
+									"name": "end",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Date"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "random.ts",
+							"line": 38,
+							"character": 23
+						}
+					]
+				},
+				{
+					"id": 7,
+					"name": "randomWords",
+					"kind": 64,
+					"kindString": "Function",
+					"flags": {
+						"isExported": true,
+						"isConst": true
+					},
+					"signatures": [
+						{
+							"id": 8,
+							"name": "randomWords",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 9,
+									"name": "min",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "1"
+								},
+								{
+									"id": 10,
+									"name": "max",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"defaultValue": "1"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "random.ts",
+							"line": 22,
+							"character": 24
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"kind": 64,
+					"children": [
+						4,
+						2,
+						11,
+						7
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "random.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "External modules",
+			"kind": 1,
+			"children": [
+				15,
+				35,
+				43,
+				54,
+				96,
+				123,
+				170,
+				267,
+				300,
+				312,
+				408,
+				364,
+				263,
+				376,
+				1
+			]
+		}
+	]
+}

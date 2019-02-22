@@ -1,0 +1,8 @@
+{
+    "out": "docs",
+    "mode": "modules",
+    "excludePrivate": true,
+    "target": "ES6",
+    "exclude": "src/**/*+(.data|index|config|formats|common|text).*",
+    "name": "rs-mock - Documentation"
+}
