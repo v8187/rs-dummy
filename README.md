@@ -1,5 +1,5 @@
 # rs-mock
-[Draft version] This tool provides sample data to test your application written in JavaScript and Typescript. It is still in Development mode.
+This tool provides mock(Sample) data to test your application written in JavaScript and Typescript.
 
 
 ## Install
@@ -32,6 +32,9 @@ const { gender } from '@v8187/rs-utils';
 gender(); // Male
 ```
 
+## API
+
+[Full API](https://v8187.github.io/rs-mock)
 
 ## License
 

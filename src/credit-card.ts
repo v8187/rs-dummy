@@ -121,7 +121,7 @@ interface IMinMax {
 };
 
 export interface ICCardFormat {
-    iins: (IMinMax | number)[]; range: IMinMax;
+    iins: Array<IMinMax | number>; range: IMinMax;
 };
 
 export interface ICCardType {
