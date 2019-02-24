@@ -10,12 +10,18 @@ export interface ICompanyOptions {
     min?: number; max?: number;
 };
 
-const DEFAULTS: TRequired<ICompanyOptions> = {
+export const companyDefaults = (): TRequired<ICompanyOptions> => ({
     min: 2, max: 5
-};
+});
 
-export const company = (options: ICompanyOptions = DEFAULTS): string => {
-    const temp = deepMergeObject({}, DEFAULTS, options);
+/**
+ * Generates the random Company name based on given parameters
+ * 
+ * @param options { ICompanyOptions }
+ * @returns { string }
+ */
+export const company = (options: ICompanyOptions = companyDefaults()): string => {
+    const temp = deepMergeObject(companyDefaults(), options);
 
     return `${toTitleCase(randomWords(temp.min, temp.max))} ${randomItem(COMPANY_SUFIXES)}`;
 };

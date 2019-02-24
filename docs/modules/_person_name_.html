@@ -71,9 +71,22 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
+							<h3>Enumerations</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-enum tsd-parent-kind-external-module"><a href="../enums/_person_name_.epersonnameformats.html" class="tsd-kind-icon">EPerson<wbr>Name<wbr>Formats</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_person_name_.ipersonnameoptions.html" class="tsd-kind-icon">IPerson<wbr>Name<wbr>Options</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_person_name_.html#personname" class="tsd-kind-icon">person<wbr>Name</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_person_name_.html#personnamedefaults" class="tsd-kind-icon">person<wbr>Name<wbr>Defaults</a></li>
 							</ul>
 						</section>
 					</div>
@@ -85,22 +98,44 @@
 					<a name="personname" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> person<wbr>Name</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">person<wbr>Name<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">person<wbr>Name<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_person_name_.ipersonnameoptions.html" class="tsd-signature-type">IPersonNameOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/revision/src/person-name.ts#L7">person-name.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/aa9c745/src/person-name.ts#L31">person-name.ts:31</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Generates random Person Name based on given parameters</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>options: <span class="tsd-signature-type">any</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <a href="../interfaces/_person_name_.ipersonnameoptions.html" class="tsd-signature-type">IPersonNameOptions</a><span class="tsd-signature-symbol"> =&nbsp;personNameDefaults()</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="personnamedefaults" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> person<wbr>Name<wbr>Defaults</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">person<wbr>Name<wbr>Defaults<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TRequired</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_person_name_.ipersonnameoptions.html" class="tsd-signature-type">IPersonNameOptions</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/aa9c745/src/person-name.ts#L19">person-name.ts:19</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TRequired</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_person_name_.ipersonnameoptions.html" class="tsd-signature-type">IPersonNameOptions</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -158,8 +193,17 @@
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="../enums/_person_name_.epersonnameformats.html" class="tsd-kind-icon">EPerson<wbr>Name<wbr>Formats</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="../interfaces/_person_name_.ipersonnameoptions.html" class="tsd-kind-icon">IPerson<wbr>Name<wbr>Options</a>
+					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_person_name_.html#personname" class="tsd-kind-icon">person<wbr>Name</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_person_name_.html#personnamedefaults" class="tsd-kind-icon">person<wbr>Name<wbr>Defaults</a>
 					</li>
 				</ul>
 			</nav>

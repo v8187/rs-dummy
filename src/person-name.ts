@@ -1,38 +1,61 @@
-import { randomItem, toTitleCase } from '@v8187/rs-utils';
+import { randomItem, toTitleCase, deepMergeObject } from '@v8187/rs-utils';
 import { randomAlphabet } from './random';
 import maleNames from './jsons/person-male-names.data';
 import femaleNames from './jsons/person-female-names.data';
 import surNames from './jsons/person-surnames.data';
 
-export const personName = (options) => {
+export enum EPersonNameFormats {
+    NAME, SURNAME, NAME_SURNAME, SURNAME_NAME,
+    NAME_INITIAL, NAME_INITIAL_SURNAME,
+    NAME_SURNAME_INITIAL, SURNAME_NAME_INITIAL
+};
 
-    const format = options.formats[0];
+export interface IPersonNameOptions {
+    format: EPersonNameFormats;
+    male: boolean;
+    female: boolean;
+};
 
-    const namesList: string[] = [];
-    if (options.male) {
+export const personNameDefaults = (): TRequired<IPersonNameOptions> => ({
+    format: EPersonNameFormats.NAME_SURNAME,
+    male: true,
+    female: true
+});
+
+/**
+ * Generates random Person Name based on given parameters
+ * 
+ * @param options { IPersonNameOptions }
+ * @returns { string }
+ */
+export const personName = (options: IPersonNameOptions = personNameDefaults()): string => {
+
+    const namesList: string[] = [],
+        temp: IPersonNameOptions = deepMergeObject(personNameDefaults(), options);
+
+    if (temp.male) {
         namesList.push(...maleNames);
     }
-    if (options.female) {
+    if (temp.female) {
         namesList.push(...femaleNames);
     }
 
-    switch (format.value) {
-        case 'name':
-        default:
+    switch (temp.format) {
+        case EPersonNameFormats.NAME:
             return toTitleCase(randomItem(namesList));
-        case 'sur':
-            return toTitleCase(randomItem(surNames));
-        case 'sur-name':
-            return toTitleCase(`${randomItem(surNames)}, ${randomItem(namesList)}`);
-        case 'name-int':
+        case EPersonNameFormats.NAME_INITIAL:
             return toTitleCase(`${randomItem(namesList)} ${randomAlphabet()}.`);
-        case 'name-sur':
-            return toTitleCase(`${randomItem(namesList)} ${randomItem(surNames)}`);
-        case 'name-int-sur':
+        case EPersonNameFormats.NAME_INITIAL_SURNAME:
             return toTitleCase(`${randomItem(namesList)} ${randomAlphabet()}. ${randomItem(surNames)}`);
-        case 'name-sur-int':
+        case EPersonNameFormats.NAME_SURNAME:
+            return toTitleCase(`${randomItem(namesList)} ${randomItem(surNames)}`);
+        case EPersonNameFormats.NAME_SURNAME_INITIAL:
             return toTitleCase(`${randomItem(namesList)} ${randomItem(surNames)} ${randomAlphabet()}.`);
-        case 'sur-name-int':
+        case EPersonNameFormats.SURNAME:
+            return toTitleCase(randomItem(surNames));
+        case EPersonNameFormats.SURNAME_NAME:
+            return toTitleCase(`${randomItem(surNames)}, ${randomItem(namesList)}`);
+        case EPersonNameFormats.SURNAME_NAME_INITIAL:
             return toTitleCase(`${randomItem(surNames)}, ${randomItem(namesList)} ${randomAlphabet()}.`);
     };
 };

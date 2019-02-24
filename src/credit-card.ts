@@ -132,13 +132,19 @@ export interface ICCardOptions {
     cardTypes?: ICCardType[]; separator?: string;
 };
 
-const DEFAULTS: TRequired<ICCardOptions> = {
+export const creditCardDefaults = (): TRequired<ICCardOptions> => ({
     cardTypes: [CCARD_TYPES[0]], separator: ' '
-};
+});
 
-export const creditCard = (options: ICCardOptions = DEFAULTS): string => {
+/**
+ * Generates the random Credit Card number based on given parameters
+ * 
+ * @param options { ICCardOptions }
+ * @returns string
+ */
+export const creditCard = (options: ICCardOptions = creditCardDefaults()): string => {
 
-    const { cardTypes, separator } = deepMergeObject({}, DEFAULTS, options);
+    const { cardTypes, separator } = deepMergeObject(creditCardDefaults(), options);
     const card = cardTypes[randomNum(0, cardTypes.length - 1)];
 
     const { formats } = card;

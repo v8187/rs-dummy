@@ -28,7 +28,7 @@ export interface IPhoneOptions {
     startsWith?: EPhoneStartsWith;
 };
 
-const DEFAULTS = (): TRequired<IPhoneOptions> => ({
+export const phoneNoDefaults = (): TRequired<IPhoneOptions> => ({
     countries: CONUTRIES_LIST.filter((con: ICountry) => con.code3 === 'IND'),
     format: EPhoneFormats.PLAIN,
     isdInBraces: false,
@@ -39,17 +39,17 @@ const DEFAULTS = (): TRequired<IPhoneOptions> => ({
 });
 
 /**
- * This method generates the random Phone number based on provided
- * configurations.
- * @param options: IPhoneOptions
- * @returns string
+ * Generates the random Phone number based on given parameters
+ * 
+ * @param options { IPhoneOptions }
+ * @returns { string }
  */
-export const phoneNo = (options: IPhoneOptions = DEFAULTS()): string => {
+export const phoneNo = (options: IPhoneOptions = phoneNoDefaults()): string => {
 
     const {
         countries, format, isdInBraces, separateISD,
         withISD, separator, startsWith
-    } = deepMergeObject(DEFAULTS(), options);
+    } = deepMergeObject(phoneNoDefaults(), options);
 
     let isd = withISD ? randomItem(countries).isdCode : '';
 

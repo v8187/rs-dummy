@@ -1,15 +1,16 @@
-import { randomAlphaNum } from './random';
+import { randomNum } from '@v8187/rs-utils';
+import { randomAlphabet } from './random';
 
 export interface IAlphanumericOptions {
     format?: string;
 };
 
-const DEFAULTS: TRequired<IAlphanumericOptions> = {
+export const alphanumericDefaults: TRequired<IAlphanumericOptions> = {
     format: ''
 };
 
 /**
- * This method generates the random Alphanumeric string based on
+ * Generates the random Alphanumeric string based on
  * given string containing "x", "a" and "A". 
  * - "x" will be replaced by digits
  * - "a" will be replaced by lowercase alphabets
@@ -18,8 +19,18 @@ const DEFAULTS: TRequired<IAlphanumericOptions> = {
  * - Empty string will be returned if no options are provided
  * 
  * @param options { IAlphanumericOptions }
- * @returns string
+ * @returns { string }
  */
-export const alphanumeric = (options: IAlphanumericOptions = DEFAULTS): string => {
-    return randomAlphaNum(options.format || DEFAULTS.format);
+export const alphanumeric = (options: IAlphanumericOptions = alphanumericDefaults): string => {
+    return (options.format || alphanumericDefaults.format).replace(/./g, char => {
+        if (char === 'a') {
+            return randomAlphabet();
+        } else if (char === 'A') {
+            return randomAlphabet().toUpperCase();
+        } else if (char === 'x') {
+            return `${randomNum(0, 9)}`;
+        } else {
+            return char;
+        }
+    });
 };

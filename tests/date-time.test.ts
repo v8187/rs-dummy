@@ -1,5 +1,5 @@
 import { clrExpected, clrValue } from './helpers';
-import { dateTime, DATE_SEQUENCE } from "../src/date-time";
+import { dateTime, EDateSequence, EVariant, EDateSeparator, ETimeSeparator } from "../src/date-time";
 
 describe('[DateTime]', () => {
 
@@ -18,67 +18,67 @@ describe('[DateTime]', () => {
         expect(dateTime3).toMatch(/^\d{4}(-\d{2}){2}T\d{2}(:\d{2}){2}\.\d{3}Z$/);
     });
 
-    const dateTime40 = dateTime({ variant: [{ value: 'short' }] });
+    const dateTime40 = dateTime({ variant: EVariant.SHORT });
     test(`Should return ${clrExpected('MM/DD/YY')} format [ ${clrValue(dateTime40)} ]`, () => {
         expect(dateTime40).toMatch(/^\d{2}(\/\d{2}){2}$/);
     });
 
-    const dateTime41 = dateTime({ variant: [{ value: 'short' }], dateSequence: [{ value: DATE_SEQUENCE.DMY }], dateSeparator: [{ value: '.' }] });
+    const dateTime41 = dateTime({ variant: EVariant.SHORT, dateSequence: EDateSequence.DMY, dateSeparator: EDateSeparator.FULLSTOP });
     test(`Should return ${clrExpected('DD.MM.YY')} format [ ${clrValue(dateTime41)} ]`, () => {
         expect(dateTime41).toMatch(/^\d{2}(\.\d{2}){2}$/);
     });
 
-    const dateTime42 = dateTime({ variant: [{ value: 'short' }], timeSeparator: [{ value: '.' }], onlyTime: true, hasTime: true });
+    const dateTime42 = dateTime({ variant: EVariant.SHORT, timeSeparator: ETimeSeparator.FULLSTOP, onlyTime: true, hasTime: true });
     test(`Should return ${clrExpected('HH.MM AM')} format [ ${clrValue(dateTime42)} ]`, () => {
         expect(dateTime42).toMatch(/^\d{2}\.\d{2} (A|P)M$/);
     });
 
-    const dateTime43 = dateTime({ variant: [{ value: 'short' }], hasTime: true, dateSequence: [{ value: DATE_SEQUENCE.YMD }], dateSeparator: [{ value: '-' }] });
+    const dateTime43 = dateTime({ variant: EVariant.SHORT, hasTime: true, dateSequence: EDateSequence.YMD, dateSeparator: EDateSeparator.HYPHEN });
     test(`Should return ${clrExpected('YY-MM-MM, HH:MM AM')} format [ ${clrValue(dateTime43)} ]`, () => {
         expect(dateTime43).toMatch(/^\d{2}(\-\d{2}){2}, \d{2}:\d{2} (A|P)M$/);
     });
 
-    const dateTime5 = dateTime({ variant: [{ value: 'medium' }] });
+    const dateTime5 = dateTime({ variant: EVariant.MEDIUM });
     test(`Should return ${clrExpected('MMM, DD, YYYY')} format [ ${clrValue(dateTime5)} ]`, () => {
         expect(dateTime5).toMatch(/^[A-Z][a-z]{2} \d{2}, \d{4}$/);
     });
 
-    const dateTime51 = dateTime({ variant: [{ value: 'medium' }], hasTime: true });
+    const dateTime51 = dateTime({ variant: EVariant.MEDIUM, hasTime: true });
     test(`Should return ${clrExpected('MMM, DD, YYYY, HH:MM:SS AM')} format [ ${clrValue(dateTime51)} ]`, () => {
         expect(dateTime51).toMatch(/^[A-Z][a-z]{2} \d{2}, \d{4}, \d{2}(:\d{2}){2} (A|P)M$/);
     });
 
-    const dateTime52 = dateTime({ variant: [{ value: 'medium' }], hasTime: true, onlyTime: true });
+    const dateTime52 = dateTime({ variant: EVariant.MEDIUM, hasTime: true, onlyTime: true });
     test(`Should return ${clrExpected('HH:MM:SS AM')} format [ ${clrValue(dateTime52)} ]`, () => {
         expect(dateTime52).toMatch(/^\d{2}(:\d{2}){2} (A|P)M$/);
     });
 
-    const dateTime6 = dateTime({ variant: [{ value: 'long' }] });
+    const dateTime6 = dateTime({ variant: EVariant.LONG });
     test(`Should return ${clrExpected('MMMM, DD, YYYY')} format [ ${clrValue(dateTime6)} ]`, () => {
         expect(dateTime6).toMatch(/^[A-Z][a-z]{2,} \d{2}, \d{4}$/);
     });
 
-    const dateTime61 = dateTime({ variant: [{ value: 'long' }], hasTime: true });
+    const dateTime61 = dateTime({ variant: EVariant.LONG, hasTime: true });
     test(`Should return ${clrExpected('MMMM, DD, YYYY, HH:MM:SS AM')} format [ ${clrValue(dateTime61)} ]`, () => {
         expect(dateTime61).toMatch(/^[A-Z][a-z]{2,} \d{2}, \d{4}, \d{2}(:\d{2}){2} (A|P)M$/);
     });
 
-    const dateTime62 = dateTime({ variant: [{ value: 'long' }], hasTime: true, onlyTime: true });
+    const dateTime62 = dateTime({ variant: EVariant.LONG, hasTime: true, onlyTime: true });
     test(`Should return ${clrExpected('HH:MM:SS AM')} format [ ${clrValue(dateTime62)} ]`, () => {
         expect(dateTime62).toMatch(/^\d{2}(:\d{2}){2} (A|P)M$/);
     });
 
-    const dateTime7 = dateTime({ variant: [{ value: 'full' }] });
+    const dateTime7 = dateTime({ variant: EVariant.FULL });
     test(`Should return ${clrExpected('dddd, MMMM, DD, YYYY')} format [ ${clrValue(dateTime7)} ]`, () => {
         expect(dateTime7).toMatch(/^[A-Z][a-z]{2,}, [A-Z][a-z]{2,} \d{2}, \d{4}$/);
     });
 
-    const dateTime71 = dateTime({ variant: [{ value: 'full' }], hasTime: true });
+    const dateTime71 = dateTime({ variant: EVariant.FULL, hasTime: true });
     test(`Should return ${clrExpected('dddd, MMMM, DD, YYYY, HH:MM:SS AM Timezone')} format [ ${clrValue(dateTime71)} ]`, () => {
         expect(dateTime71).toMatch(/^[A-Z][a-z]{2,}, [A-Z][a-z]{2,} \d{2}, \d{4}, \d{2}(:\d{2}){2} (A|P)M [A-Z]{3}\+\d{2}:\d{2}$/);
     });
 
-    const dateTime72 = dateTime({ variant: [{ value: 'full' }], hasTime: true, onlyTime: true });
+    const dateTime72 = dateTime({ variant: EVariant.FULL, hasTime: true, onlyTime: true });
     test(`Should return ${clrExpected('HH:MM:SS AM Timezone')} format [ ${clrValue(dateTime72)} ]`, () => {
         expect(dateTime72).toMatch(/^\d{2}(:\d{2}){2} (A|P)M [A-Z]{3}\+\d{2}:\d{2}$/);
     });

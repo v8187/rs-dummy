@@ -18,6 +18,11 @@ const
     , house = () => `${randomItem(['', 'H.', 'House', 'Ap.', 'Apartment', 'F.', 'Flat', 'Kothi', ''])} ${ranNumber()},`
     ;
 
+/**
+ * Generates the random Address
+ * 
+ * @returns { string }
+ */
 export const address = (): string => {
     const addType = randomNum(1, 7);
     let address = '';

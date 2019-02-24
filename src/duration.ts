@@ -1,10 +1,10 @@
 import { randomNum, deepMergeObject } from '@v8187/rs-utils';
 
-const DURATION_UNITS = [
+export const DURATION_UNITS = [
     'decades', 'years', 'months', 'weeks', 'days',
     'hours', 'minutes', 'seconds', 'miliseconds'];
 
-interface IFix {
+export interface IFix {
     sufix?: string; prefix?: string;
 };
 
@@ -17,7 +17,7 @@ export interface IDurationOptions extends IFix {
     hours?: IDUnit; minutes?: IDUnit; seconds?: IDUnit; miliseconds?: IDUnit;
 };
 
-const DEFAULTS: TRequired<IDurationOptions> = {
+export const durationDefaults = (): TRequired<IDurationOptions> => ({
     prefix: '', sufix: '',
     decades: { title: 'Decades', selected: false, min: 0, max: 9, sufix: 'Decades', prefix: '' },
     years: { title: 'Years', selected: false, min: 0, max: 1000, sufix: 'Years', prefix: '' },
@@ -28,11 +28,17 @@ const DEFAULTS: TRequired<IDurationOptions> = {
     minutes: { title: 'Minutes', selected: false, min: 0, max: 59, sufix: 'Minutes', prefix: '' },
     seconds: { title: 'Seconds', selected: false, min: 0, max: 59, sufix: 'Seconds', prefix: '' },
     miliseconds: { title: 'Miliseconds', selected: false, min: 0, max: 999, sufix: 'Miliseconds', prefix: '' }
-};
+});
 
-export const duration = (options: IDurationOptions = DEFAULTS): string => {
+/**
+ * Generates the random Duration string based on given parameters
+ * 
+ * @param options { IDurationOptions }
+ * @returns { string }
+ */
+export const duration = (options: IDurationOptions = durationDefaults()): string => {
 
-    const temp = deepMergeObject({}, DEFAULTS, options);
+    const temp = deepMergeObject(durationDefaults(), options);
     let value = temp.prefix;
 
     DURATION_UNITS.map(unitName => {

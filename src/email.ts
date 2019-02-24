@@ -1,7 +1,7 @@
 import { randomItem, deepMergeObject } from '@v8187/rs-utils';
-import { personName } from './person-name';
+import { personName, EPersonNameFormats } from './person-name';
 import { company } from './company';
-import { randomAlphaNum } from './random';
+import { alphanumeric } from './alphanumeric';
 
 export const PUBLIC_DOMAINS = [
     'google', 'gmail', 'yahoo', 'reddif', 'hotmail', 'outlook', 'gmx',
@@ -9,10 +9,11 @@ export const PUBLIC_DOMAINS = [
 
 export const SUB_DOMAINS = ['com', 'ca', 'in', 'fa', 'org', 'net', 'es', 'cs', 'eu'];
 
-const NAME_OPTIONS = () => ({
-    formats: [randomItem([{ value: 'name-int' },
-    { value: 'name-sur' },
-    { value: 'name-int-sur' }])],
+const nameOptions = () => ({
+    format: randomItem([
+        EPersonNameFormats.NAME_INITIAL,
+        EPersonNameFormats.NAME_SURNAME,
+        EPersonNameFormats.NAME_INITIAL_SURNAME]),
     male: true,
     female: true
 });
@@ -30,27 +31,30 @@ export interface IEmailOptions {
     hyphen?: boolean;
 };
 
-const DEFAULTS: TRequired<IEmailOptions> = {
+export const emailDefaults = (): TRequired<IEmailOptions> => ({
     publicDomains: true,
     companyDomains: false,
     hyphen: false,
-    fullstop: true,
+    fullstop: false,
     personName: true,
     randomChars: false,
     underscore: false
-};
+});
 
-/* 
- * This method generates Random Email Id depends on given Options
+/** 
+ * Generates Random Email Id based on given parameters
  * 
- * Default options willbe empty javaScript Object
- * If Company Domain if Off, then Public domain will be used by default
- * If Person name is Off, then random user Id will be used by default
- * Special Characters (., -, _) all are optional and Off by default
+ * - Default options willbe empty javaScript Object
+ * - If Company Domain if Off, then Public domain will be used by default
+ * - If Person name is Off, then random user Id will be used by default
+ * - Special Characters (., -, _) all are optional and Off by default
+ * 
+ * @param options { IEmailOptions }
+ * @returns { string }
  */
-export const email = (options: IEmailOptions = DEFAULTS): string => {
+export const email = (options: IEmailOptions = emailDefaults()): string => {
 
-    const temp = deepMergeObject({}, DEFAULTS, options);
+    const temp = deepMergeObject(emailDefaults(), options);
 
     let domains: string[] = [], types: string[] = [], others: string[] = [];
 
@@ -66,7 +70,7 @@ export const email = (options: IEmailOptions = DEFAULTS): string => {
 
     const other = randomItem(others) || '';
     const domain = randomItem(domains) === 'p' ? randomItem(PUBLIC_DOMAINS) : company({ min: 1, max: 3 });
-    const username = randomItem(types) === 'p' ? personName(NAME_OPTIONS()) : randomAlphaNum(randomItem(RANDOM_OPTIONS));
+    const username = randomItem(types) === 'p' ? personName(nameOptions()) : alphanumeric(randomItem(RANDOM_OPTIONS));
 
     return (`${replaceSpecial(username, ' ').trim()
         .replace(/\s+/ig, other)}@${replaceSpecial(domain)

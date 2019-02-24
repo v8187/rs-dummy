@@ -34,7 +34,7 @@ export interface IDateTimeOptions {
     timeSeparator?: ETimeSeparator;
 };
 
-const DEFAULTS: TRequired<IDateTimeOptions> = {
+export const dateTimeDefaults = (): TRequired<IDateTimeOptions> => ({
     from: moment().subtract(1, 'month'),
     to: moment().add(1, 'month'),
     unixTimestampMilisecond: false,
@@ -46,11 +46,17 @@ const DEFAULTS: TRequired<IDateTimeOptions> = {
     dateSequence: EDateSequence.MDY,
     dateSeparator: EDateSeparator.SLASH,
     timeSeparator: ETimeSeparator.COLON
-};
+});
 
-export const dateTime = (options: IDateTimeOptions = DEFAULTS): string | number => {
+/**
+ * Generates the random Date/Time in various Formats based on given parameters
+ * 
+ * @param options { IDateTimeOptions }
+ * @returns { string }
+ */
+export const dateTime = (options: IDateTimeOptions = dateTimeDefaults()): string | number => {
 
-    const temp = deepMergeObject({}, DEFAULTS, options);
+    const temp = deepMergeObject(dateTimeDefaults(), options);
 
     const ranDate = moment(randomDate((temp.from).toDate(), (temp.to).toDate()));
 

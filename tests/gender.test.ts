@@ -1,5 +1,5 @@
 import { clrValue, clrExpected } from './helpers';
-import { gender } from "../src/gender";
+import { gender, EGenderFormat } from "../src/gender";
 
 describe('[Gender]', () => {
 
@@ -8,17 +8,17 @@ describe('[Gender]', () => {
         expect(testValue1).toMatch(/^Male|Female$/);
     });
 
-    const testValue2 = gender({ formats: [{ value: 'mf' }] });
+    const testValue2 = gender({ format: EGenderFormat.SHORT_LOWER });
     test(`Should return ${clrExpected('m or f')} [ ${clrValue(testValue2)} ]`, () => {
         expect(testValue2).toMatch(/^m|f$/);
     });
 
-    const testValue3 = gender({ formats: [{ value: 'MF' }] });
+    const testValue3 = gender({ format: EGenderFormat.SHORT_UPPER });
     test(`Should return ${clrExpected('M or F')} [ ${clrValue(testValue3)} ]`, () => {
         expect(testValue3).toMatch(/^M|F$/);
     });
 
-    const testValue4 = gender({ formats: [{ value: 'malefemale' }] });
+    const testValue4 = gender({ format: EGenderFormat.FULL });
     test(`Should return ${clrExpected('Male or Female')} [ ${clrValue(testValue4)} ]`, () => {
         expect(testValue4).toMatch(/^Male|Female$/);
     });

@@ -1,7 +1,7 @@
 {
   "name": "@v8187/rs-mock",
-  "version": "0.0.1-draft.3",
-  "description": "This tool provides sample data to test your application written in JavaScript and Typescript. It is still in Development mode.",
+  "version": "0.0.1",
+  "description": "This tool provides sample data to test your application written in JavaScript and Typescript.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {

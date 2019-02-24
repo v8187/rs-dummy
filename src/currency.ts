@@ -50,17 +50,23 @@ export interface ICurrencyOptions {
     symbol?: ICSymbol;
 };
 
-const DEFAULTS: TRequired<ICurrencyOptions> = {
+export const currencyDefaults = (): TRequired<ICurrencyOptions> => ({
     min: 10,
     max: 1000,
     decimals: 2,
     separator: ',',
     symbol: { ...CURRENCY_SYMBOLS[0] }
-};
+});
 
-export const currency = (options: ICurrencyOptions = DEFAULTS): string => {
+/**
+ * Generates the random Amount with various Currency Symbols based on given parameters
+ * 
+ * @param options { ICurrencyOptions }
+ * @returns string
+ */
+export const currency = (options: ICurrencyOptions = currencyDefaults()): string => {
 
-    const { min, max, decimals, separator, symbol } = deepMergeObject({}, DEFAULTS, options);
+    const { min, max, decimals, separator, symbol } = deepMergeObject(currencyDefaults(), options);
 
     let value = '' + randomNum(min, max);
     value = value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, (!separator && separator === '') ? '' : ',');

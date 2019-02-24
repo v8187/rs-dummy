@@ -19,7 +19,7 @@ describe('[Email]', () => {
         expect(email2).toMatch(new RegExp(`^[a-z\\d]+${RX_C_DOMAIN}`));
     });
 
-    const email3 = email({ period: true, hyphen: true, personName: true });
+    const email3 = email({ fullstop: true, hyphen: true, personName: true });
     test(`Should have ${clrExpected('Period (.) or Hyphen (-) in user name')} [ ${clrValue(email3)} ]`, () => {
         expect(email3).toMatch(new RegExp(`^([a-z\\d]+(\\.|\\-))+[a-z\\d]+${RX_P_DOMAIN}`));
     });

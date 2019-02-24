@@ -89,12 +89,7 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_date_time_.html#datetime" class="tsd-kind-icon">date<wbr>Time</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Object literals</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported"><a href="_date_time_.html#defaults" class="tsd-kind-icon">DEFAULTS</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_date_time_.html#datetimedefaults" class="tsd-kind-icon">date<wbr>Time<wbr>Defaults</a></li>
 							</ul>
 						</section>
 					</div>
@@ -112,13 +107,18 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/revision/src/date-time.ts#L51">date-time.ts:51</a></li>
+									<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/aa9c745/src/date-time.ts#L57">date-time.ts:57</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Generates the random Date/Time in various Formats based on given parameters</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <a href="../interfaces/_date_time_.idatetimeoptions.html" class="tsd-signature-type">IDateTimeOptions</a><span class="tsd-signature-symbol"> =&nbsp;DEFAULTS</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <a href="../interfaces/_date_time_.idatetimeoptions.html" class="tsd-signature-type">IDateTimeOptions</a><span class="tsd-signature-symbol"> =&nbsp;dateTimeDefaults()</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span>
@@ -128,128 +128,22 @@
 						</li>
 					</ul>
 				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Object literals</h2>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="defaults" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> DEFAULTS</h3>
-					<div class="tsd-signature tsd-kind-icon">DEFAULTS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/revision/src/date-time.ts#L37">date-time.ts:37</a></li>
-						</ul>
-					</aside>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-						<a name="defaults.dateseparator" class="tsd-anchor"></a>
-						<h3>date<wbr>Separator</h3>
-						<div class="tsd-signature tsd-kind-icon">date<wbr>Separator<span class="tsd-signature-symbol">:</span> <a href="../enums/_date_time_.edateseparator.html#slash" class="tsd-signature-type">SLASH</a><span class="tsd-signature-symbol"> =&nbsp;EDateSeparator.SLASH</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/revision/src/date-time.ts#L47">date-time.ts:47</a></li>
-							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-						<a name="defaults.datesequence" class="tsd-anchor"></a>
-						<h3>date<wbr>Sequence</h3>
-						<div class="tsd-signature tsd-kind-icon">date<wbr>Sequence<span class="tsd-signature-symbol">:</span> <a href="../enums/_date_time_.edatesequence.html#mdy" class="tsd-signature-type">MDY</a><span class="tsd-signature-symbol"> =&nbsp;EDateSequence.MDY</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/revision/src/date-time.ts#L46">date-time.ts:46</a></li>
-							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-						<a name="defaults.from" class="tsd-anchor"></a>
-						<h3>from</h3>
-						<div class="tsd-signature tsd-kind-icon">from<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Moment</span><span class="tsd-signature-symbol"> =&nbsp;moment().subtract(1, &#x27;month&#x27;)</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/revision/src/date-time.ts#L38">date-time.ts:38</a></li>
-							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-						<a name="defaults.hastime" class="tsd-anchor"></a>
-						<h3>has<wbr>Time</h3>
-						<div class="tsd-signature tsd-kind-icon">has<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/revision/src/date-time.ts#L44">date-time.ts:44</a></li>
-							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-						<a name="defaults.onlytime" class="tsd-anchor"></a>
-						<h3>only<wbr>Time</h3>
-						<div class="tsd-signature tsd-kind-icon">only<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/revision/src/date-time.ts#L43">date-time.ts:43</a></li>
-							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-						<a name="defaults.sqltimestamp" class="tsd-anchor"></a>
-						<h3>sql<wbr>Timestamp</h3>
-						<div class="tsd-signature tsd-kind-icon">sql<wbr>Timestamp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/revision/src/date-time.ts#L42">date-time.ts:42</a></li>
-							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-						<a name="defaults.timeseparator" class="tsd-anchor"></a>
-						<h3>time<wbr>Separator</h3>
-						<div class="tsd-signature tsd-kind-icon">time<wbr>Separator<span class="tsd-signature-symbol">:</span> <a href="../enums/_date_time_.etimeseparator.html#colon" class="tsd-signature-type">COLON</a><span class="tsd-signature-symbol"> =&nbsp;ETimeSeparator.COLON</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/revision/src/date-time.ts#L48">date-time.ts:48</a></li>
-							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-						<a name="defaults.to" class="tsd-anchor"></a>
-						<h3>to</h3>
-						<div class="tsd-signature tsd-kind-icon">to<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Moment</span><span class="tsd-signature-symbol"> =&nbsp;moment().add(1, &#x27;month&#x27;)</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/revision/src/date-time.ts#L39">date-time.ts:39</a></li>
-							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-						<a name="defaults.unixtimestampmilisecond" class="tsd-anchor"></a>
-						<h3>unix<wbr>Timestamp<wbr>Milisecond</h3>
-						<div class="tsd-signature tsd-kind-icon">unix<wbr>Timestamp<wbr>Milisecond<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/revision/src/date-time.ts#L40">date-time.ts:40</a></li>
-							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-						<a name="defaults.unixtimestampsecond" class="tsd-anchor"></a>
-						<h3>unix<wbr>Timestamp<wbr>Second</h3>
-						<div class="tsd-signature tsd-kind-icon">unix<wbr>Timestamp<wbr>Second<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> =&nbsp;false</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/revision/src/date-time.ts#L41">date-time.ts:41</a></li>
-							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-						<a name="defaults.variant" class="tsd-anchor"></a>
-						<h3>variant</h3>
-						<div class="tsd-signature tsd-kind-icon">variant<span class="tsd-signature-symbol">:</span> <a href="../enums/_date_time_.evariant.html#full" class="tsd-signature-type">FULL</a><span class="tsd-signature-symbol"> =&nbsp;EVariant.FULL</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/revision/src/date-time.ts#L45">date-time.ts:45</a></li>
-							</ul>
-						</aside>
-					</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="datetimedefaults" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> date<wbr>Time<wbr>Defaults</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">date<wbr>Time<wbr>Defaults<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TRequired</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_date_time_.idatetimeoptions.html" class="tsd-signature-type">IDateTimeOptions</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/aa9c745/src/date-time.ts#L37">date-time.ts:37</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TRequired</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_date_time_.idatetimeoptions.html" class="tsd-signature-type">IDateTimeOptions</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -323,8 +217,8 @@
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_date_time_.html#datetime" class="tsd-kind-icon">date<wbr>Time</a>
 					</li>
-					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_date_time_.html#defaults" class="tsd-kind-icon">DEFAULTS</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_date_time_.html#datetimedefaults" class="tsd-kind-icon">date<wbr>Time<wbr>Defaults</a>
 					</li>
 				</ul>
 			</nav>

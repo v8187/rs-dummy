@@ -89,12 +89,7 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_credit_card_.html#creditcard" class="tsd-kind-icon">credit<wbr>Card</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section tsd-is-not-exported">
-							<h3>Object literals</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported"><a href="_credit_card_.html#defaults" class="tsd-kind-icon">DEFAULTS</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_credit_card_.html#creditcarddefaults" class="tsd-kind-icon">credit<wbr>Card<wbr>Defaults</a></li>
 							</ul>
 						</section>
 					</div>
@@ -108,7 +103,7 @@
 					<div class="tsd-signature tsd-kind-icon">CCARD_<wbr>TYPES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[// American Express 34, 37 - 15 Luhn algorithm{name: &#x27;American Express&#x27;,formats: [{iins: [34, 37], range: { min: 15, max: 15 }}]}// China UnionPay 62 - 16–19, {name: &#x27;China UnionPay&#x27;,formats: [{iins: [62], range: { min: 16, max: 19 }}]}// Diners Club International// 36 - 14–19 Luhn algorithm// 300–305, 3095, 38–39 - 16–19, {name: &#x27;Diners Club International&#x27;,formats: [{iins: [36], range: { min: 14, max: 19 }}, {iins: [{ min: 300, max: 305 }, 3095, 38, 39], range: { min: 16, max: 19 }}]}// Diners Club United States &amp; Canada 54, 55 (MasterCard co-branded) - 16, {name: &#x27;Diners Club United States &amp; Canada&#x27;,formats: [{iins: [54, 55], range: { min: 16, max: 16 }}]}// Discover Card 6011, 64, 65 - 16–19, {name: &#x27;Discover Card&#x27;,formats: [{iins: [6011, 64, 65], range: { min: 16, max: 19 }}]}// RuPay 60, 6521 - 16, {name: &#x27;RuPay&#x27;,formats: [{iins: [60, 6521], range: { min: 16, max: 16 }}]}// JCB 3528–3589 - 16–19, {name: &#x27;JCB&#x27;,formats: [{iins: [{ min: 3528, max: 3589 }], range: { min: 16, max: 19 }}]}// Maestro 50, 56–58, 639, 67 - 12–19, {name: &#x27;Maestro&#x27;,formats: [{iins: [50, 56, 57, 58, 639, 67], range: { min: 12, max: 19 }}]}// Dankort 5019 - 16// 4571 (Visa co-branded) - 16, {name: &#x27;Dankort&#x27;,formats: [{iins: [5019, 4571], range: { min: 16, max: 16 }}]}// MIR 2200–2204 - 16, {name: &#x27;MIR&#x27;,formats: [{iins: [{ min: 2200, max: 2204 }], range: { min: 16, max: 16 }}]}// Mastercard 222100–272099 - 2017 16// 51–55 - 16, {name: &#x27;Mastercard&#x27;,formats: [{iins: [{ min: 222100, max: 272099 }], range: { min: 16, max: 16 }}, {iins: [{ min: 51, max: 55 }], range: { min: 16, max: 16 }}]}// Troy 979200–979289 - 16, {name: &#x27;Troy&#x27;,formats: [{iins: [{ min: 979200, max: 979289 }], range: { min: 16, max: 16 }}]}// Visa 4 (including related/partner brands: Dankort, Electron, etc.) - 16, {name: &#x27;Visa&#x27;,formats: [{iins: [4], range: { min: 16, max: 16 }}]}// UATP 1 - 15, {name: &#x27;UATP&#x27;,formats: [{iins: [1], range: { min: 15, max: 15 }}]}// Verve 506099–506198, 650002–650027 - 16, 19, {name: &#x27;Verve&#x27;,formats: [{iins: [{ min: 506099, max: 506198 }, { min: 650002, max: 650027 }], range: { min: 16, max: 19 }}]}]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/revision/src/credit-card.ts#L3">credit-card.ts:3</a></li>
+							<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/aa9c745/src/credit-card.ts#L3">credit-card.ts:3</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -125,51 +120,41 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/revision/src/credit-card.ts#L139">credit-card.ts:139</a></li>
+									<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/aa9c745/src/credit-card.ts#L145">credit-card.ts:145</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Generates the random Credit Card number based on given parameters</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <a href="../interfaces/_credit_card_.iccardoptions.html" class="tsd-signature-type">ICCardOptions</a><span class="tsd-signature-symbol"> =&nbsp;DEFAULTS</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <a href="../interfaces/_credit_card_.iccardoptions.html" class="tsd-signature-type">ICCardOptions</a><span class="tsd-signature-symbol"> =&nbsp;creditCardDefaults()</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>string</p>
 						</li>
 					</ul>
 				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
-				<h2>Object literals</h2>
-				<section class="tsd-panel tsd-member tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
-					<a name="defaults" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> DEFAULTS</h3>
-					<div class="tsd-signature tsd-kind-icon">DEFAULTS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/revision/src/credit-card.ts#L135">credit-card.ts:135</a></li>
-						</ul>
-					</aside>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-						<a name="defaults.cardtypes" class="tsd-anchor"></a>
-						<h3>card<wbr>Types</h3>
-						<div class="tsd-signature tsd-kind-icon">card<wbr>Types<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[CCARD_TYPES[0]]</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/revision/src/credit-card.ts#L136">credit-card.ts:136</a></li>
-							</ul>
-						</aside>
-					</section>
-					<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-object-literal tsd-is-not-exported">
-						<a name="defaults.separator" class="tsd-anchor"></a>
-						<h3>separator</h3>
-						<div class="tsd-signature tsd-kind-icon">separator<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot; &quot;</span></div>
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/revision/src/credit-card.ts#L136">credit-card.ts:136</a></li>
-							</ul>
-						</aside>
-					</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="creditcarddefaults" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> credit<wbr>Card<wbr>Defaults</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">credit<wbr>Card<wbr>Defaults<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TRequired</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_credit_card_.iccardoptions.html" class="tsd-signature-type">ICCardOptions</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/aa9c745/src/credit-card.ts#L135">credit-card.ts:135</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TRequired</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_credit_card_.iccardoptions.html" class="tsd-signature-type">ICCardOptions</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -243,8 +228,8 @@
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_credit_card_.html#creditcard" class="tsd-kind-icon">credit<wbr>Card</a>
 					</li>
-					<li class=" tsd-kind-object-literal tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="_credit_card_.html#defaults" class="tsd-kind-icon">DEFAULTS</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_credit_card_.html#creditcarddefaults" class="tsd-kind-icon">credit<wbr>Card<wbr>Defaults</a>
 					</li>
 				</ul>
 			</nav>

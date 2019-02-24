@@ -414,7 +414,7 @@
 										"name": "IAlphanumericOptions",
 										"id": 36
 									},
-									"defaultValue": " DEFAULTS"
+									"defaultValue": " defaultOptions"
 								}
 							],
 							"type": {
@@ -433,7 +433,7 @@
 				},
 				{
 					"id": 38,
-					"name": "DEFAULTS",
+					"name": "defaultOptions",
 					"kind": 2097152,
 					"kindString": "Object literal",
 					"flags": {
@@ -664,7 +664,7 @@
 										"name": "ICompanyOptions",
 										"id": 44
 									},
-									"defaultValue": " DEFAULTS"
+									"defaultValue": " defaultOptions"
 								}
 							],
 							"type": {
@@ -683,7 +683,7 @@
 				},
 				{
 					"id": 48,
-					"name": "DEFAULTS",
+					"name": "defaultOptions",
 					"kind": 2097152,
 					"kindString": "Object literal",
 					"flags": {
@@ -1400,7 +1400,7 @@
 										"name": "ICCardOptions",
 										"id": 64
 									},
-									"defaultValue": " DEFAULTS"
+									"defaultValue": " defaultOptions"
 								}
 							],
 							"type": {
@@ -1419,7 +1419,7 @@
 				},
 				{
 					"id": 79,
-					"name": "DEFAULTS",
+					"name": "defaultOptions",
 					"kind": 2097152,
 					"kindString": "Object literal",
 					"flags": {
@@ -2242,7 +2242,7 @@
 										"name": "ICurrencyOptions",
 										"id": 102
 									},
-									"defaultValue": " DEFAULTS"
+									"defaultValue": " defaultOptions"
 								}
 							],
 							"type": {
@@ -2261,7 +2261,7 @@
 				},
 				{
 					"id": 114,
-					"name": "DEFAULTS",
+					"name": "defaultOptions",
 					"kind": 2097152,
 					"kindString": "Object literal",
 					"flags": {
@@ -3183,7 +3183,7 @@
 										"name": "IDateTimeOptions",
 										"id": 143
 									},
-									"defaultValue": " DEFAULTS"
+									"defaultValue": " defaultOptions"
 								}
 							],
 							"type": {
@@ -3211,7 +3211,7 @@
 				},
 				{
 					"id": 155,
-					"name": "DEFAULTS",
+					"name": "defaultOptions",
 					"kind": 2097152,
 					"kindString": "Object literal",
 					"flags": {
@@ -4208,7 +4208,7 @@
 										"name": "IDurationOptions",
 										"id": 181
 									},
-									"defaultValue": " DEFAULTS"
+									"defaultValue": " defaultOptions"
 								}
 							],
 							"type": {
@@ -4227,7 +4227,7 @@
 				},
 				{
 					"id": 194,
-					"name": "DEFAULTS",
+					"name": "defaultOptions",
 					"kind": 2097152,
 					"kindString": "Object literal",
 					"flags": {
@@ -6174,7 +6174,7 @@
 										"name": "IEmailOptions",
 										"id": 268
 									},
-									"defaultValue": " DEFAULTS"
+									"defaultValue": " defaultOptions"
 								}
 							],
 							"type": {
@@ -6247,7 +6247,7 @@
 				},
 				{
 					"id": 285,
-					"name": "DEFAULTS",
+					"name": "defaultOptions",
 					"kind": 2097152,
 					"kindString": "Object literal",
 					"flags": {
@@ -6625,7 +6625,7 @@
 										"name": "IGenderOptions",
 										"id": 305
 									},
-									"defaultValue": " DEFAULTS"
+									"defaultValue": " defaultOptions"
 								}
 							],
 							"type": {
@@ -6644,7 +6644,7 @@
 				},
 				{
 					"id": 307,
-					"name": "DEFAULTS",
+					"name": "defaultOptions",
 					"kind": 2097152,
 					"kindString": "Object literal",
 					"flags": {
@@ -8702,7 +8702,7 @@
 				},
 				{
 					"id": 403,
-					"name": "DEFAULTS",
+					"name": "defaultOptions",
 					"kind": 64,
 					"kindString": "Function",
 					"flags": {
@@ -8711,7 +8711,7 @@
 					"signatures": [
 						{
 							"id": 404,
-							"name": "DEFAULTS",
+							"name": "defaultOptions",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
@@ -8772,7 +8772,7 @@
 										"name": "IPhoneOptions",
 										"id": 395
 									},
-									"defaultValue": " DEFAULTS()"
+									"defaultValue": " defaultOptions()"
 								}
 							],
 							"type": {

@@ -8,13 +8,19 @@ export interface IGenderOptions {
     format?: EGenderFormat;
 }
 
-const DEFAULTS: TRequired<IGenderOptions> = {
+export const genderDefaults: TRequired<IGenderOptions> = {
     format: EGenderFormat.FULL
 };
 
-export const gender = (options: IGenderOptions = DEFAULTS): string => {
+/**
+ * Generates the random Gender in below formats based on given parameters
+ * 
+ * @param options { IGenderOptions }
+ * @returns { string }
+ */
+export const gender = (options: IGenderOptions = genderDefaults): string => {
 
-    switch (options.format || DEFAULTS.format) {
+    switch (options.format || genderDefaults.format) {
         case EGenderFormat.SHORT_LOWER:
             return randomItem(['m', 'f']);
         case EGenderFormat.SHORT_UPPER:

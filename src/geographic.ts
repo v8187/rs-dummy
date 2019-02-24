@@ -35,16 +35,33 @@ export interface ICityOptions extends ICountryBasedOptions {
     states?: IState[];
 };
 
+/**
+ * Generates random Country name 
+ * 
+ * @returns { string }
+ */
 export const country = (): string => {
     return randomItem(countriesData).name;
 };
 
+/**
+ * Generates random State/Provision name based on given Countries list
+ * 
+ * @param options { ICountryBasedOptions }
+ * @returns { string }
+ */
 export const state = (options: ICountryBasedOptions = {}): string => {
     const countries = countryNames(options);
     const filtered = countries.length ? statesData.filter(state => countries.indexOf(state.country) !== -1) : statesData;
     return randomItem(filtered).name;
 };
 
+/**
+ * Generates random City name based on given Countries and States list
+ * 
+ * @param options { ICityOptions }
+ * @returns { string }
+ */
 export const city = (options: ICityOptions = {}): string => {
     const countries = countryNames(options);
     const states = options && options.states ? options.states.map(state => state.id) : [];
@@ -56,6 +73,12 @@ export const city = (options: ICityOptions = {}): string => {
     return randomItem(filtered).name;
 };
 
+/**
+ * Generates random Latitude/Longitude based on given Countries list
+ * 
+ * @param options { ICountryBasedOptions }
+ * @returns { string }
+ */
 export const latLong = (options: ICountryBasedOptions = {}): string => {
     const countries = countryNames(options);
     const filtered = countries.length ? citiesData.filter(city => countries.indexOf(city.country) !== -1) : citiesData;
