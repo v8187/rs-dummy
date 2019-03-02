@@ -26,6 +26,6 @@ describe('[Email]', () => {
 
     const email4 = email({ underscore: true, companyDomains: true });
     test(`Should have ${clrExpected('Underscore with random username & Company domain')} [ ${clrValue(email4)} ]`, () => {
-        expect(email4).toMatch(new RegExp(`^[a-z\\d]+\\_[a-z\\d]+${RX_C_DOMAIN}`));
+        expect(email4).toMatch(new RegExp(`^([a-z\\d]+\\_)+[a-z\\d]+${RX_C_DOMAIN}`));
     });
 });

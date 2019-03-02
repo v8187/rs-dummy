@@ -11,9 +11,9 @@ export enum EPersonNameFormats {
 };
 
 export interface IPersonNameOptions {
-    format: EPersonNameFormats;
-    male: boolean;
-    female: boolean;
+    format?: EPersonNameFormats;
+    male?: boolean;
+    female?: boolean;
 };
 
 export const personNameDefaults = (): TRequired<IPersonNameOptions> => ({
@@ -31,7 +31,7 @@ export const personNameDefaults = (): TRequired<IPersonNameOptions> => ({
 export const personName = (options: IPersonNameOptions = personNameDefaults()): string => {
 
     const namesList: string[] = [],
-        temp: IPersonNameOptions = deepMergeObject(personNameDefaults(), options);
+        temp = deepMergeObject(personNameDefaults(), options);
 
     if (temp.male) {
         namesList.push(...maleNames);
@@ -44,6 +44,7 @@ export const personName = (options: IPersonNameOptions = personNameDefaults()): 
         case EPersonNameFormats.NAME:
             return toTitleCase(randomItem(namesList));
         case EPersonNameFormats.NAME_INITIAL:
+        default:
             return toTitleCase(`${randomItem(namesList)} ${randomAlphabet()}.`);
         case EPersonNameFormats.NAME_INITIAL_SURNAME:
             return toTitleCase(`${randomItem(namesList)} ${randomAlphabet()}. ${randomItem(surNames)}`);
