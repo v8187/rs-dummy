@@ -1,5 +1,4 @@
 import * as moment from 'moment-timezone';
-import { Moment } from 'moment-timezone';
 import { deepMergeObject } from '@v8187/rs-utils';
 import { randomDate } from './random';
 
@@ -21,8 +20,8 @@ export enum ETimeSeparator {
 };
 
 export interface IDateTimeOptions {
-    from?: Moment;
-    to?: Moment;
+    from?: number;
+    to?: number;
     unixTimestampSecond?: boolean;
     unixTimestampMilisecond?: boolean;
     sqlTimestamp?: boolean;
@@ -35,8 +34,8 @@ export interface IDateTimeOptions {
 };
 
 export const dateTimeDefaults = (): TRequired<IDateTimeOptions> => ({
-    from: moment().subtract(1, 'month'),
-    to: moment().add(1, 'month'),
+    from: +(moment().subtract(1, 'month')),
+    to: +(moment().add(1, 'month')),
     unixTimestampMilisecond: false,
     unixTimestampSecond: false,
     sqlTimestamp: false,
@@ -58,7 +57,7 @@ export const dateTime = (options: IDateTimeOptions = dateTimeDefaults()): string
 
     const temp = deepMergeObject(dateTimeDefaults(), options);
 
-    const ranDate = moment(randomDate((temp.from).toDate(), (temp.to).toDate()));
+    const ranDate = moment(randomDate(new Date(temp.from), new Date(temp.to)));
 
     if (temp.unixTimestampSecond) {
         return ranDate.unix();
