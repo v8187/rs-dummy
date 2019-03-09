@@ -1,6 +1,6 @@
 {
   "name": "@v8187/rs-mock",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "This tool provides mock(Sample) data to test your application written in JavaScript and Typescript.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
