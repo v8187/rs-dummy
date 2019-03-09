@@ -12,3 +12,4 @@ export * from './password';
 export * from './person-name';
 export * from './phone-no';
 export * from './random';
+export * from './username';
