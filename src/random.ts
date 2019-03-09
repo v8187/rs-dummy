@@ -18,7 +18,7 @@ export const randomAlphabet = (): string => {
  * @returns { string }
  */
 export const randomWords = (min: number = 1, max: number = 1): string => {
-    let i = min;
+    let i = 1;
     const words: string[] = [];
 
     if (min !== max) {
@@ -29,7 +29,6 @@ export const randomWords = (min: number = 1, max: number = 1): string => {
         words.push(randomItem(DUMMY_TEXT_MIN_4));
         i++;
     };
-
     return words.join(' ');
 };
 

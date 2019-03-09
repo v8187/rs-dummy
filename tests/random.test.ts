@@ -1,13 +1,25 @@
 import { ALPHAS } from '../src/static/common';
 import { clrExpected, clrValue } from './helpers';
 
-import { randomAlphabet, randomDate } from '../src/random';
+import { randomAlphabet, randomDate, randomWords } from '../src/random';
 
 describe('[Random]', () => {
     describe('randomAlphabet()', () => {
         const randomAlphabet0 = randomAlphabet();
         test(`Returns random ${clrExpected('Alphabet')} [ ${clrValue(randomAlphabet0)} ]`, () => {
             expect(ALPHAS.toLowerCase().indexOf(randomAlphabet0)).toBeGreaterThanOrEqual(0);
+        });
+    });
+
+    describe('randomWords()', () => {
+        const testValue1 = randomWords();
+        test(`Returns random ${clrExpected('1 word')} by default [ ${clrValue(testValue1)} ]`, () => {
+            expect(testValue1).toMatch(/^[^\s]+$/);
+        });
+
+        const testValue2 = randomWords(2, 4);
+        test(`Returns random ${clrExpected('2-4 word')} [ ${clrValue(testValue2)} ]`, () => {
+            expect(testValue2).toMatch(/^[^\s]+(\s[^\s]+){1,3}$/);
         });
     });
 

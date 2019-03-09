@@ -97,10 +97,10 @@
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module">
 					<a name="company_sufixes" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> COMPANY_<wbr>SUFIXES</h3>
-					<div class="tsd-signature tsd-kind-icon">COMPANY_<wbr>SUFIXES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[&#x27;Company&#x27;, &#x27;Corp.&#x27;, &#x27;Corporation&#x27;, &#x27;Inc.&#x27;, &#x27;Incorporated&#x27;,&#x27;LLC&#x27;, &#x27;LLP&#x27;, &#x27;Ltd&#x27;, &#x27;Limited&#x27;, &#x27;Pvt. Ltd.&#x27;, &#x27;Private Limited&#x27;,&#x27;PC&#x27;, &#x27;Foundation&#x27;, &#x27;Institute&#x27;, &#x27;Associates&#x27;, &#x27;Industries&#x27;, &#x27;Consulting&#x27;]</span></div>
+					<div class="tsd-signature tsd-kind-icon">COMPANY_<wbr>SUFIXES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[&#x27;Company&#x27;, &#x27;Corp.&#x27;, &#x27;Corporation&#x27;, &#x27;Inc.&#x27;, &#x27;Incorporated&#x27;,&#x27;LLC&#x27;, &#x27;LLP&#x27;, &#x27;Ltd&#x27;, &#x27;Limited&#x27;, /* &#x27;Pvt. Ltd.&#x27;, &#x27;Private Limited&#x27;, */&#x27;PC&#x27;, &#x27;Foundation&#x27;, &#x27;Institute&#x27;, &#x27;Associates&#x27;, &#x27;Industries&#x27;, &#x27;Consulting&#x27;]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/aa9c745/src/company.ts#L4">company.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/3ed2b4d/src/company.ts#L4">company.ts:4</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -117,12 +117,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/aa9c745/src/company.ts#L23">company.ts:23</a></li>
+									<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/3ed2b4d/src/company.ts#L25">company.ts:25</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Generates the random Company name based on given parameters</p>
+									<p>Generates the random Company name based on given parameters
+										options.min value must be &gt;=2,
+									values lower than 2 will be ignored</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -145,7 +147,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/aa9c745/src/company.ts#L13">company.ts:13</a></li>
+									<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/3ed2b4d/src/company.ts#L13">company.ts:13</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TRequired</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_company_.icompanyoptions.html" class="tsd-signature-type">ICompanyOptions</a><span class="tsd-signature-symbol">&gt;</span></h4>

@@ -13,12 +13,12 @@ export interface IPasswordOptions {
 };
 
 export const passwordDefaults = (): TRequired<IPasswordOptions> => ({
-    upperCase: false,
-    lowerCase: false,
-    digit: false,
-    specialChar: false,
-    max: 4,
-    min: 10
+    upperCase: true,
+    lowerCase: true,
+    digit: true,
+    specialChar: true,
+    max: 6,
+    min: 8
 });
 
 /**

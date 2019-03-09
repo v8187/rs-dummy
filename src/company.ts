@@ -3,7 +3,7 @@ import { randomWords } from './random';
 
 export const COMPANY_SUFIXES = [
     'Company', 'Corp.', 'Corporation', 'Inc.', 'Incorporated',
-    'LLC', 'LLP', 'Ltd', 'Limited', 'Pvt. Ltd.', 'Private Limited',
+    'LLC', 'LLP', 'Ltd', 'Limited', /* 'Pvt. Ltd.', 'Private Limited', */
     'PC', 'Foundation', 'Institute', 'Associates', 'Industries', 'Consulting'];
 
 export interface ICompanyOptions {
@@ -15,13 +15,15 @@ export const companyDefaults = (): TRequired<ICompanyOptions> => ({
 });
 
 /**
- * Generates the random Company name based on given parameters
+ * Generates the random Company name based on given parameters 
+ * options.min value must be >=2,
+ * values lower than 2 will be ignored
  * 
  * @param options { ICompanyOptions }
  * @returns { string }
  */
 export const company = (options: ICompanyOptions = companyDefaults()): string => {
-    const temp = deepMergeObject(companyDefaults(), options);
+    const { min, max } = deepMergeObject(companyDefaults(), options);
 
-    return `${toTitleCase(randomWords(temp.min, temp.max))} ${randomItem(COMPANY_SUFIXES)}`;
+    return `${toTitleCase(randomWords(min > 2 ? min - 1 : 1, max - 1))} ${randomItem(COMPANY_SUFIXES)}`;
 };

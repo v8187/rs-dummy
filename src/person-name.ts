@@ -1,8 +1,8 @@
 import { randomItem, toTitleCase, deepMergeObject } from '@v8187/rs-utils';
 import { randomAlphabet } from './random';
-import maleNames from './jsons/person-male-names.data';
-import femaleNames from './jsons/person-female-names.data';
-import surNames from './jsons/person-surnames.data';
+import maleNames from './static/person-male-names.data';
+import femaleNames from './static/person-female-names.data';
+import surNames from './static/person-surnames.data';
 
 export enum EPersonNameFormats {
     NAME, SURNAME, NAME_SURNAME, SURNAME_NAME,

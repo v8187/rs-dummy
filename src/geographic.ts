@@ -1,8 +1,8 @@
 import { randomItem } from '@v8187/rs-utils';
 
-import countriesData from './jsons/countries.data';
-import statesData from './jsons/states.data';
-import citiesData from './jsons/cities.data';
+import countriesData from './static/countries.data';
+import statesData from './static/states.data';
+import citiesData from './static/cities.data';
 
 export const CONUTRIES_LIST = countriesData;
 export const STATES_LIST = statesData;

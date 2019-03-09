@@ -5,7 +5,7 @@ import { alphanumeric } from '../src/alphanumeric';
 describe('[Alphanumeric]', () => {
 
     const testValue1 = alphanumeric();
-    test(`Should ${clrExpected('return empty string')} by default [ ${clrValue(testValue1)} ]`, () => {
+    test(`Should return ${clrExpected('empty string')} by default [ ${clrValue(testValue1)} ]`, () => {
         expect(testValue1).toMatch(/^$/);
     });
 
