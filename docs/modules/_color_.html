@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ICityOptions | rs-mock - Documentation</title>
+	<title>&quot;color&quot; | rs-mock - Documentation</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,68 +56,89 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_geographic_.html">&quot;geographic&quot;</a>
-				</li>
-				<li>
-					<a href="_geographic_.icityoptions.html">ICityOptions</a>
+					<a href="_color_.html">&quot;color&quot;</a>
 				</li>
 			</ul>
-			<h1>Interface ICityOptions</h1>
+			<h1>External module &quot;color&quot;</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<a href="_geographic_.icountrybasedoptions.html" class="tsd-signature-type">ICountryBasedOptions</a>
-						<ul class="tsd-hierarchy">
-							<li>
-								<span class="target">ICityOptions</span>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Properties</h3>
+							<h3>Enumerations</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="_geographic_.icityoptions.html#countries" class="tsd-kind-icon">countries</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_geographic_.icityoptions.html#states" class="tsd-kind-icon">states</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-external-module"><a href="../enums/_color_.ecolorformat.html" class="tsd-kind-icon">EColor<wbr>Format</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Interfaces</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/_color_.icoloroptions.html" class="tsd-kind-icon">IColor<wbr>Options</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_color_.html#color" class="tsd-kind-icon">color</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_color_.html#colordefaults" class="tsd-kind-icon">color<wbr>Defaults</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-					<a name="countries" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> countries</h3>
-					<div class="tsd-signature tsd-kind-icon">countries<span class="tsd-signature-symbol">:</span> <a href="_geographic_.icountry.html" class="tsd-signature-type">ICountry</a><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<p>Inherited from <a href="_geographic_.icountrybasedoptions.html">ICountryBasedOptions</a>.<a href="_geographic_.icountrybasedoptions.html#countries">countries</a></p>
-						<ul>
-							<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/8387bb2/src/geographic.ts#L31">geographic.ts:31</a></li>
-						</ul>
-					</aside>
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="color" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> color</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">color<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_color_.icoloroptions.html" class="tsd-signature-type">IColorOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/8387bb2/src/color.ts#L25">color.ts:25</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Generates the random Color based on given parameters
+									Color can be in English name, Hex code, RGB(percentage) or RGB(numeric) formats</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> options: <a href="../interfaces/_color_.icoloroptions.html" class="tsd-signature-type">IColorOptions</a><span class="tsd-signature-symbol"> =&nbsp;colorDefaults()</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="states" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> states</h3>
-					<div class="tsd-signature tsd-kind-icon">states<span class="tsd-signature-symbol">:</span> <a href="_geographic_.istate.html" class="tsd-signature-type">IState</a><span class="tsd-signature-symbol">[]</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/8387bb2/src/geographic.ts#L35">geographic.ts:35</a></li>
-						</ul>
-					</aside>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="colordefaults" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> color<wbr>Defaults</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">color<wbr>Defaults<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TRequired</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_color_.icoloroptions.html" class="tsd-signature-type">IColorOptions</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/v8187/rs-mock/blob/8387bb2/src/color.ts#L14">color.ts:14</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TRequired</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_color_.icoloroptions.html" class="tsd-signature-type">IColorOptions</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -128,104 +149,68 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_address_.html">"address"</a>
+						<a href="_address_.html">"address"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_alphanumeric_.html">"alphanumeric"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_color_.html">"color"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_company_.html">"company"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_credit_card_.html">"credit-<wbr>card"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_currency_.html">"currency"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_date_time_.html">"date-<wbr>time"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_duration_.html">"duration"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_email_.html">"email"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_gender_.html">"gender"</a>
+						<a href="_alphanumeric_.html">"alphanumeric"</a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_geographic_.html">"geographic"</a>
+						<a href="_color_.html">"color"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_password_.html">"password"</a>
+						<a href="_company_.html">"company"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_person_name_.html">"person-<wbr>name"</a>
+						<a href="_credit_card_.html">"credit-<wbr>card"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_phone_no_.html">"phone-<wbr>no"</a>
+						<a href="_currency_.html">"currency"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_random_.html">"random"</a>
+						<a href="_date_time_.html">"date-<wbr>time"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
-						<a href="../modules/_username_.html">"username"</a>
+						<a href="_duration_.html">"duration"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_email_.html">"email"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_gender_.html">"gender"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_geographic_.html">"geographic"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_password_.html">"password"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_person_name_.html">"person-<wbr>name"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_phone_no_.html">"phone-<wbr>no"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_random_.html">"random"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="_username_.html">"username"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_geographic_.icityoptions.html" class="tsd-kind-icon">ICity<wbr>Options</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
-								<a href="_geographic_.icityoptions.html#countries" class="tsd-kind-icon">countries</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_geographic_.icityoptions.html#states" class="tsd-kind-icon">states</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_geographic_.icountry.html" class="tsd-kind-icon">ICountry</a>
+					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="../enums/_color_.ecolorformat.html" class="tsd-kind-icon">EColor<wbr>Format</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_geographic_.icountrybasedoptions.html" class="tsd-kind-icon">ICountry<wbr>Based<wbr>Options</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_geographic_.istate.html" class="tsd-kind-icon">IState</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_geographic_.html#cities_list" class="tsd-kind-icon">CITIES_<wbr>LIST</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_geographic_.html#conutries_list" class="tsd-kind-icon">CONUTRIES_<wbr>LIST</a>
-					</li>
-					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
-						<a href="../modules/_geographic_.html#states_list" class="tsd-kind-icon">STATES_<wbr>LIST</a>
+						<a href="../interfaces/_color_.icoloroptions.html" class="tsd-kind-icon">IColor<wbr>Options</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_geographic_.html#city" class="tsd-kind-icon">city</a>
+						<a href="_color_.html#color" class="tsd-kind-icon">color</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_geographic_.html#country" class="tsd-kind-icon">country</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-not-exported">
-						<a href="../modules/_geographic_.html#countrynames" class="tsd-kind-icon">country<wbr>Names</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_geographic_.html#latlong" class="tsd-kind-icon">lat<wbr>Long</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="../modules/_geographic_.html#state" class="tsd-kind-icon">state</a>
+						<a href="_color_.html#colordefaults" class="tsd-kind-icon">color<wbr>Defaults</a>
 					</li>
 				</ul>
 			</nav>
