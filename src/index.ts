@@ -1,5 +1,6 @@
 export * from './address';
 export * from './alphanumeric';
+export * from './color';
 export * from './company';
 export * from './credit-card';
 export * from './currency';
