@@ -17,8 +17,8 @@ export const passwordDefaults = (): TRequired<IPasswordOptions> => ({
     lowerCase: true,
     digit: true,
     specialChar: true,
-    max: 6,
-    min: 8
+    max: 8,
+    min: 6
 });
 
 /**
