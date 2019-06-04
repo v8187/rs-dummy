@@ -69,7 +69,7 @@ export const currency = (options: ICurrencyOptions = currencyDefaults()): string
     const { min, max, decimals, separator, symbol } = deepMergeObject(currencyDefaults(), options);
 
     let value = '' + randomNum(min, max);
-    value = value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, (!separator && separator === '') ? '' : ',');
+    value = value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, separator === '' ? '' : (!separator ? ',': separator));
 
     if (decimals) {
         value += ('.' + padString(randomNum(0, Number(new Array(decimals + 1).join('9'))), 'RIGHT', '0', decimals));

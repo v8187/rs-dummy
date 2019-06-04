@@ -1,7 +1,10 @@
 module.exports = {
     collectCoverageFrom: [
         'src/**/*.{js,jsx,ts,tsx}',
-        '!**/node_modules/**'
+        '!**/node_modules/**',
+        '!dist/**',
+        '!docs/**',
+        '!src/static/**'
     ],
     // collectCoverage: true,
     // mapCoverage: true,

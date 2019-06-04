@@ -20,4 +20,10 @@ describe('[Currency]', () => {
     test(`Should ${clrExpected('between 2000-3000, WITHOUT "," and decimals')} [ ${clrValue(testValue3)} ]`, () => {
         expect(testValue3).toMatch(/^₽[2-3]\d{3}$/);
     });
+
+    const testValue4 = currency(({ separator: 'aa', decimals: 3, min: 1, max: 500000, symbol: { symbol: '₹' } }));
+    // test(`Returns with ${clrExpected('Symbol=₹, Range=1 - 500000, Decimals=3, Separator=","')}`, () => {
+    test(`Should ${clrExpected('between 1-500000, with "aa" and 3 decimals')} [ ${clrValue(testValue4)} ]`, () => {
+        expect(testValue4).toMatch(/^₹[1-9]\d{0,2}(aa\d{3})?\.\d{3}$/);
+    });
 });
